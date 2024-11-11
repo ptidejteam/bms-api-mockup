@@ -1,0 +1,274 @@
+{
+    "$base": "List",
+    "PAC Admin Office 01 VAV": {
+        "$base": "Struct",
+        "CLG_V": {
+            "$base": "Real",
+            "id": "36beb807-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10100.AO2"
+        },
+        "id": "a5fd616d-6817-11e3-a53e-00a0c9f13aeb",
+        "location": "",
+        "address": "",
+        "template": "VAV.xml",
+        "description": "PAC Admin Office 01 VAV",
+        "HTG_V": {
+            "$base": "Real",
+            "id": "36beb817-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10100.AV24"
+        },
+        "MAD": {
+            "$base": "Real",
+            "id": "36beb7b7-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10100.AV29"
+        },
+        "OT": {
+            "$base": "Real",
+            "id": "36c7b926-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10100.AV1"
+        },
+        "RT1": {
+            "$base": "Real",
+            "id": "36c7b940-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10100.AI5"
+        },
+        "RT2": {
+            "$base": "Real",
+            "id": "36c7b933-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10100.AI6"
+        },
+        "R_FAN_VSD": {
+            "$base": "Real",
+            "id": "36beb827-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10100.AV28"
+        },
+        "SAT": {
+            "$base": "Real",
+            "id": "36beb86a-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10100.AI3"
+        },
+        "SAT_SP": {
+            "$base": "Real",
+            "id": "36beb85e-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10100.AV9"
+        },
+        "SCHED": {
+            "$base": "String",
+            "id": "36c7b950-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10100.SCH2"
+        },
+        "S_FAN": {
+            "$base": "Enumerated",
+            "id": "36beb851-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10100.BV19"
+        },
+        "S_FAN_S": {
+            "$base": "Enumerated",
+            "id": "36beb841-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10100.BV14"
+        },
+        "S_FAN_VSD": {
+            "$base": "Real",
+            "id": "36beb834-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10100.AV27"
+        }
+    },
+    "PAC Admin Office 02 VAV": {
+        "$base": "Struct",
+        "CLG_V": {
+            "$base": "Real",
+            "id": "46beb807-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.AO2"
+        },
+        "id": "b5fd616d-6817-11e3-a53e-00a0c9f13aeb",
+        "location": "",
+        "address": "",
+        "template": "VAV.xml",
+        "description": "PAC Admin Office 02 VAV",
+        "HTG_V": {
+            "$base": "Real",
+            "id": "46beb817-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.AV24"
+        },
+        "MAD": {
+            "$base": "Real",
+            "id": "46beb7b7-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.AV29"
+        },
+        "OT": {
+            "$base": "Real",
+            "id": "46c7b926-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.AV1"
+        },
+        "RT1": {
+            "$base": "Real",
+            "id": "46c7b940-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.AI5"
+        },
+        "RT2": {
+            "$base": "Real",
+            "id": "46c7b933-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.AI6"
+        },
+        "R_FAN_VSD": {
+            "$base": "Real",
+            "id": "46beb827-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.AV28"
+        },
+        "SAT": {
+            "$base": "Real",
+            "id": "46beb86a-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.AI3"
+        },
+        "SAT_SP": {
+            "$base": "Real",
+            "id": "46beb85e-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.AV9"
+        },
+        "SCHED": {
+            "$base": "String",
+            "id": "46c7b950-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.SCH2"
+        },
+        "S_FAN": {
+            "$base": "Enumerated",
+            "id": "46beb851-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.BV19"
+        },
+        "S_FAN_S": {
+            "$base": "Enumerated",
+            "id": "46beb841-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.BV14"
+        },
+        "S_FAN_VSD": {
+            "$base": "Real",
+            "id": "46beb834-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.AV27"
+        }
+    },
+    "PAC Lab 1 AHU": {
+        "$base": "Struct",
+        "CLG_V": {
+            "$base": "Real",
+            "id": "36beb807-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10100.AO2"
+        },
+        "id": "a5fd616d-6817-11e3-a53e-00a0c9f13aeb",
+        "location": "",
+        "address": "",
+        "template": "VAV.xml",
+        "description": "PAC Admin Office 02 VAV",
+        "HTG_V": {
+            "$base": "Real",
+            "id": "46beb817-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.AV24"
+        },
+        "MAD": {
+            "$base": "Real",
+            "id": "46beb7b7-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.AV29"
+        },
+        "OT": {
+            "$base": "Real",
+            "id": "46c7b926-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.AV1"
+        },
+        "RT1": {
+            "$base": "Real",
+            "id": "46c7b940-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.AI5"
+        },
+        "RT2": {
+            "$base": "Real",
+            "id": "46c7b933-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.AI6"
+        },
+        "R_FAN_VSD": {
+            "$base": "Real",
+            "id": "46beb827-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.AV28"
+        },
+        "SAT": {
+            "$base": "Real",
+            "id": "46beb86a-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.AI3"
+        },
+        "SAT_SP": {
+            "$base": "Real",
+            "id": "46beb85e-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.AV9",
+            "value": "35"
+        },
+        "SCHED": {
+            "$base": "String",
+            "id": "46c7b950-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.SCH2"
+        },
+        "S_FAN": {
+            "$base": "Enumerated",
+            "id": "46beb851-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.BV19"
+        },
+        "S_FAN_S": {
+            "$base": "Enumerated",
+            "id": "46beb841-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.BV14"
+        },
+        "S_FAN_VSD": {
+            "$base": "Real",
+            "id": "46beb834-6819-11e3-a53e-00a0c9f13aeb",
+            "type": "Object",
+            "ref": "//Training/10200.AV27"
+        },
+        "ROOM1_SP": {
+            "$base": "Real",
+            "value": "21"
+        },
+        "ROOM2_SP": {
+            "$base": "Real",
+            "value": "27"
+        },
+        "ROOM3_SP": {
+            "$base": "Real",
+            "value": "28"
+        }
+    }
+}

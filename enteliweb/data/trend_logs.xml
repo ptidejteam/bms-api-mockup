@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<List name="histories" next="RD-enteliweb-t2.network.com/enteliweb/api/.data/histories" xmlns="http://bacnet.org/csml/1.2">
+    <Link name="1" value="/.bacnet/MainSite/4789/trend-log,1"/>
+    <Link name="2" value="/.bacnet/MainSite/4789/trend-log,2"/>
+    <Link name="3" value="/.bacnet/MainSite/4789/trend-log,3"/>
+    <Link name="4" value="/.bacnet/MainSite/4789/trend-log,4"/>
+    <Link name="5" value="/.bacnet/MainSite/4789/trend-log,5"/>
+    <Link name="6" value="/.bacnet/MainSite/4789/trend-log,6"/>
+    <Link name="7" value="/.bacnet/MainSite/4789/trend-log,7"/>
+    <Link name="8" value="/.bacnet/MainSite/4789/trend-log,8"/>
+    <Link name="9" value="/.bacnet/MainSite/4789/trend-log,9"/>
+    <Link name="10" value="/.bacnet/MainSite/4789/trend-log,10"/>
+</List>

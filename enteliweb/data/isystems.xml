@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<List xmlns="http://bacnet.org/csml/1.2" name="Systems">
+    <Struct name="PAC Lab 1 AHU" id="a5fd616d-6817-11e3-a53e-00a0c9f13aeb" location="" address="" template="AHU.xml" description="PAC Lab 1 AHU">
+        <Real name="CLG_V" id="7111daaa-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10100.AO2" value="None" />
+        <Real name="HTG_V" id="7111daba-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10100.AV24" value="None" />
+        <Real name="MAD" id="7111da50-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10100.AV29" value="None" />
+        <Real name="OT" id="711a572c-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10100.AV1" />
+        <Real name="RT1" id="711a5746-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10100.AI5" />
+        <Real name="RT2" id="711a5739-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10100.AI6" />
+        <Real name="R_FAN_VSD" id="7111dac7-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10100.AV28" />
+        <Real name="SAT" id="7111db07-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10100.AI3" />
+        <Real name="SAT_SP" id="7111dafa-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10100.AV9" />
+        <String name="SCHED" id="711a5753-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10100.SCH2" />
+        <Enumerated name="S_FAN" id="7111daee-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10100.BV19" />
+        <Enumerated name="S_FAN_S" id="7111dae1-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10100.BV14" />
+        <Real name="S_FAN_VSD" id="7111dad4-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10100.AV27" />
+    </Struct>
+
+    <Struct name="PAC Lab 2 AHU" id="b6fd616d-6817-11e3-a53e-00a0c9f13aeb" location="" address="" template="AHU.xml" description="PAC Lab 2 AHU">
+        <Real name="CLG_V" id="8111daaa-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10200.AO2" />
+        <Real name="HTG_V" id="8111daba-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10200.AV24" />
+        <Real name="MAD" id="8111da50-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10200.AV29" />
+        <Real name="OT" id="811a572c-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10200.AV1" />
+        <Real name="RT1" id="811a5746-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10200.AI5" />
+        <Real name="RT2" id="811a5739-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10200.AI6" />
+        <Real name="R_FAN_VSD" id="8111dac7-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10200.AV28" />
+        <Real name="SAT" id="8111db07-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10200.AI3" />
+        <Real name="SAT_SP" id="8111dafa-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10200.AV9" />
+        <String name="SCHED" id="811a5753-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10200.SCH2" />
+        <Enumerated name="S_FAN" id="8111daee-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10200.BV19" />
+        <Enumerated name="S_FAN_S" id="8111dae1-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10200.BV14" />
+        <Real name="S_FAN_VSD" id="8111dad4-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10200.AV27" />
+    </Struct>
+
+    <Struct name="PAC Lab 3 AHU" id="c7fd616d-6817-11e3-a53e-00a0c9f13aeb" location="" address="" template="AHU.xml" description="PAC Lab 3 AHU">
+        <Real name="CLG_V" id="9111daaa-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10300.AO2" />
+        <Real name="HTG_V" id="9111daba-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10300.AV24" />
+        <Real name="MAD" id="9111da50-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10300.AV29" />
+        <Real name="OT" id="911a572c-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10300.AV1" />
+        <Real name="RT1" id="911a5746-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10300.AI5" />
+        <Real name="RT2" id="911a5739-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10300.AI6" />
+        <Real name="R_FAN_VSD" id="9111dac7-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10300.AV28" />
+        <Real name="SAT" id="9111db07-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10300.AI3" />
+        <Real name="SAT_SP" id="9111dafa-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10300.AV9" />
+        <String name="SCHED" id="911a5753-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10300.SCH2" />
+        <Enumerated name="S_FAN" id="9111daee-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10300.BV19" />
+        <Enumerated name="S_FAN_S" id="9111dae1-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10300.BV14" />
+        <Real name="S_FAN_VSD" id="9111dad4-6818-11e3-a53e-00a0c9f13aeb" type="Object" ref="//Training/10300.AV27" />
+    </Struct>
+</List>

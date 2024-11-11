@@ -1,0 +1,42 @@
+{
+  "1": {
+    "$base": "Link",
+    "value": "/.bacnet/MainSite/5600/trend-log,1"
+  },
+  "2": {
+    "$base": "Link",
+    "value": "/.bacnet/MainSite/5600/trend-log,2"
+  },
+  "3": {
+    "$base": "Link",
+    "value": "/.bacnet/MainSite/5600/trend-log,3"
+  },
+  "4": {
+    "$base": "Link",
+    "value": "/.bacnet/MainSite/5600/trend-log,4"
+  },
+  "5": {
+    "$base": "Link",
+    "value": "/.bacnet/MainSite/5600/trend-log,5"
+  },
+  "6": {
+    "$base": "Link",
+    "value": "/.bacnet/MainSite/5600/trend-log,6"
+  },
+  "7": {
+    "$base": "Link",
+    "value": "/.bacnet/MainSite/5600/trend-log,7"
+  },
+  "8": {
+    "$base": "Link",
+    "value": "/.bacnet/MainSite/5600/trend-log,8"
+  },
+  "9": {
+    "$base": "Link",
+    "value": "/.bacnet/MainSite/5600/trend-log,9"
+  },
+  "10": {
+    "$base": "Link",
+    "value": "/.bacnet/MainSite/5600/trend-log,10"
+  }
+}
