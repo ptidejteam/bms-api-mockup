@@ -24,8 +24,8 @@ authorizations = {
 }
 
 # Initialize the API with the authorization scheme
-api = Api(app, version='1.0', title='Mock BMS APIs',
-          description='A simple BMS API',
+api = Api(app, version='1.0', title='enteliWEB BMS API Mockup',
+          description='enteliWEB BMS API Mockup',
           authorizations=authorizations,
           security='basicAuth'
           )

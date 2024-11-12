@@ -18,11 +18,6 @@ class Misc:
         return jsonify(json.loads(mock_data))
 
     @staticmethod
-    def get_mock_data(file_path):
-        with open(file_path, 'r') as file:
-            return file.read()
-
-    @staticmethod
     def process_xml(struct):
         xml_str = ET.tostring(struct, encoding='unicode')
         # Remove namespace prefixes

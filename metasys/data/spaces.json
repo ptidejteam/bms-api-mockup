@@ -1,0 +1,41 @@
+{
+  "total": 3,
+  "items": [
+    {
+      "id": "bf254f63-2cbb-4195-8c53-a1d6fcbe54f6",
+      "itemReference": "{http://127.0.0.1:6000}:{deviceHostname}/Campus",
+      "name": "Loyola Campus",
+      "type": "spaceTypesEnumSet.generic",
+      "self": "http://127.0.0.1:6000/api/v4/spaces/bf254f63-2cbb-4195-8c53-a1d6fcbe54f6",
+      "parentUrl": null,
+      "spacesUrl": "http://127.0.0.1:6000/api/v4/spaces/bf254f63-2cbb-4195-8c53-a1d6fcbe54f6/spaces",
+      "equipmentUrl": "http://127.0.0.1:6000/api/v4/spaces/bf254f63-2cbb-4195-8c53-a1d6fcbe54f6/equipment",
+      "networkDevicesUrl": "http://127.0.0.1:6000/api/v4/spaces/bf254f63-2cbb-4195-8c53-a1d6fcbe54f6/networkDevices"
+    },
+    {
+      "id": "bf254f63-2cbb-4195-8c53-a1d6fcbe54f6",
+      "itemReference": "{http://127.0.0.1:6000}:{deviceHostname}/Campus",
+      "name": "Sir George Williams Campus",
+      "type": "spaceTypesEnumSet.generic",
+      "self": "http://127.0.0.1:6000/api/v4/spaces/bf254f63-2cbb-4195-8c53-a1d6fcbe54f6",
+      "parentUrl": null,
+      "spacesUrl": "http://127.0.0.1:6000/api/v4/spaces/bf254f63-2cbb-4195-8c53-a1d6fcbe54f6/spaces",
+      "equipmentUrl": "http://127.0.0.1:6000/api/v4/spaces/bf254f63-2cbb-4195-8c53-a1d6fcbe54f6/equipment",
+      "networkDevicesUrl": "http://127.0.0.1:6000/api/v4/spaces/bf254f63-2cbb-4195-8c53-a1d6fcbe54f6/networkDevices"
+    },
+    {
+      "id": "ca8fbdbb-8e44-41fd-a765-da18de80a8f1",
+      "itemReference": "{http://127.0.0.1:6000}:{deviceHostname}/Campus.Building",
+      "name": "Building",
+      "type": "spaceTypesEnumSet.building",
+      "self": "http://127.0.0.1:6000/api/v4/spaces/ca8fbdbb-8e44-41fd-a765-da18de80a8f1",
+      "parentUrl": "http://127.0.0.1:6000/api/v4/spaces/bf254f63-2cbb-4195-8c53-a1d6fcbe54f6",
+      "spacesUrl": "http://127.0.0.1:6000/api/v4/spaces/ca8fbdbb-8e44-41fd-a765-da18de80a8f1/spaces",
+      "equipmentUrl": "http://127.0.0.1:6000/api/v4/spaces/ca8fbdbb-8e44-41fd-a765-da18de80a8f1/equipment",
+      "networkDevicesUrl": "http://127.0.0.1:6000/api/v4/spaces/ca8fbdbb-8e44-41fd-a765-da18de80a8f1/networkDevices"
+    }
+  ],
+  "next": null,
+  "previous": null,
+  "self": "http://127.0.0.1:6000/api/v4/spaces?pageSize=100&page=1&sort=name"
+}

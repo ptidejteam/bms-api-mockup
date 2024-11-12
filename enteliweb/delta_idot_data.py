@@ -1,6 +1,7 @@
 from flask import request, jsonify, make_response
 import xml.etree.ElementTree as ET
 from misc import Misc
+from util import Util
 import json
 
 class DeltaIdotData:
@@ -35,7 +36,7 @@ class DeltaIdotData:
             response.headers['Content-Type'] = 'application/xml'
             return response
         elif data_type == 'json':
-            json_data = json.loads(Misc.get_mock_data('data/trend_logs.json'))
+            json_data = json.loads(Util.get_mock_data('data/trend_logs.json'))
             items = list(json_data.items())
             items = items[skip:skip + max_results]
             result = dict(items)

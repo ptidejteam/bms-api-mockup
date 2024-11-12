@@ -3,6 +3,7 @@ import json
 import xml.etree.ElementTree as ET
 import re
 from misc import Misc
+from util import Util
 
 
 class DeltaISystem:
@@ -65,7 +66,7 @@ class DeltaISystem:
                 return make_response(jsonify({'error': 'malformed input data'}), 500)
         elif data_type == 'json':
             data = json.loads(request.data.decode('utf-8'))
-            existing_json = json.loads(Misc.get_mock_data('data/isystems.json'))
+            existing_json = json.loads(Util.get_mock_data('data/isystems.json'))
             existing_record = existing_json.get(system_name, None)
             if existing_record:
                 for key, value in data.items():
@@ -92,7 +93,7 @@ class DeltaISystem:
                 return response
             return make_response('System not found', 404)
         elif data_type == 'json':
-            json_data = json.loads(Misc.get_mock_data('data/isystems.json'))
+            json_data = json.loads(Util.get_mock_data('data/isystems.json'))
             if json_data.get(system_name):
                 return jsonify(json_data.get(system_name))
             return make_response('System not found', 404)
