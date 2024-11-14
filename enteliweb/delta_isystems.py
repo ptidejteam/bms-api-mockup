@@ -22,7 +22,6 @@ class DeltaISystem:
             if struct.get('name') == system_name:
                 return struct, tree
 
-
     def write_multiple_property_values(self, system_name):
         data_type = request.args.get('alt', 'xml')
         if data_type == 'xml':

@@ -1,0 +1,44 @@
+{
+  "total": 3,
+  "items": [
+    {
+      "id": "b78fa672-3ec9-4794-bd00-7aeafeb9cde0",
+      "itemReference": "http://127.0.0.1:6000:local.server/equipment.AHU-1",
+      "name": "AHU-1",
+      "type": "MASP AHUs",
+      "self": "http://127.0.0.1:6000/api/v4/equipment/b78fa672-3ec9-4794-bd00-7aeafeb9cde0",
+      "spacesUrl": "http://127.0.0.1:6000/api/v4/equipment/b78fa672-3ec9-4794-bd00-7aeafeb9cde0/spaces",
+      "equipmentUrl": "http://127.0.0.1:6000/api/v4/equipment/b78fa672-3ec9-4794-bd00-7aeafeb9cde0/equipment",
+      "upstreamEquipmentUrl": "http://127.0.0.1:6000/api/v4/equipment/b78fa672-3ec9-4794-bd00-7aeafeb9cde0/upstreamEquipment",
+      "networkDevicesUrl": "http://127.0.0.1:6000/api/v4/equipment/b78fa672-3ec9-4794-bd00-7aeafeb9cde0/networkDevices",
+      "pointsUrl": "http://127.0.0.1:6000/api/v4/equipment/b78fa672-3ec9-4794-bd00-7aeafeb9cde0/points"
+    },
+    {
+      "id": "c89gb783-4fd0-5895-ce11-8bfbgfc0def1",
+      "itemReference": "http://127.0.0.1:6000:local.server/equipment.AHU-2",
+      "name": "AHU-2",
+      "type": "MASP AHUs",
+      "self": "http://127.0.0.1:7000/api/v4/equipment/c89gb783-4fd0-5895-ce11-8bfbgfc0def1",
+      "spacesUrl": "http://127.0.0.1:7000/api/v4/equipment/c89gb783-4fd0-5895-ce11-8bfbgfc0def1/spaces",
+      "equipmentUrl": "http://127.0.0.1:7000/api/v4/equipment/c89gb783-4fd0-5895-ce11-8bfbgfc0def1/equipment",
+      "upstreamEquipmentUrl": "http://127.0.0.1:7000/api/v4/equipment/c89gb783-4fd0-5895-ce11-8bfbgfc0def1/upstreamEquipment",
+      "networkDevicesUrl": "http://127.0.0.1:7000/api/v4/equipment/c89gb783-4fd0-5895-ce11-8bfbgfc0def1/networkDevices",
+      "pointsUrl": "http://127.0.0.1:7000/api/v4/equipment/c89gb783-4fd0-5895-ce11-8bfbgfc0def1/points"
+    },
+    {
+      "id": "d90hc894-5ge1-6906-df22-9cgchgd1efg2",
+      "itemReference": "http://127.0.0.1:6000:local.server/equipment.AHU-3",
+      "name": "AHU-3",
+      "type": "MASP AHUs",
+      "self": "http://127.0.0.1:8000/api/v4/equipment/d90hc894-5ge1-6906-df22-9cgchgd1efg2",
+      "spacesUrl": "http://127.0.0.1:8000/api/v4/equipment/d90hc894-5ge1-6906-df22-9cgchgd1efg2/spaces",
+      "equipmentUrl": "http://127.0.0.1:8000/api/v4/equipment/d90hc894-5ge1-6906-df22-9cgchgd1efg2/equipment",
+      "upstreamEquipmentUrl": "http://127.0.0.1:8000/api/v4/equipment/d90hc894-5ge1-6906-df22-9cgchgd1efg2/upstreamEquipment",
+      "networkDevicesUrl": "http://127.0.0.1:8000/api/v4/equipment/d90hc894-5ge1-6906-df22-9cgchgd1efg2/networkDevices",
+      "pointsUrl": "http://127.0.0.1:8000/api/v4/equipment/d90hc894-5ge1-6906-df22-9cgchgd1efg2/points"
+    }
+  ],
+  "next": null,
+  "previous": null,
+  "self": "http://127.0.0.1:6000/api/v4/equipment?page=1&pageSize=100&sort=name"
+}

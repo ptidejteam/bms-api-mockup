@@ -3,6 +3,8 @@ from flask_restx import Api
 from dotenv import load_dotenv
 import os
 from space_resource import api as space_api
+from equipment_resource import api as equipment_api
+from time_series import api as time_series_api
 
 load_dotenv()
 
@@ -25,6 +27,8 @@ api = Api(app, version='1.0', title='Metasys BMS API MockUp',
           )
 
 api.add_namespace(space_api, path='/api/v4/')
+api.add_namespace(equipment_api, path='/api/v4/equipment')
+api.add_namespace(time_series_api, path='/api/v4/objects')
 
 
 def verify_bearer_token(token):

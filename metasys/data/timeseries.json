@@ -1,0 +1,58 @@
+{
+  "trendedAttributes":{
+    "total": 2,
+    "items": [
+      {
+        "samplesUrl": "http://127.0.0.1:6000/api/v4/objects/b259cdd9-6bb5-57c9-aeca-3ef7df6ebb9a/trendedAttributes/memoryUsage/samples?startTime=2021-05-23T04:39:01.545Z&endTime=2021-05-24T04:39:01.545Z&page=1&pageSize=1000&sort=timestamp",
+        "attribute": "attributeEnumSet.memoryUsage"
+      },
+      {
+        "samplesUrl": "http://127.0.0.1:6000/api/v4/objects/b259cdd9-6bb5-57c9-aeca-3ef7df6ebb9a/trendedAttributes/alarmRate/samples?startTime=2021-05-23T04:39:01.545Z&endTime=2021-05-24T04:39:01.545Z&page=1&pageSize=1000&sort=timestamp",
+        "attribute": "attributeEnumSet.alarmRate"
+      }
+    ],
+    "self": "http://127.0.0.1:6000/api/v4/objects/b259cdd9-6bb5-57c9-aeca-3ef7df6ebb9a/trendedAttributes"
+  },
+  "trendedData": {
+    "total": 4,
+    "items": [
+      {
+        "value": {
+          "value": 68.9,
+          "units": "unitEnumSet.degF"
+        },
+        "timestamp": "2021-01-01T12:00:00Z",
+        "isReliable": true
+      },
+      {
+        "value": {
+          "value": 68.7,
+          "units": "unitEnumSet.degF"
+        },
+        "timestamp": "2021-01-01T12:05:00Z",
+        "isReliable": true
+      },
+      {
+        "value": {
+          "value": 68.6,
+          "units": "unitEnumSet.degF"
+        },
+        "timestamp": "2021-01-01T12:10:00Z",
+        "isReliable": true
+      },
+      {
+        "value": {
+          "value": 68.4,
+          "units": "unitEnumSet.degF"
+        },
+        "timestamp": "2021-01-01T12:15:00Z",
+        "isReliable": true
+      }
+    ],
+    "next": "http://127.0.0.1:6000/api/v4/objects/c550095d-ee4c-4314-b415-b0577e383ee9/trendedAttributes/presentValue/samples?startTime=2020-05-12T16:46:47.000Z&endTime=2021-01-19T18:13:58.007Z&page=2&pageSize=1",
+    "previous": null,
+    "attribute": "attributeEnumSet.presentValue",
+    "self": "http://127.0.0.1:6000/api/v4/objects/c550095d-ee4c-4314-b415-b0577e383ee9/trendedAttributes/presentValue/samples?startTime=2020-05-12T16:46:47.000Z&endTime=2021-01-19T18:13:58.007Z&pageSize=1",
+    "objectUrl": "http://127.0.0.1:6000/api/v4/objects/c550095d-ee4c-4314-b415-b0577e383ee9"
+  }
+}
