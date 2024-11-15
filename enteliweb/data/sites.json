@@ -1,0 +1,14 @@
+{
+  "$base" : "Collection",
+  "nodeType" : "PROTOCOL",
+  "AnnexSite" : {
+    "$base" : "Collection",
+    "nodeType" : "NETWORK",
+    "truncated" : "true"
+  },
+  "MainSite" : {
+    "$base" : "Collection",
+    "nodeType" : "NETWORK",
+    "truncated" : "true"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "$base" : "List",
+  "778943" : {
+    "$base" : "Sequence",
+    "timestamp" : {
+      "$base" : "DateTime",
+      "value" : "2014-06-04T12:00:57.67"
+    },
+    "logDatum" : {
+      "$base" : "Choice",
+      "real-value" : {
+        "$base" : "Real",
+        "value" : "22.9066"
+      }
+    },
+    "statusFlags" : {
+      "$base" : "BitString",
+      "value" : ""
+    }
+  },
+  "778944" : {
+    "$base" : "Sequence",
+    "timestamp" : {
+      "$base" : "DateTime",
+      "value" : "2014-06-04T12:01:57.88"
+    },
+    "logDatum" : {
+      "$base" : "Choice",
+      "real-value" : {
+        "$base" : "Real",
+        "value" : "22.9511"
+      }
+    },
+    "statusFlags" : {
+      "$base" : "BitString",
+      "value" : ""
+    }
+  },
+  "779000" : {
+    "$base" : "Sequence",
+    "timestamp" : {
+      "$base" : "DateTime",
+      "value" : "2014-06-04T12:58:18.11"
+    },
+    "logDatum" : {
+      "$base" : "Choice",
+      "real-value" : {
+        "$base" : "Real",
+        "value" : "22.6886"
+      }
+    },
+    "statusFlags" : {
+      "$base" : "BitString",
+      "value" : ""
+    }
+  },
+  "779001" : {
+    "$base" : "Sequence",
+    "timestamp" : {
+      "$base" : "DateTime",
+      "value" : "2014-06-04T12:59:18.31"
+    },
+    "logDatum" : {
+      "$base" : "Choice",
+      "real-value" : {
+        "$base" : "Real",
+        "value" : "22.6926"
+      }
+    },
+    "statusFlags" : {
+      "$base" : "BitString",
+      "value" : ""
+    }
+  }
+}

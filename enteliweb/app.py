@@ -4,6 +4,7 @@ from flask_basicauth import BasicAuth
 from isystem_resource import api as systems_api
 from idot_data_resource import api as idot_data_api
 from idot_multi_resource import api as idot_multi_api
+from idot_bacnet_resource import api as ido_bacnet_api
 from dotenv import load_dotenv
 import os
 
@@ -33,6 +34,7 @@ api = Api(app, version='1.0', title='enteliWEB BMS API Mockup',
 api.add_namespace(systems_api, path='/enteliweb/api/systems')
 api.add_namespace(idot_data_api, path='/enteliweb/api/.data')
 api.add_namespace(idot_multi_api, path='/enteliweb/api/.multi')
+api.add_namespace(ido_bacnet_api, path='/enteliweb/api/.bacnet')
 
 
 # Apply basic authentication to all requests

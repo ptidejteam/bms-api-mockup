@@ -57,3 +57,12 @@ class SpaceChildren(Resource):
             return jsonify(json_data)
 
         return make_response(jsonify({'error': 'parent space not found'}), 404)
+
+
+@api.route('/spaces/<space_id>/equipment')
+class EquipmentServingSpace(Resource):
+    def get(self, space_id):
+        print(f'Request parameter - space id: {space_id}')
+        json_data = json.loads(Util.get_mock_data('data/equipment.json'))
+        return jsonify(json_data)
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Collection name="MainSite"    xmlns="http://bacnet.org/csml/1.2">
+    <Collection name="2797" displayName="enteliWEB 2797" nodeType="DEVICE" truncated="true"/>
+    <Collection name="10400" displayName="CP Boiler" nodeType="DEVICE" truncated="true"/>
+    <Collection name="10300" displayName="PAC Admin AHU" nodeType="DEVICE" truncated="true"/>
+    <Collection name="10200" displayName="PAC Lab 2 AHU" nodeType="DEVICE" truncated="true"/>
+    <Collection name="10100" displayName="PAC Lab 1 AHU" nodeType="DEVICE" truncated="true"/>
+    <Collection name="10000" displayName="George University Campus" nodeType="DEVICE" truncated="true"/>
+    <Collection name="10301" displayName="PAC Admin Office 01 VAV" nodeType="DEVICE" truncated="true"/>
+    <Collection name="10600" displayName="GRB Classroom AHU" nodeType="DEVICE" truncated="true"/>
+    <Collection name="10500" displayName="CP Chiller" nodeType="DEVICE" truncated="true"/>
+    <Collection name="10401" displayName="CP Meters 1" nodeType="DEVICE" truncated="true"/>
+    <Collection name="20004" displayName="CopperCube_20004" nodeType="DEVICE" truncated="true"/>
+    <Collection name="10601" displayName="GRB Classroom 01 VAV" nodeType="DEVICE" truncated="true"/>
+    <Collection name="10303" displayName="PAC Admin Office 03 VAV" nodeType="DEVICE" truncated="true"/>
+    <Collection name="10403" displayName="CP Meters 3" nodeType="DEVICE" truncated="true"/>
+    <Collection name="10602" displayName="GRB Classroom 02 VAV" nodeType="DEVICE" truncated="true"/>
+    <Collection name="597898" displayName="George U enteliWEB Server" nodeType="DEVICE" truncated="true"/>
+    <Collection name="20002" displayName="George University Historian" nodeType="DEVICE" truncated="true"/>
+    <Collection name="10700" displayName="GRB Cafeteria AHU" nodeType="DEVICE" truncated="true"/>
+    <Collection name="10402" displayName="CP Meters 2" nodeType="DEVICE" truncated="true"/>
+    <Collection name="10302" displayName="PAC Admin Office 02 VAV" nodeType="DEVICE" truncated="true"/>
+    <Collection name="10800" displayName="Delta Office Router" nodeType="DEVICE" truncated="true"/>
+    <Collection name="10604" displayName="GRB Classroom 04 VAV" nodeType="DEVICE" truncated="true"/>
+    <Collection name="10603" displayName="GRB Classroom 03 VAV" nodeType="DEVICE" truncated="true"/>
+</Collection>

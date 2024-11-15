@@ -1,0 +1,48 @@
+{
+  "$base" : "Object",
+  "object-identifier" : {
+    "$base" : "ObjectIdentifier",
+    "value" : "analog-input,1"
+  },
+  "displayName" : "Temperature",
+  "object-type" : {
+    "$base" : "Enumerated",
+    "value" : "260"
+  },
+  "object-name" : {
+    "$base" : "String",
+    "value" : "Temperature"
+  },
+  "description" : {
+    "$base" : "String",
+    "value" : ""
+  },
+  "flags" : {
+    "$base" : "BitString",
+    "value" : "not-commissioned"
+  },
+  "present-value" : {
+    "$base" : "Real",
+    "value" : "23.8933"
+  },
+  "last-value" : {
+    "$base" : "Real",
+    "value" : "23.889"
+  },
+  "status-flags" : {
+    "$base" : "BitString",
+    "value" : ""
+  },
+  "reset" : {
+    "$base" : "Boolean",
+    "value" : 0
+  },
+  "units" : {
+    "$base" : "Enumerated",
+    "value" : "degC"
+  },
+  "commission-flag" : {
+    "$base" : "Enumerated",
+    "value" : "not-commissioned"
+  }
+}

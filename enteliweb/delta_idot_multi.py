@@ -43,8 +43,9 @@ class DeltaIdotMulti:
             response = make_response(jsonify(data), res_code)
             return response
 
-    def get_multi(self, values=None):
+    def get_multi(self, id_number, values=None):
         data_type = request.args.get('alt', 'xml')
+        print(f'Request parameters - id number: {id_number}')
         if data_type == 'xml':
             multi = '''
                 <?xml version="1.0" encoding="utf-8" ?>

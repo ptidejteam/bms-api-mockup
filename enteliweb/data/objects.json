@@ -1,0 +1,80 @@
+{
+    "$base": "Collection",
+    "nodeType": "Device",
+    "next": "http://192.168.150.137/enteliweb/api/.bacnet/MainSite/10100?skip=15&max-results=15",
+    "analog-input,1": {
+        "$base": "Object",
+        "displayName": "PAC_Lab_1_AHU VFD Speed Fback",
+        "truncated": "true"
+    },
+    "analog-input,2": {
+        "$base": "Object",
+        "displayName": "PAC_Lab_1_AHU PREC T",
+        "truncated": "true"
+    },
+    "analog-input,3": {
+        "$base": "Object",
+        "displayName": "PAC_Lab_1_AHU Supply Air Temp",
+        "truncated": "true"
+    },
+    "analog-input,5": {
+        "$base": "Object",
+        "displayName": "PAC_Lab_1_AHU Room Temp 1",
+        "truncated": "true"
+    },
+    "analog-input,6": {
+        "$base": "Object",
+        "displayName": "PAC_Lab_1_AHU Room Temp 2",
+        "truncated": "true"
+    },
+    "analog-input,7": {
+        "$base": "Object",
+        "displayName": "PAC_Lab_1_AHU Flow",
+        "truncated": "true"
+    },
+    "analog-input,8": {
+        "$base": "Object",
+        "displayName": "PAC_Lab_1_AHU DP",
+        "truncated": "true"
+    },
+    "analog-input,10": {
+        "$base": "Object",
+        "displayName": "PAC Lab 1 EF Speed FB",
+        "truncated": "true"
+    },
+    "analog-input,11": {
+        "$base": "Object",
+        "displayName": "PAC Lab 1 EF Flow",
+        "truncated": "true"
+    },
+    "aic,4": {
+        "$base": "Object",
+        "displayName": "Current 0-5V 0-10 A AIC",
+        "truncated": "true"
+    },
+    "aic,11": {
+        "$base": "Object",
+        "displayName": "Temperature 50-100F AIC",
+        "truncated": "true"
+    },
+    "aic,18": {
+        "$base": "Object",
+        "displayName": "Pressure 4-20mA 0-500 Pa AIC",
+        "truncated": "true"
+    },
+    "aic,19": {
+        "$base": "Object",
+        "displayName": "Temperature 30-120F AIC",
+        "truncated": "true"
+    },
+    "aic,20": {
+        "$base": "Object",
+        "displayName": "Temperature 30-60F AIC",
+        "truncated": "true"
+    },
+    "aic,21": {
+        "$base": "Object",
+        "displayName": "Temperature 10K -35-240 degF AIC",
+        "truncated": "true"
+    }
+}

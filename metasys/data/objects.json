@@ -391,7 +391,7 @@
     }
   }
 },
-  "object": {
+  "objects": {
   "self": "https://{hostname}/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9/objects?flatten=false&includeExtensions=true&includeInternal=false&depth=1",
   "items": [
     {

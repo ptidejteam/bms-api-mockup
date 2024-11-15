@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Object name="analog-input,5" displayName="PAC_Lab_1_AHU Room Temp 1"
+    xmlns="http://bacnet.org/csml/1.2">
+    <ObjectIdentifier name="object-identifier" value="analog-input,5"/>
+    <Enumerated name="object-type" value="analog-input"/>
+    <String name="object-name" value="PAC_Lab_1_AHU Room Temp 1"/>
+    <String name="description" value=""/>
+    <BitString name="flags" value=""/>
+    <Real name="present-value" value="75.0794"/>
+    <Real name="last-value" value="75.0794"/>
+    <BitString name="status-flags" value=""/>
+    <Boolean name="reset" value="0"/>
+    <Enumerated name="units" value="&#xB0;f"/>
+    <Enumerated name="commission-flag" value="commissioned"/>
+    <ObjectIdentifier name="device-type-ref" value="aic,11"/>
+    <Enumerated name="event-state" value="normal"/>
+    <Enumerated name="reliability" value="no-fault-detected"/>
+    <Boolean name="out-of-service" value="0"/>
+    <String name="device-type" value="Temperature 50-100F AIC"/>
+    <Unsigned name="update-interval" value="97"/>
+    <Real name="min-pres-value" value="50"/>
+    <Real name="max-pres-value" value="100"/>
+    <Real name="resolution" value="0.01221"/>
+    <Real name="cov-increment" value="1"/>
+    <Unsigned name="adfilter" value="80"/>
+    <Choice name="filter-delay-timer">
+        <Unsigned name="filter-delay-timer" value="469940798"/>
+    </Choice>
+    <Unsigned name="advalue" value="2054"/>
+    <Real name="calibration" value="0"/>
+    <Boolean name="fixed-point" value="1"/>
+    <Unsigned name="decimal-places" value="1"/>
+    <Boolean name="external-control" value="0"/>
+    <Unsigned name="time-delay" value="0"/>
+    <Unsigned name="notification-class" value="0"/>
+    <Real name="high-limit" value="0"/>
+    <Real name="low-limit" value="0"/>
+</Object>

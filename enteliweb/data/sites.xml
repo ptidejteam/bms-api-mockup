@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Collection nodeType="PROTOCOL" xmlns="http://bacnet.org/csml/1.2">
+    <Collection name="MainSite" nodeType="NETWORK" truncated="true" />
+    <Collection name="AnnexSite" nodeType="NETWORK" truncated="true" />
+</Collection>

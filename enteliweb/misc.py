@@ -2,6 +2,7 @@ from flask import request, jsonify, make_response
 import json
 import xml.etree.ElementTree as ET
 import re
+from util import Util
 
 
 class Misc:
@@ -10,7 +11,7 @@ class Misc:
     def get_resource_data(file_path):
         # Check the query parameter for response format
         response_format = request.args.get('alt', 'xml')
-        mock_data = Misc.get_mock_data(file_path)
+        mock_data = Util.get_mock_data(file_path)
         if response_format == 'xml':
             response = make_response(mock_data)
             response.headers['Content-Type'] = 'application/xml'

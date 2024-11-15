@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<List name="log-buffer" xmlns="http://bacnet.org/csml/1.2">
+    <Sequence name="778943">
+        <DateTime name="timestamp" value="2014-06-04T12:00:57.67"/>
+        <Choice name="logDatum">
+            <Real name="real-value" value="22.9066"/>
+        </Choice>
+        <BitString name="statusFlags" value=""/>
+    </Sequence>
+    <Sequence name="778944">
+        <DateTime name="timestamp" value="2014-06-04T12:01:57.88"/>
+        <Choice name="logDatum">
+            <Real name="real-value" value="22.9511"/>
+        </Choice>
+        <BitString name="statusFlags" value=""/>
+    </Sequence>
+    <Sequence name="778944">
+        <DateTime name="timestamp" value="2014-06-04T14:01:57.88"/>
+        <Choice name="logDatum">
+            <Real name="real-value" value="22.9511"/>
+        </Choice>
+        <BitString name="statusFlags" value=""/>
+    </Sequence>
+    <Sequence name="779000">
+        <DateTime name="timestamp" value="2014-06-04T12:58:18.11"/>
+        <Choice name="logDatum">
+            <Real name="real-value" value="22.6886"/>
+        </Choice>
+        <BitString name="statusFlags" value=""/>
+    </Sequence>
+    <Sequence name="779001">
+        <DateTime name="timestamp" value="2014-06-04T12:59:18.31"/>
+        <Choice name="logDatum">
+            <Real name="real-value" value="22.6926"/>
+        </Choice>
+        <BitString name="statusFlags" value=""/>
+    </Sequence>
+</List>

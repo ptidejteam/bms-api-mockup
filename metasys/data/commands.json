@@ -1,0 +1,401 @@
+{
+  "self": "http://127.0.0.1:6000/api/v4/objects/960534d2-7df5-5ed8-884c-164e7a2f280a/commands",
+  "items": [
+    {
+      "id": "commandIdEnumSet.adjustCommand",
+      "invokeUrl": "http://127.0.0.1:6000/api/v4/objects/960534d2-7df5-5ed8-884c-164e7a2f280a/commands/commandIdEnumSet.adjustCommand",
+      "title": "Adjust",
+      "commandBodySchema": {
+        "type": "object",
+        "metasysType": "struct",
+        "properties": {
+          "priority": {
+            "oneOf": [
+              {
+                "$ref": "#writePriorityEnumSet"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "parameters": {
+            "type": "array",
+            "metasysType": "list",
+            "items": [
+              {
+                "id": "commandParmsEnumSet.valueCmdparm",
+                "title": "Value",
+                "displayPrecisionSource": "displayPrecision",
+                "maxPresValueSource": "maxPresValue",
+                "minPresValueSource": "minPresValue",
+                "unitsSource": "units",
+                "metasysType": "float",
+                "type": "number",
+                "minimum": -1.69999998e+38,
+                "maximum": 1.69999998e+38,
+                "displayPrecision": {
+                  "id": "displayPrecisionEnumSet.displayPrecisionPt1",
+                  "displayMultipleOf": 0.1
+                },
+                "default": 72.5
+              }
+            ],
+            "minItems": 1,
+            "maxItems": 1
+          },
+          "annotation": {
+            "title": "Annotation",
+            "type": "string",
+            "metasysType": "string",
+            "minLength": 1,
+            "maxLength": 255
+          }
+        },
+        "required": [],
+        "additionalProperties": false,
+        "definitions": {
+          "writePriorityEnumSet": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "title": "Write Priority",
+            "$id": "#writePriorityEnumSet",
+            "allOf": [
+              {
+                "$ref": "http://127.0.0.1:6000/api/v4/schemas/enums/writePriorityEnumSet"
+              }
+            ],
+            "setId": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "commandIdEnumSet.overrideCommand",
+      "invokeUrl": "http://127.0.0.1:6000/api/v4/objects/960534d2-7df5-5ed8-884c-164e7a2f280a/commands/commandIdEnumSet.overrideCommand",
+      "title": "Operator Override",
+      "commandBodySchema": {
+        "type": "object",
+        "metasysType": "struct",
+        "properties": {
+          "parameters": {
+            "type": "array",
+            "metasysType": "list",
+            "items": [
+              {
+                "id": "commandParmsEnumSet.valueCmdparm",
+                "title": "Value",
+                "displayPrecisionSource": "displayPrecision",
+                "maxPresValueSource": "maxPresValue",
+                "minPresValueSource": "minPresValue",
+                "unitsSource": "units",
+                "metasysType": "float",
+                "type": "number",
+                "minimum": -1.69999998e+38,
+                "maximum": 1.69999998e+38,
+                "displayPrecision": {
+                  "id": "displayPrecisionEnumSet.displayPrecisionPt1",
+                  "displayMultipleOf": 0.1
+                },
+                "default": 72.5
+              }
+            ],
+            "minItems": 1,
+            "maxItems": 1
+          },
+          "annotation": {
+            "title": "Annotation",
+            "type": "string",
+            "metasysType": "string",
+            "minLength": 1,
+            "maxLength": 255
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "id": "commandIdEnumSet.temporaryOverrideCommand",
+      "invokeUrl": "http://127.0.0.1:6000/api/v4/objects/960534d2-7df5-5ed8-884c-164e7a2f280a/commands/commandIdEnumSet.temporaryOverrideCommand",
+      "title": "Temporary Override",
+      "commandBodySchema": {
+        "type": "object",
+        "metasysType": "struct",
+        "properties": {
+          "parameters": {
+            "type": "array",
+            "metasysType": "list",
+            "items": [
+              {
+                "id": "commandParmsEnumSet.valueCmdparm",
+                "title": "Value",
+                "displayPrecisionSource": "displayPrecision",
+                "maxPresValueSource": "maxPresValue",
+                "minPresValueSource": "minPresValue",
+                "unitsSource": "units",
+                "metasysType": "float",
+                "type": "number",
+                "minimum": -1.69999998e+38,
+                "maximum": 1.69999998e+38,
+                "displayPrecision": {
+                  "id": "displayPrecisionEnumSet.displayPrecisionPt1",
+                  "displayMultipleOf": 0.1
+                },
+                "default": 72.5
+              },
+              {
+                "id": "commandParmsEnumSet.hoursCmdparm",
+                "title": "Hours",
+                "metasysType": "ulong",
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100,
+                "default": 0
+              },
+              {
+                "id": "commandParmsEnumSet.minutesCmdparm",
+                "title": "Minutes",
+                "metasysType": "ulong",
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 59,
+                "default": 0
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "annotation": {
+            "title": "Annotation",
+            "type": "string",
+            "metasysType": "string",
+            "minLength": 1,
+            "maxLength": 255
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "id": "commandIdEnumSet.overrideReleaseCommand",
+      "invokeUrl": "http://127.0.0.1:6000/api/v4/objects/960534d2-7df5-5ed8-884c-164e7a2f280a/commands/commandIdEnumSet.overrideReleaseCommand",
+      "title": "Release Operator Override",
+      "commandBodySchema": {
+        "type": "object",
+        "metasysType": "struct",
+        "properties": {
+          "annotation": {
+            "title": "Annotation",
+            "type": "string",
+            "metasysType": "string",
+            "minLength": 1,
+            "maxLength": 255
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "id": "commandIdEnumSet.releaseCommand",
+      "invokeUrl": "http://127.0.0.1:6000/api/v4/objects/960534d2-7df5-5ed8-884c-164e7a2f280a/commands/commandIdEnumSet.releaseCommand",
+      "title": "Release",
+      "commandBodySchema": {
+        "type": "object",
+        "metasysType": "struct",
+        "properties": {
+          "parameters": {
+            "type": "array",
+            "metasysType": "list",
+            "items": [
+              {
+                "id": "commandParmsEnumSet.attributeCmdparm",
+                "title": "Attribute",
+                "type": "string",
+                "metasysType": "enum",
+                "oneOf": [
+                  {
+                    "$ref": "#attributeEnumSet"
+                  }
+                ],
+                "default": "attributeEnumSet.presentValue"
+              },
+              {
+                "id": "commandParmsEnumSet.priorityCmdparm",
+                "title": "Priority",
+                "numberOfStates": 17,
+                "type": "string",
+                "metasysType": "enum",
+                "oneOf": [
+                  {
+                    "$ref": "#writePriorityEnumSet"
+                  }
+                ],
+                "default": "writePriorityEnumSet.priorityDefault"
+              }
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "annotation": {
+            "title": "Annotation",
+            "type": "string",
+            "metasysType": "string",
+            "minLength": 1,
+            "maxLength": 255
+          }
+        },
+        "required": [],
+        "additionalProperties": false,
+        "definitions": {
+          "attributeEnumSet": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "title": "Attribute",
+            "$id": "#attributeEnumSet",
+            "allOf": [
+              {
+                "oneOf": [
+                  {
+                    "const": "attributeEnumSet.presentValue",
+                    "title": "Present Value",
+                    "memberId": 85
+                  }
+                ]
+              },
+              {
+                "$ref": "http://127.0.0.1:6000/api/v4/schemas/enums/attributeEnumSet"
+              }
+            ],
+            "setId": 509
+          },
+          "writePriorityEnumSet": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "title": "Write Priority",
+            "$id": "#writePriorityEnumSet",
+            "allOf": [
+              {
+                "$ref": "http://127.0.0.1:6000/api/v4/schemas/enums/writePriorityEnumSet"
+              }
+            ],
+            "setId": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "commandIdEnumSet.releaseAllCommand",
+      "invokeUrl": "http://127.0.0.1:6000/api/v4/objects/960534d2-7df5-5ed8-884c-164e7a2f280a/commands/commandIdEnumSet.releaseAllCommand",
+      "title": "Release All",
+      "commandBodySchema": {
+        "type": "object",
+        "metasysType": "struct",
+        "properties": {
+          "parameters": {
+            "type": "array",
+            "metasysType": "list",
+            "items": [
+              {
+                "id": "commandParmsEnumSet.attributeCmdparm",
+                "title": "Attribute",
+                "type": "string",
+                "metasysType": "enum",
+                "oneOf": [
+                  {
+                    "$ref": "#attributeEnumSet"
+                  }
+                ],
+                "default": "attributeEnumSet.presentValue"
+              }
+            ],
+            "minItems": 1,
+            "maxItems": 1
+          },
+          "annotation": {
+            "title": "Annotation",
+            "type": "string",
+            "metasysType": "string",
+            "minLength": 1,
+            "maxLength": 255
+          }
+        },
+        "required": [],
+        "additionalProperties": false,
+        "definitions": {
+          "attributeEnumSet": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "title": "Attribute",
+            "$id": "#attributeEnumSet",
+            "allOf": [
+              {
+                "oneOf": [
+                  {
+                    "const": "attributeEnumSet.presentValue",
+                    "title": "Present Value",
+                    "memberId": 85
+                  }
+                ]
+              },
+              {
+                "$ref": "http://127.0.0.1:6000/api/v4/schemas/enums/attributeEnumSet"
+              }
+            ],
+            "setId": 509
+          }
+        }
+      }
+    },
+    {
+      "id": "commandIdEnumSet.enableAlarmsCommand",
+      "invokeUrl": "http://127.0.0.1:6000/api/v4/objects/960534d2-7df5-5ed8-884c-164e7a2f280a/commands/commandIdEnumSet.enableAlarmsCommand",
+      "title": "Enable Alarms",
+      "commandBodySchema": {
+        "type": "object",
+        "metasysType": "struct",
+        "properties": {
+          "annotation": {
+            "title": "Annotation",
+            "type": "string",
+            "metasysType": "string",
+            "minLength": 1,
+            "maxLength": 255
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "id": "commandIdEnumSet.disableAlarmsCommand",
+      "invokeUrl": "http://127.0.0.1:6000/api/v4/objects/960534d2-7df5-5ed8-884c-164e7a2f280a/commands/commandIdEnumSet.disableAlarmsCommand",
+      "title": "Disable Alarms",
+      "commandBodySchema": {
+        "type": "object",
+        "metasysType": "struct",
+        "properties": {
+          "annotation": {
+            "title": "Annotation",
+            "type": "string",
+            "metasysType": "string",
+            "minLength": 1,
+            "maxLength": 255
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  ],
+  "effectivePermissions": {
+    "canInvoke": [
+      "commandIdEnumSet.adjustCommand",
+      "commandIdEnumSet.overrideCommand",
+      "commandIdEnumSet.temporaryOverrideCommand",
+      "commandIdEnumSet.overrideReleaseCommand",
+      "commandIdEnumSet.releaseCommand",
+      "commandIdEnumSet.releaseAllCommand",
+      "commandIdEnumSet.enableAlarmsCommand",
+      "commandIdEnumSet.disableAlarmsCommand"
+    ]
+  }
+}

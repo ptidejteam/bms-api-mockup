@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Collection nodeType="Device"
+            next="http://192.168.150.137/enteliweb/api/.bacnet/MainSite/10100?skip=15&amp;max-results=15"
+            xmlns="http://bacnet.org/csml/1.2">
+    <Object name="analog-input,1" displayName="PAC_Lab_1_AHU VFD Speed Fback" truncated="true"/>
+    <Object name="analog-input,2" displayName="PAC_Lab_1_AHU PREC T" truncated="true"/>
+    <Object name="analog-input,3" displayName="PAC_Lab_1_AHU Supply Air Temp" truncated="true"/>
+    <Object name="analog-input,5" displayName="PAC_Lab_1_AHU Room Temp 1" truncated="true"/>
+    <Object name="analog-input,6" displayName="PAC_Lab_1_AHU Room Temp 2" truncated="true"/>
+    <Object name="analog-input,7" displayName="PAC_Lab_1_AHU Flow" truncated="true"/>
+    <Object name="analog-input,8" displayName="PAC_Lab_1_AHU DP" truncated="true"/>
+    <Object name="analog-input,10" displayName="PAC Lab 1 EF Speed FB" truncated="true"/>
+    <Object name="analog-input,11" displayName="PAC Lab 1 EF Flow" truncated="true"/>
+    <Object name="aic,4" displayName="Current 0-5V 0-10 A AIC" truncated="true"/>
+    <Object name="aic,11" displayName="Temperature 50-100F AIC" truncated="true"/>
+    <Object name="aic,18" displayName="Pressure 4-20mA 0-500 Pa AIC" truncated="true"/>
+    <Object name="aic,19" displayName="Temperature 30-120F AIC" truncated="true"/>
+    <Object name="aic,20" displayName="Temperature 30-60F AIC" truncated="true"/>
+    <Object name="aic,21" displayName="Temperature 10K -35-240 degF AIC" truncated="true"/>
+</Collection>

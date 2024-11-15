@@ -1,0 +1,69 @@
+{
+    "10000": {
+        "$base": "Collection",
+        "displayName": "George University Campus",
+        "nodeType": "DEVICE",
+        "truncated": "true"
+    },
+    "10100": {
+        "$base": "Collection",
+        "displayName": "PAC Lab 1 AHU",
+        "nodeType": "DEVICE",
+        "truncated": "true"
+    },
+    "10200": {
+        "$base": "Collection",
+        "displayName": "PAC Lab 2 AHU",
+        "nodeType": "DEVICE",
+        "truncated": "true"
+    },
+    "10300": {
+        "$base": "Collection",
+        "displayName": "PAC Admin AHU",
+        "nodeType": "DEVICE",
+        "truncated": "true"
+    },
+    "10301": {
+        "$base": "Collection",
+        "displayName": "PAC Admin Office 01 VAV",
+        "nodeType": "DEVICE",
+        "truncated": "true"
+    },
+    "10604": {
+        "$base": "Collection",
+        "displayName": "GRB Classroom 04 VAV",
+        "nodeType": "DEVICE",
+        "truncated": "true"
+    },
+    "10700": {
+        "$base": "Collection",
+        "displayName": "GRB Cafeteria AHU",
+        "nodeType": "DEVICE",
+        "truncated": "true"
+    },
+    "10800": {
+        "$base": "Collection",
+        "displayName": "Delta Office Router",
+        "nodeType": "DEVICE",
+        "truncated": "true"
+    },
+    "20002": {
+        "$base": "Collection",
+        "displayName": "George University Historian",
+        "nodeType": "DEVICE",
+        "truncated": "true"
+    },
+    "20004": {
+        "$base": "Collection",
+        "displayName": "CopperCube_20004",
+        "nodeType": "DEVICE",
+        "truncated": "true"
+    },
+    "597898": {
+        "$base": "Collection",
+        "displayName": "George U enteliWEB Server",
+        "nodeType": "DEVICE",
+        "truncated": "true"
+    },
+    "$base": "Collection"
+}
