@@ -159,7 +159,7 @@ class DeltaIDotBacnet:
             print(f'Request data: {xml_string}')
             res_xml = '''
                 <?xml version="1.0" encoding="UTF-8"?>
-<               <Real error="-1" errorText="OK" xmlns="http://bacnet.org/csml/1.2"/>
+                <Real error="-1" errorText="OK" xmlns="http://bacnet.org/csml/1.2"/>
             '''
             response = make_response(res_xml)
             response.headers['Content-Type'] = 'application/xml'
