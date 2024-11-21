@@ -1,0 +1,721 @@
+{
+    "links": {
+        "self": "/locations",
+        "next": "/locations?page[number]=1"
+    },
+    "data": [
+        {
+            "id": "43997b3e-fe5a-4053-ab90-ed218faa164f",
+            "type": "Campus",
+            "attributes": {
+                "label": "Aspern Smart City Campus, Europe/Zurich",
+                "timeZone": "Europe/Zurich",
+                "description": "A properly organized location in Europe/Zurich",
+                "externalId": "IfcGuid:1234",
+                "tags": {
+                    "userDefinedMarker": true,
+                    "userDefinedValue": [
+                        "blue",
+                        "green"
+                    ]
+                },
+                "geoLocation": {
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            8.48281,
+                            47.19717
+                        ]
+                    }
+                },
+                "geoArea": {
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    8.41,
+                                    47.08
+                                ],
+                                [
+                                    8.66,
+                                    47.08
+                                ],
+                                [
+                                    8.66,
+                                    47.22
+                                ],
+                                [
+                                    8.41,
+                                    47.22
+                                ],
+                                [
+                                    8.41,
+                                    47.08
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                "primaryContact": {
+                    "name": "Marla Pfahl",
+                    "email": "marla.pfahl@example.com",
+                    "phone": "+41 41 234 56 78"
+                }
+            },
+            "relationships": {
+                "hasPostalAddress": {
+                    "data": {
+                        "id": "05085306-9c1d-4cee-b92a-04c07e4b1945",
+                        "type": "Address"
+                    }
+                }
+            },
+            "meta": {
+                "createdAt": "2024-11-18T22:01:47.015Z",
+                "updatedAt": "2024-11-18T22:01:47.015Z",
+                "createdBy": "adsf",
+                "updatedBy": "adsf"
+            }
+        },
+        {
+            "id": "6e0f580d-7ea2-40b4-b03d-14c56757c49b",
+            "type": "CampusPart",
+            "attributes": {
+                "label": "Location XYZ",
+                "description": "A properly organized location",
+                "externalId": "IfcGuid:1234",
+                "tags": {
+                    "userDefinedMarker": true,
+                    "userDefinedValue": [
+                        "blue",
+                        "green"
+                    ]
+                },
+                "geoLocation": {
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            8.48281,
+                            47.19717
+                        ]
+                    }
+                },
+                "geoArea": {
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    8.41,
+                                    47.08
+                                ],
+                                [
+                                    8.66,
+                                    47.08
+                                ],
+                                [
+                                    8.66,
+                                    47.22
+                                ],
+                                [
+                                    8.41,
+                                    47.22
+                                ],
+                                [
+                                    8.41,
+                                    47.08
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                "primaryContact": {
+                    "name": "Marla Pfahl",
+                    "email": "marla.pfahl@example.com",
+                    "phone": "+41 41 234 56 78"
+                }
+            },
+            "relationships": {
+                "isCampusPartOf": {
+                    "data": {
+                        "id": "43997b3e-fe5a-4053-ab90-ed218faa164f",
+                        "type": "Campus"
+                    }
+                },
+                "hasPostalAddress": {
+                    "data": {
+                        "id": "05085306-9c1d-4cee-b92a-04c07e4b1945",
+                        "type": "Address"
+                    }
+                }
+            },
+            "meta": {
+                "createdAt": "2024-11-18T22:01:47.015Z",
+                "updatedAt": "2024-11-18T22:01:47.015Z",
+                "createdBy": "adsf",
+                "updatedBy": "adsf"
+            }
+        },
+        {
+            "id": "c9e01d9d-457c-426f-a186-f7c5e592e1f7",
+            "type": "Building",
+            "attributes": {
+                "buildingType": "office",
+                "timeZone": "Europe/Zurich",
+                "constructionYear": 2019,
+                "usableArea": {
+                    "value": 1200,
+                    "unit": "m2"
+                },
+                "label": "Location XYZ",
+                "description": "A properly organized location",
+                "externalId": "IfcGuid:1234",
+                "tags": {
+                    "userDefinedMarker": true,
+                    "userDefinedValue": [
+                        "blue",
+                        "green"
+                    ]
+                },
+                "geoLocation": {
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            8.48281,
+                            47.19717
+                        ]
+                    }
+                },
+                "geoArea": {
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    8.41,
+                                    47.08
+                                ],
+                                [
+                                    8.66,
+                                    47.08
+                                ],
+                                [
+                                    8.66,
+                                    47.22
+                                ],
+                                [
+                                    8.41,
+                                    47.22
+                                ],
+                                [
+                                    8.41,
+                                    47.08
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                "primaryContact": {
+                    "name": "Marla Pfahl",
+                    "email": "marla.pfahl@example.com",
+                    "phone": "+41 41 234 56 78"
+                }
+            },
+            "relationships": {
+                "isBuildingOf": {
+                    "data": {
+                        "id": "43997b3e-fe5a-4053-ab90-ed218faa164f",
+                        "type": "Campus"
+                    }
+                },
+                "hasPostalAddress": {
+                    "data": {
+                        "id": "05085306-9c1d-4cee-b92a-04c07e4b1945",
+                        "type": "Address"
+                    }
+                }
+            },
+            "meta": {
+                "createdAt": "2024-11-18T22:01:47.015Z",
+                "updatedAt": "2024-11-18T22:01:47.015Z",
+                "createdBy": "adsf",
+                "updatedBy": "adsf"
+            }
+        },
+        {
+            "id": "faffccf8-1c63-4112-9072-3d4da898da4c",
+            "type": "BuildingPart",
+            "attributes": {
+                "label": "Building Annex II",
+                "description": "A properly organized location",
+                "externalId": "IfcGuid:1234",
+                "tags": {
+                    "userDefinedMarker": true,
+                    "userDefinedValue": [
+                        "blue",
+                        "green"
+                    ]
+                },
+                "geoLocation": {
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            8.48281,
+                            47.19717
+                        ]
+                    }
+                },
+                "geoArea": {
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    8.41,
+                                    47.08
+                                ],
+                                [
+                                    8.66,
+                                    47.08
+                                ],
+                                [
+                                    8.66,
+                                    47.22
+                                ],
+                                [
+                                    8.41,
+                                    47.22
+                                ],
+                                [
+                                    8.41,
+                                    47.08
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                "primaryContact": {
+                    "name": "Marla Pfahl",
+                    "email": "marla.pfahl@example.com",
+                    "phone": "+41 41 234 56 78"
+                }
+            },
+            "relationships": {
+                "isBuildingPartOf": {
+                    "data": {
+                        "id": "c9e01d9d-457c-426f-a186-f7c5e592e1f7",
+                        "type": "Building"
+                    }
+                },
+                "hasPostalAddress": {
+                    "data": {
+                        "id": "05085306-9c1d-4cee-b92a-04c07e4b1945",
+                        "type": "Address"
+                    }
+                }
+            },
+            "meta": {
+                "createdAt": "2024-11-18T22:01:47.015Z",
+                "updatedAt": "2024-11-18T22:01:47.015Z",
+                "createdBy": "adsf",
+                "updatedBy": "adsf"
+            }
+        },
+        {
+            "id": "e388c95a-3c88-4815-8b46-1710caf69b68",
+            "type": "Outside",
+            "attributes": {
+                "label": "Terrace",
+                "geoLocation": {
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            8.48281,
+                            47.19717
+                        ]
+                    }
+                },
+                "geoArea": {
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    8.41,
+                                    47.08
+                                ],
+                                [
+                                    8.66,
+                                    47.08
+                                ],
+                                [
+                                    8.66,
+                                    47.22
+                                ],
+                                [
+                                    8.41,
+                                    47.22
+                                ],
+                                [
+                                    8.41,
+                                    47.08
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                "description": "A properly organized location",
+                "externalId": "IfcGuid:1234",
+                "tags": {
+                    "userDefinedMarker": true,
+                    "userDefinedValue": [
+                        "blue",
+                        "green"
+                    ]
+                }
+            },
+            "relationships": {
+                "isOutsideOf": {
+                    "data": {
+                        "id": "43997b3e-fe5a-4053-ab90-ed218faa164f",
+                        "type": "Campus"
+                    }
+                }
+            },
+            "meta": {
+                "createdAt": "2024-11-18T22:01:47.015Z",
+                "updatedAt": "2024-11-18T22:01:47.015Z",
+                "createdBy": "adsf",
+                "updatedBy": "adsf"
+            }
+        },
+        {
+            "id": "e944507e-6103-4cd1-b453-284d660c095b",
+            "type": "Floor",
+            "attributes": {
+                "floorNumber": 1,
+                "label": "Location XYZ",
+                "description": "A properly organized location",
+                "externalId": "IfcGuid:1234",
+                "tags": {
+                    "userDefinedMarker": true,
+                    "userDefinedValue": [
+                        "blue",
+                        "green"
+                    ]
+                }
+            },
+            "relationships": {
+                "isFloorOf": {
+                    "data": {
+                        "id": "c9e01d9d-457c-426f-a186-f7c5e592e1f7",
+                        "type": "Building"
+                    }
+                }
+            },
+            "meta": {
+                "createdAt": "2024-11-18T22:01:47.015Z",
+                "updatedAt": "2024-11-18T22:01:47.015Z",
+                "createdBy": "adsf",
+                "updatedBy": "adsf"
+            }
+        },
+        {
+            "id": "66831bb1-8e8f-4d93-8382-7051d3fc2fad",
+            "type": "FloorArea",
+            "attributes": {
+                "label": "Location XYZ",
+                "description": "A properly organized location",
+                "externalId": "IfcGuid:1234",
+                "tags": {
+                    "userDefinedMarker": true,
+                    "userDefinedValue": [
+                        "blue",
+                        "green"
+                    ]
+                }
+            },
+            "relationships": {
+                "isFloorAreaOf": {
+                    "data": {
+                        "id": "e944507e-6103-4cd1-b453-284d660c095b",
+                        "type": "Floor"
+                    }
+                }
+            },
+            "meta": {
+                "createdAt": "2024-11-18T22:01:47.015Z",
+                "updatedAt": "2024-11-18T22:01:47.015Z",
+                "createdBy": "adsf",
+                "updatedBy": "adsf"
+            }
+        },
+        {
+            "id": "5a80ad64-e736-43ae-ae1a-28eb8ec8a9be",
+            "type": "MultifloorArea",
+            "attributes": {
+                "coversFloors": 2,
+                "label": "Location XYZ",
+                "description": "A properly organized location",
+                "externalId": "IfcGuid:1234",
+                "tags": {
+                    "userDefinedMarker": true,
+                    "userDefinedValue": [
+                        "blue",
+                        "green"
+                    ]
+                }
+            },
+            "relationships": {
+                "isMultifloorAreaOf": {
+                    "data": {
+                        "id": "e944507e-6103-4cd1-b453-284d660c095b",
+                        "type": "Floor"
+                    }
+                }
+            },
+            "meta": {
+                "createdAt": "2024-11-18T22:01:47.015Z",
+                "updatedAt": "2024-11-18T22:01:47.015Z",
+                "createdBy": "adsf",
+                "updatedBy": "adsf"
+            }
+        },
+        {
+            "id": "521d41e8-13d4-46b4-9b59-a17d35110efd",
+            "type": "Room",
+            "attributes": {
+                "label": "Location XYZ",
+                "description": "A properly organized location",
+                "externalId": "IfcGuid:1234",
+                "tags": {
+                    "userDefinedMarker": true,
+                    "userDefinedValue": [
+                        "blue",
+                        "green"
+                    ]
+                }
+            },
+            "relationships": {
+                "isRoomOf": {
+                    "data": {
+                        "id": "e944507e-6103-4cd1-b453-284d660c095b",
+                        "type": "Floor"
+                    }
+                }
+            },
+            "meta": {
+                "createdAt": "2024-11-18T22:01:47.015Z",
+                "updatedAt": "2024-11-18T22:01:47.015Z",
+                "createdBy": "adsf",
+                "updatedBy": "adsf"
+            }
+        },
+        {
+            "id": "05085306-9c1d-4cee-b92a-04c07e4b1945",
+            "type": "RoomSegment",
+            "attributes": {
+                "label": "Location XYZ",
+                "description": "A properly organized location",
+                "externalId": "IfcGuid:1234",
+                "tags": {
+                    "userDefinedMarker": true,
+                    "userDefinedValue": [
+                        "blue",
+                        "green"
+                    ]
+                }
+            },
+            "relationships": {
+                "isRoomSegmentOf": {
+                    "data": {
+                        "id": "521d41e8-13d4-46b4-9b59-a17d35110efd",
+                        "type": "Room"
+                    }
+                }
+            },
+            "meta": {
+                "createdAt": "2024-11-18T22:01:47.015Z",
+                "updatedAt": "2024-11-18T22:01:47.015Z",
+                "createdBy": "adsf",
+                "updatedBy": "adsf"
+            }
+        },
+        {
+            "data": {
+                "id": "43997b3e-fe5a-4053-ab90-ed218faa164f",
+                "type": "Campus",
+                "attributes": {
+                    "label": "Aspern Smart City Campus",
+                    "timeZone": "Europe/Zurich",
+                    "description": "A properly organized location",
+                    "externalId": "IfcGuid:1234",
+                    "tags": {
+                        "userDefinedMarker": true,
+                        "userDefinedValue": [
+                            "blue",
+                            "green"
+                        ]
+                    },
+                    "geoLocation": {
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                8.48281,
+                                47.19717
+                            ]
+                        }
+                    },
+                    "geoArea": {
+                        "geometry": {
+                            "type": "Polygon",
+                            "coordinates": [
+                                [
+                                    [
+                                        8.41,
+                                        47.08
+                                    ],
+                                    [
+                                        8.66,
+                                        47.08
+                                    ],
+                                    [
+                                        8.66,
+                                        47.22
+                                    ],
+                                    [
+                                        8.41,
+                                        47.22
+                                    ],
+                                    [
+                                        8.41,
+                                        47.08
+                                    ]
+                                ]
+                            ]
+                        }
+                    },
+                    "primaryContact": {
+                        "name": "Marla Pfahl",
+                        "email": "marla.pfahl@example.com",
+                        "phone": "+41 41 234 56 78"
+                    }
+                },
+                "relationships": {
+                    "hasPostalAddress": {
+                        "data": {
+                            "id": "05085306-9c1d-4cee-b92a-04c07e4b1945",
+                            "type": "Address"
+                        }
+                    }
+                }
+            },
+            "included": [
+                {
+                    "id": "05085306-9c1d-4cee-b92a-04c07e4b1945",
+                    "type": "Address",
+                    "attributes": {
+                        "locality": "Vienna",
+                        "countryCode": "AUT",
+                        "region": "Styria",
+                        "postalCode": "1010",
+                        "street": "Opernring 3",
+                        "additionalProp1": {}
+                    }
+                }
+            ]
+        },
+        {
+            "id": "43997b3e-fe5a-4053-ab90-ed218faa164f",
+            "type": "Campus",
+            "attributes": {
+                "label": "Aspern Smart City Campus, Zurich",
+                "timeZone": "Europe/Zurich",
+                "description": "A properly organized location in Aspern Smart City Campus",
+                "externalId": "IfcGuid:1234",
+                "tags": {
+                    "userDefinedMarker": true,
+                    "userDefinedValue": [
+                        "blue",
+                        "green"
+                    ]
+                },
+                "geoLocation": {
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            8.48281,
+                            47.19717
+                        ]
+                    }
+                },
+                "geoArea": {
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    8.41,
+                                    47.08
+                                ],
+                                [
+                                    8.66,
+                                    47.08
+                                ],
+                                [
+                                    8.66,
+                                    47.22
+                                ],
+                                [
+                                    8.41,
+                                    47.22
+                                ],
+                                [
+                                    8.41,
+                                    47.08
+                                ]
+                            ]
+                        ]
+                    }
+                },
+                "primaryContact": {
+                    "name": "Marla Pfahl",
+                    "email": "marla.pfahl@example.com",
+                    "phone": "+41 41 234 56 78"
+                }
+            },
+            "relationships": {
+                "hasPostalAddress": {
+                    "data": {
+                        "id": "05085306-9c1d-4cee-b92a-04c07e4b1945",
+                        "type": "Address"
+                    }
+                }
+            }
+        }
+    ],
+    "included": [
+        {
+            "id": "05085306-9c1d-4cee-b92a-04c07e4b1945",
+            "type": "Address",
+            "attributes": {
+                "locality": "Vienna",
+                "countryCode": "AUT",
+                "countryName": "Austria",
+                "continentCode": "EU",
+                "continentName": "Europe",
+                "region": "Styria",
+                "postalCode": "1010",
+                "street": "Opernring 3",
+                "additionalProp1": {}
+            },
+            "meta": {
+                "createdAt": "2024-11-18T22:01:47.015Z",
+                "updatedAt": "2024-11-18T22:01:47.015Z",
+                "createdBy": "adsf",
+                "updatedBy": "adsf"
+            }
+        }
+    ]
+}

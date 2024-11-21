@@ -1,0 +1,262 @@
+{
+    "links": {
+        "self": "/partitions/b2ae267d-1d74-4e2a-bff8-e7c90a3b854a/devices",
+        "next": "/partitions/b2ae267d-1d74-4e2a-bff8-e7c90a3b854a/devices?page[cursor]=qwerty"
+    },
+    "data": [
+        {
+            "type": "Device",
+            "id": "1bcaafc3-d4d3-43e1-ab64-89d8518d5951",
+            "attributes": {
+                "modelName": "MSIB CCA",
+                "serialNumber": "L7955828",
+                "profile": {
+                    "name": "X300-5",
+                    "notes": "In basement, ask Bruno for key"
+                }
+            },
+            "relationships": {
+                "hasGateway": {
+                    "data": {
+                        "type": "Device",
+                        "id": "1bcaafc3-d4d3-43e1-ab64-89d8518d5951"
+                    }
+                },
+                "hasLocation": {
+                    "data": {
+                        "type": "Building",
+                        "id": "598a0329-2cca-4227-aea5-629862864cdf"
+                    }
+                },
+                "hasFeatures": {
+                    "data": [
+                        {
+                            "type": "DeviceInfo",
+                            "id": "598a0329-2cca-4227-aea5-629862864cdf"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Device",
+            "id": "2dcaafc3-d4d3-43e1-ab64-89d8518d5952",
+            "attributes": {
+                "modelName": "MSIB CCB",
+                "serialNumber": "L7955829",
+                "profile": {
+                    "name": "X300-6",
+                    "notes": "In attic, ask Alice for key"
+                }
+            },
+            "relationships": {
+                "hasGateway": {
+                    "data": {
+                        "type": "Device",
+                        "id": "2dcaafc3-d4d3-43e1-ab64-89d8518d5952"
+                    }
+                },
+                "hasLocation": {
+                    "data": {
+                        "type": "Building",
+                        "id": "698a0329-2cca-4227-aea5-629862864cdf"
+                    }
+                },
+                "hasFeatures": {
+                    "data": [
+                        {
+                            "type": "DeviceInfo",
+                            "id": "698a0329-2cca-4227-aea5-629862864cdf"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Device",
+            "id": "3ecaafc3-d4d3-43e1-ab64-89d8518d5953",
+            "attributes": {
+                "modelName": "MSIB CCC",
+                "serialNumber": "L7955830",
+                "profile": {
+                    "name": "X300-7",
+                    "notes": "In garage, ask Charlie for key"
+                }
+            },
+            "relationships": {
+                "hasGateway": {
+                    "data": {
+                        "type": "Device",
+                        "id": "3ecaafc3-d4d3-43e1-ab64-89d8518d5953"
+                    }
+                },
+                "hasLocation": {
+                    "data": {
+                        "type": "Building",
+                        "id": "798a0329-2cca-4227-aea5-629862864cdf"
+                    }
+                },
+                "hasFeatures": {
+                    "data": [
+                        {
+                            "type": "DeviceInfo",
+                            "id": "798a0329-2cca-4227-aea5-629862864cdf"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Device",
+            "id": "4fcaafc3-d4d3-43e1-ab64-89d8518d5954",
+            "attributes": {
+                "modelName": "MSIB CCD",
+                "serialNumber": "L7955831",
+                "profile": {
+                    "name": "X300-8",
+                    "notes": "In storage room, ask Dave for key"
+                }
+            },
+            "relationships": {
+                "hasGateway": {
+                    "data": {
+                        "type": "Device",
+                        "id": "4fcaafc3-d4d3-43e1-ab64-89d8518d5954"
+                    }
+                },
+                "hasLocation": {
+                    "data": {
+                        "type": "Building",
+                        "id": "898a0329-2cca-4227-aea5-629862864cdf"
+                    }
+                },
+                "hasFeatures": {
+                    "data": [
+                        {
+                            "type": "DeviceInfo",
+                            "id": "898a0329-2cca-4227-aea5-629862864cdf"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Device",
+            "id": "5gcaafc3-d4d3-43e1-ab64-89d8518d5955",
+            "attributes": {
+                "modelName": "MSIB CCE",
+                "serialNumber": "L7955832",
+                "profile": {
+                    "name": "X300-9",
+                    "notes": "In office, ask Eve for key"
+                }
+            },
+            "relationships": {
+                "hasGateway": {
+                    "data": {
+                        "type": "Device",
+                        "id": "5gcaafc3-d4d3-43e1-ab64-89d8518d5955"
+                    }
+                },
+                "hasLocation": {
+                    "data": {
+                        "type": "Building",
+                        "id": "998a0329-2cca-4227-aea5-629862864cdf"
+                    }
+                },
+                "hasFeatures": {
+                    "data": [
+                        {
+                            "type": "DeviceInfo",
+                            "id": "998a0329-2cca-4227-aea5-629862864cdf"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Device",
+            "attributes": {
+                "modelName": "MSIB BFD",
+                "serialNumber": "L7045730",
+                "profile": {
+                    "name": "X740-6",
+                    "notes": "Newly created device"
+                }
+            },
+            "id": "391c4785-b8f9-4065-9310-70132c5dca32",
+            "relationships": {
+                "hasGateway": {
+                    "data": {
+                        "type": "Device",
+                        "id": "7a74a317-7803-426e-b55c-b074478a2def"
+                    }
+                }
+            },
+            "hasLocation": {
+                "data": {
+                    "type": "Building",
+                    "id": "7c2819c6-9f43-4390-a648-716b8eb75fc2"
+                }
+            },
+            "hasFeature": [
+                {
+                    "type": "DeviceInfo",
+                    "id": "72d6a127-f6da-4626-a493-023d8776cb51"
+                }
+            ]
+        },
+        {
+            "type": "Device",
+            "attributes": {
+                "modelName": "MSIC BAD",
+                "serialNumber": "L7065730",
+                "profile": {
+                    "name": "X661-7",
+                    "notes": "Device has been patched",
+                    "externalId": "127.0.0.1:7000/structure/partitions/1/devices/bb861b72-7ffd-4687-83ed-f160046eeedc"
+                }
+            },
+            "id": "bb861b72-7ffd-4687-83ed-f160046eeedc",
+            "relationships": {
+                "hasGateway": {
+                    "data": {
+                        "type": "Device",
+                        "id": "61528cad-8809-476b-917b-da01fa7eb07c"
+                    }
+                }
+            },
+            "hasLocation": {
+                "data": {
+                    "type": "Building",
+                    "id": "90a58ad0-ff9f-4ac8-9074-5a869e9d55d8"
+                }
+            },
+            "hasFeature": [
+                {
+                    "type": "DeviceInfo",
+                    "id": "9939e06b-a45a-4e95-a86f-17b6da68bdf0"
+                }
+            ]
+        }
+    ],
+    "included": [
+        {
+            "id": "e7c6d033-c305-410a-a248-f7a1e6289841",
+            "type": "DeviceInfo",
+            "attributes": {
+                "name": "Bob's device",
+                "description": "Don not power off",
+                "timezone": "Europe/Zurich"
+            },
+            "relationships": {
+                "hasDevice": {
+                    "data": {
+                        "id": "1bcaafc3-d4d3-43e1-ab64-89d8518d5951",
+                        "type": "Device"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,158 @@
+{
+    "data": [
+        {
+            "type": "Point",
+            "id": "2d55baf8-b5af-4fd1-8af6-187e67f527f9",
+            "attributes": {
+                "name": "point 123",
+                "description": "Boiler Temp",
+                "dataType": "number",
+                "isActive": true,
+                "unit": "qudt:DEG_C",
+                "enum": {
+                    "on": {
+                        "label": "On"
+                    },
+                    "off": {
+                        "label": "Off"
+                    },
+                    "auto": {
+                        "label": "Auto"
+                    }
+                },
+                "source": {
+                    "type": "PointNB"
+                },
+                "minimum": "5",
+                "maximum": "55.9",
+                "precision": "0.1",
+                "commandingSemantic": "writable",
+                "function": "sensor",
+                "systemAttributes": {},
+                "tags": {},
+                "pointValue": {
+                    "value": "23.2",
+                    "timestamp": "2024-11-18T22:10:30.115Z"
+                }
+            },
+            "meta": {
+                "createdAt": "2024-11-18T22:10:30.115Z",
+                "updatedAt": "2024-11-18T22:10:30.115Z"
+            },
+            "relationships": {
+                "hostedBy": {
+                    "data": {
+                        "id": "1bcaafc3-d4d3-43e1-ab64-89d8518d5951",
+                        "type": "Device"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Point",
+            "id": "3e66cbf9-c6bf-5ge2-9bg7-298f78g638g0",
+            "attributes": {
+                "name": "point 456",
+                "description": "Water Pressure",
+                "dataType": "number",
+                "isActive": true,
+                "unit": "qudt:BAR",
+                "enum": {
+                    "on": {
+                        "label": "On"
+                    },
+                    "off": {
+                        "label": "Off"
+                    },
+                    "auto": {
+                        "label": "Auto"
+                    },
+                    "manual": {
+                        "label": "Manual"
+                    }
+                },
+                "source": {
+                    "type": "PointNB"
+                },
+                "minimum": "1",
+                "maximum": "10.5",
+                "precision": "0.01",
+                "commandingSemantic": "writable",
+                "function": "sensor",
+                "systemAttributes": {},
+                "tags": {},
+                "pointValue": {
+                    "value": "7.25",
+                    "timestamp": "2024-11-18T22:15:45.215Z"
+                }
+            },
+            "meta": {
+                "createdAt": "2024-11-18T22:15:45.215Z",
+                "updatedAt": "2024-11-18T22:15:45.215Z"
+            },
+            "relationships": {
+                "hostedBy": {
+                    "data": {
+                        "id": "2cdbbfc4-e5e4-54f2-bc75-9ae9629f6a62",
+                        "type": "Device"
+                    }
+                }
+            }
+        },
+        {
+            "type": "Point",
+            "id": "4f77dcg0-d7cg-6hf3-adg8-3a9f89h749h1",
+            "attributes": {
+                "name": "point 789",
+                "description": "Flow Rate",
+                "dataType": "number",
+                "isActive": true,
+                "unit": "qudt:L_PER_MIN",
+                "enum": {
+                    "on": {
+                        "label": "Enabled"
+                    },
+                    "off": {
+                        "label": "Disabled"
+                    },
+                    "auto": {
+                        "label": "Automatic"
+                    }
+                },
+                "source": {
+                    "type": "PointNB"
+                },
+                "minimum": "0.5",
+                "maximum": "20.0",
+                "precision": "0.05",
+                "commandingSemantic": "writable",
+                "function": "sensor",
+                "systemAttributes": {},
+                "tags": {
+                    "type": "temperature",
+                    "specificType": "room temperature"
+                },
+                "pointValue": {
+                    "value": "26.2",
+                    "timestamp": "2024-11-18T22:20:55.315Z"
+                }
+            },
+            "meta": {
+                "createdAt": "2024-11-18T22:20:55.315Z",
+                "updatedAt": "2024-11-18T22:20:55.315Z"
+            },
+            "relationships": {
+                "hostedBy": {
+                    "data": {
+                        "id": "3decdfd5-f6f5-65g3-cd86-abf073a85b73",
+                        "type": "Device"
+                    }
+                }
+            }
+        }
+    ],
+    "links": {
+        "self": "/partitions/b2ae267d-1d74-4e2a-bff8-e7c90a3b854a/devices/e7c6d033-c305-410a-a248-f7a1e6289841/points",
+        "next": "/partitions/b2ae267d-1d74-4e2a-bff8-e7c90a3b854a/devices/e7c6d033-c305-410a-a248-f7a1e6289841/points?page[cursor]=qwerty"
+    }
+}

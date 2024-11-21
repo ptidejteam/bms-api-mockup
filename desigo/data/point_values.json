@@ -1,0 +1,48 @@
+{
+  "data": [
+    {
+      "type": "PointValue",
+      "id": "cov-e7c6d033-c305-410a-a248-f7a1e6289841-2021-07-08T12:44:56.447Z",
+      "attributes": {
+        "timestamp": "2024-11-20T23:21:41.921Z",
+        "value": "on",
+        "targetValue": "on",
+        "qualityOfValue": 0
+      }
+    },
+    {
+      "type": "PointValue",
+      "id": "cov-a1b2c3d4-e5f6-7890-ab12-cd34ef56gh78-2024-11-20T23:25:30.123Z",
+      "attributes": {
+        "timestamp": "2024-11-20T23:25:30.123Z",
+        "value": "off",
+        "targetValue": "off",
+        "qualityOfValue": 1
+      }
+    },
+    {
+      "type": "PointValue",
+      "id": "cov-b2c3d4e5-f6g7-8901-bc23-de45fg67hi89-2024-11-20T23:30:45.456Z",
+      "attributes": {
+        "timestamp": "2024-11-20T23:30:45.456Z",
+        "value": "auto",
+        "targetValue": "auto",
+        "qualityOfValue": 2
+      }
+    },
+    {
+      "type": "PointValue",
+      "id": "cov-c3d4e5f6-g7h8-9012-cd34-ef56gh78ij90-2024-11-20T23:35:59.789Z",
+      "attributes": {
+        "timestamp": "2024-11-20T23:35:59.789Z",
+        "value": "manual",
+        "targetValue": "manual",
+        "qualityOfValue": 3
+      }
+    }
+  ],
+  "links": {
+    "self": "/partitions/b2ae267d-1d74-4e2a-bff8-e7c90a3b854a/points/2d55baf8-b5af-4fd1-8af6-187e67f527f9/values?filter[timestamp][from]=2021-07-08T12:44:56.447Z&filter[timestamp][to]=2021-07-08T13:44:56.447Z",
+    "next": "/partitions/b2ae267d-1d74-4e2a-bff8-e7c90a3b854a/points/2d55baf8-b5af-4fd1-8af6-187e67f527f9/values?filter[timestamp][from]=2021-07-08T12:44:56.447Z&filter[timestamp][to]=2021-07-08T13:44:56.447Z&page[cursor]=qwerty"
+  }
+}
