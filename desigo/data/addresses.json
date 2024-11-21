@@ -1,29 +1,89 @@
 {
-  "links": {
-    "self": "/addresses",
-    "next": "/addresses?page[number]=1"
-  },
-  "data": [
-    {
-      "id": "05085306-9c1d-4cee-b92a-04c07e4b1945",
-      "type": "Address",
-      "attributes": {
-        "locality": "Vienna",
-        "countryCode": "AUT",
-        "countryName": "Austria",
-        "continentCode": "EU",
-        "continentName": "Europe",
-        "region": "Styria",
-        "postalCode": "1010",
-        "street": "Opernring 3",
-        "additionalProp1": {}
-      },
-      "meta": {
-        "createdAt": "2024-11-18T22:06:12.401Z",
-        "updatedAt": "2024-11-18T22:06:12.401Z",
-        "createdBy": "adsf",
-        "updatedBy": "adsf"
-      }
-    }
-  ]
+    "links": {
+        "self": "/addresses",
+        "next": "/addresses?page[number]=1"
+    },
+    "data": [
+        {
+            "id": "05085306-9c1d-4cee-b92a-04c07e4b1945",
+            "type": "Address",
+            "attributes": {
+                "locality": "Vienna",
+                "countryCode": "AUT",
+                "countryName": "Austria",
+                "continentCode": "EU",
+                "continentName": "Europe",
+                "region": "Styria",
+                "postalCode": "1010",
+                "street": "Sherbrooke 3",
+                "additionalProp1": {}
+            },
+            "meta": {
+                "createdAt": "2024-11-18T22:06:12.401Z",
+                "updatedAt": "2024-11-18T22:06:12.401Z",
+                "createdBy": "adsf",
+                "updatedBy": "adsf"
+            }
+        },
+        {
+            "id": "a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6",
+            "type": "Address",
+            "attributes": {
+                "locality": "Graz",
+                "countryCode": "AUT",
+                "countryName": "Austria",
+                "continentCode": "EU",
+                "continentName": "Europe",
+                "region": "Styria",
+                "postalCode": "8010",
+                "street": "Hauptplatz 1",
+                "additionalProp1": {}
+            },
+            "meta": {
+                "createdAt": "2024-11-19T10:15:30.000Z",
+                "updatedAt": "2024-11-19T10:15:30.000Z",
+                "createdBy": "user123",
+                "updatedBy": "user123"
+            }
+        },
+        {
+            "id": "z9y8x7w6-v5u4-t3s2-r1q0-p9o8n7m6l5k4",
+            "type": "Address",
+            "attributes": {
+                "locality": "Salzburg",
+                "countryCode": "AUT",
+                "countryName": "Austria",
+                "continentCode": "EU",
+                "continentName": "Europe",
+                "region": "Salzburg",
+                "postalCode": "5020",
+                "street": "Getreidegasse 9",
+                "additionalProp1": {}
+            },
+            "meta": {
+                "createdAt": "2024-11-20T14:25:45.000Z",
+                "updatedAt": "2024-11-20T14:25:45.000Z",
+                "createdBy": "user456",
+                "updatedBy": "user456"
+            }
+        },
+        {
+            "id": "05085306-9c1d-4cee-b92a-04c07e4b1945",
+            "type": "Address",
+            "attributes": {
+                "locality": "Vienna",
+                "countryCode": "AUT",
+                "region": "Styria",
+                "postalCode": "1010",
+                "street": "Opernring 3",
+                "additionalProp1": {}
+            },
+            "meta": {
+                "createdAt": "2024-11-21T22:16:38.884Z",
+                "updatedAt": "2024-11-21T22:16:38.884Z",
+                "createdBy": "Peter Yefi",
+                "updatedBy": "Peter Yefi"
+            }
+        }
+    ]
 }
