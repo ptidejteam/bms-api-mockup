@@ -1,0 +1,189 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -71.03336244821548,
+              42.21272790670376
+            ],
+            [
+              -71.03337183594704,
+              42.212390185078924
+            ],
+            [
+              -71.0331679880619,
+              42.212390185078924
+            ],
+            [
+              -71.03316128253937,
+              42.21272790670376
+            ],
+            [
+              -71.03336244821548,
+              42.21272790670376
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "geometryId": "7b17f8a9-91fb-4787-8f53-702a107b7d71",
+        "sourceId": "3QktIcHfDDrPYHESMLLARa",
+        "description": "Newly added Room",
+        "geometryType": "2D",
+        "imageSprite": {
+          "position": {
+            "left": 5,
+            "top": -5
+          },
+          "size": {
+            "height": 10.2,
+            "width": 20.5
+          },
+          "rotationAngle": 30.5
+        },
+        "tags": {
+          "restricted room": true,
+          "admin room": true
+        },
+        "represents": {
+          "data": {
+            "id": "7b17f8a9-91fb-6666-3333-702a107b7d71",
+            "type": "Location",
+            "attributes": {
+              "rangeMinLimit": 0,
+              "rangeMaxLimit": 100,
+              "unit": "f"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -71.03336915373802,
+              42.212489018506034
+            ],
+            [
+              -71.03337183594704,
+              42.21239266833277
+            ],
+            [
+              -71.0331679880619,
+              42.21239117838048
+            ],
+            [
+              -71.03316597640514,
+              42.21248951515604
+            ],
+            [
+              -71.03336915373802,
+              42.212489018506034
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "geometryId": "7b17f8a9-91fb-4787-8f53-702a107b7d72"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -71.03331819176674,
+            42.21256003941597
+          ],
+          [
+            -71.03320151567459,
+            42.21256003941597
+          ]
+        ]
+      },
+      "properties": {
+        "geometryId": "7b17f8a9-91fb-4787-8f53-702a107b7d73",
+        "sourceId": "3QktIcHfDDrPYHESMLLARw",
+        "description": "Newly added Window",
+        "geometryType": "2D",
+        "imageSprite": {
+          "position": {
+            "left": 5,
+            "top": -5
+          },
+          "size": {
+            "height": 10.2,
+            "width": 20.5
+          },
+          "rotationAngle": 30.5
+        },
+        "tags": {
+          "glass window": true
+        },
+        "represents": {
+          "data": {
+            "id": "7b17f8a9-91fb-6666-3333-702a107b7d73",
+            "type": "Equipment/EquipmentType:827d0ae5-6c62-42a7-9367-7aa95512823e",
+            "attributes": {
+              "rangeMinLimit": 0,
+              "rangeMaxLimit": 100,
+              "unit": "f"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.03336445987225,
+          42.21245872284883
+        ]
+      },
+      "properties": {
+        "geometryId": "7b17f8a9-91fb-4787-8f53-702a107b7d74",
+        "sourceId": "3QktIcHfDDrPYHESMLLARd",
+        "description": "Newly added Datapoint",
+        "geometryType": "2D",
+        "imageSprite": {
+          "position": {
+            "left": 5,
+            "top": -5
+          },
+          "size": {
+            "height": 10.2,
+            "width": 20.5
+          },
+          "rotationAngle": 30.5
+        },
+        "tags": {
+          "time-series": true,
+          "live-data": true
+        },
+        "represents": {
+          "data": {
+            "id": "7b17f8a9-91fb-6666-3333-702a107b7d74",
+            "type": "BTZF:Point",
+            "attributes": {
+              "rangeMinLimit": 0,
+              "rangeMaxLimit": 100,
+              "unit": "f"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

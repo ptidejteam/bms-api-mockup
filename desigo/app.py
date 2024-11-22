@@ -2,7 +2,11 @@ from flask import Flask, request, jsonify
 from flask_restx import Api
 from dotenv import load_dotenv
 import os
-from desigo_resource import api as building_structure_api
+from desigo_points_resource import api as point_api
+from desigo_address_resource import api as address_api
+from desigo_devices_resource import api as device_api
+from desigo_location_resource import api as location_api
+from desigo_floor_plan_resource import api as floor_plan_api
 
 load_dotenv()
 
@@ -24,7 +28,11 @@ api = Api(app, version='1.0', title='Desigo BMS API MockUp',
           security='bearerAuth'
           )
 
-api.add_namespace(building_structure_api, path='/structure/partitions/1')
+api.add_namespace(point_api, path='/structure/partitions/1/points')
+api.add_namespace(address_api, path='/structure/partitions/1/addresses')
+api.add_namespace(location_api, path='/structure/partitions/1/locations')
+api.add_namespace(device_api, path='/structure/partitions/1/devices')
+api.add_namespace(floor_plan_api, path='/structure/partitions/1/floorplans')
 
 
 def verify_bearer_token(token):

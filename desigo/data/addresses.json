@@ -73,6 +73,7 @@
             "attributes": {
                 "locality": "Vienna",
                 "countryCode": "AUT",
+                "continentCode": "EU",
                 "region": "Styria",
                 "postalCode": "1010",
                 "street": "Opernring 3",
@@ -81,6 +82,25 @@
             "meta": {
                 "createdAt": "2024-11-21T22:16:38.884Z",
                 "updatedAt": "2024-11-21T22:16:38.884Z",
+                "createdBy": "Peter Yefi",
+                "updatedBy": "Peter Yefi"
+            }
+        },
+        {
+            "id": "05085306-9c1d-3cee-b92a-04c07e4b1949",
+            "type": "Address",
+            "attributes": {
+                "locality": "Ghana",
+                "countryCode": "GH",
+                "continentCode": "AF",
+                "region": "Accra",
+                "postalCode": "1011",
+                "street": "Prempeh Street II",
+                "additionalProp1": {}
+            },
+            "meta": {
+                "createdAt": "2024-11-22T19:27:30.234Z",
+                "updatedAt": "2024-11-22T19:27:30.234Z",
                 "createdBy": "Peter Yefi",
                 "updatedBy": "Peter Yefi"
             }

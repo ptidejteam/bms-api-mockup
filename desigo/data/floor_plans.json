@@ -1,0 +1,189 @@
+{
+  "links": {
+    "self": "/partitions/4fa85f64-8888-2222-c3fc-2c963f66afa6/floorplans?page[number]=1&page[size]=20&sort=-createdAt",
+    "first": "/partitions/4fa85f64-8888-2222-c3fc-2c963f66afa6/floorplans?page[number]=1&page[size]=20&sort=-createdAt",
+    "prev": "/partitions/4fa85f64-8888-2222-c3fc-2c963f66afa6/floorplans?page[number]=1&page[size]=20&sort=-createdAt",
+    "next": "/partitions/4fa85f64-8888-2222-c3fc-2c963f66afa6/floorplans?page[number]=1&page[size]=20&sort=-createdAt",
+    "last": "/partitions/4fa85f64-8888-2222-c3fc-2c963f66afa6/floorplans?page[number]=1&page[size]=20&sort=-createdAt"
+  },
+  "data": [
+    {
+      "id": "827d0ae5-6c62-42a7-9367-7aa95512823e",
+      "type": "Floorplan",
+      "meta": {
+        "createdAt": "2024-11-22T19:31:13.238Z",
+        "updatedAt": "2024-11-22T19:31:13.238Z",
+        "createdBy": "Z0011111",
+        "updatedBy": "Z0011111"
+      },
+      "attributes": {
+        "name": "default",
+        "description": "Default floorplan",
+        "defaultFloorplan": true,
+        "scale": 0.2,
+        "unit": "mm",
+        "northDirection": 35.5
+      },
+      "links": {
+        "self": "/partitions/4fa85f64-8888-2222-c3fc-2c963f66afa6/floorplans/4fa85f64-6767-4562-c3fc-2c963f66afa6"
+      },
+      "relationships": {
+        "isPartOfBuilding": {
+          "data": {
+            "type": "Building",
+            "id": "827d0ae5-6c62-42a7-9367-7aa95512823e"
+          }
+        },
+        "representsFloor": {
+          "data": {
+            "type": "Floor",
+            "id": "827d0ae5-6c62-42a7-9367-7aa95512823e"
+          }
+        }
+      }
+    },
+    {
+  "id": "123e4567-e89b-12d3-a456-426614174000",
+  "type": "Floorplan",
+  "meta": {
+    "createdAt": "2024-11-22T20:00:00.000Z",
+    "updatedAt": "2024-11-22T20:00:00.000Z",
+    "createdBy": "Z0022222",
+    "updatedBy": "Z0022222"
+  },
+  "attributes": {
+    "name": "main",
+    "description": "Main floorplan",
+    "defaultFloorplan": false,
+    "scale": 0.25,
+    "unit": "cm",
+    "northDirection": 45.0
+  },
+  "links": {
+    "self": "/partitions/5fa85f64-9999-3333-d4fc-3c963f66afa6/floorplans/5fa85f64-7878-5673-d4fc-3c963f66afa6"
+  },
+  "relationships": {
+    "isPartOfBuilding": {
+      "data": {
+        "type": "Building",
+        "id": "123e4567-e89b-12d3-a456-426614174000"
+      }
+    },
+    "representsFloor": {
+      "data": {
+        "type": "Floor",
+        "id": "123e4567-e89b-12d3-a456-426614174000"
+      }
+    }
+  }
+},
+    {
+  "id": "223e4567-e89b-12d3-a456-426614174001",
+  "type": "Floorplan",
+  "meta": {
+    "createdAt": "2024-11-22T21:00:00.000Z",
+    "updatedAt": "2024-11-22T21:00:00.000Z",
+    "createdBy": "Z0033333",
+    "updatedBy": "Z0033333"
+  },
+  "attributes": {
+    "name": "secondary",
+    "description": "Secondary floorplan",
+    "defaultFloorplan": false,
+    "scale": 0.15,
+    "unit": "m",
+    "northDirection": 90.0
+  },
+  "links": {
+    "self": "/partitions/6fa85f64-aaaa-4444-e5fc-4c963f66afa6/floorplans/6fa85f64-8989-6784-e5fc-4c963f66afa6"
+  },
+  "relationships": {
+    "isPartOfBuilding": {
+      "data": {
+        "type": "Building",
+        "id": "223e4567-e89b-12d3-a456-426614174001"
+      }
+    },
+    "representsFloor": {
+      "data": {
+        "type": "Floor",
+        "id": "223e4567-e89b-12d3-a456-426614174001"
+      }
+    }
+  }
+},
+    {
+  "id": "323e4567-e89b-12d3-a456-426614174002",
+  "type": "Floorplan",
+  "meta": {
+    "createdAt": "2024-11-22T22:00:00.000Z",
+    "updatedAt": "2024-11-22T22:00:00.000Z",
+    "createdBy": "Z0044444",
+    "updatedBy": "Z0044444"
+  },
+  "attributes": {
+    "name": "tertiary",
+    "description": "Tertiary floorplan",
+    "defaultFloorplan": false,
+    "scale": 0.1,
+    "unit": "in",
+    "northDirection": 180.0
+  },
+  "links": {
+    "self": "/partitions/7fa85f64-bbbb-5555-f6fc-5c963f66afa6/floorplans/7fa85f64-9090-7895-f6fc-5c963f66afa6"
+  },
+  "relationships": {
+    "isPartOfBuilding": {
+      "data": {
+        "type": "Building",
+        "id": "323e4567-e89b-12d3-a456-426614174002"
+      }
+    },
+    "representsFloor": {
+      "data": {
+        "type": "Floor",
+        "id": "323e4567-e89b-12d3-a456-426614174002"
+      }
+    }
+  }
+},
+    {
+  "id": "423e4567-e89b-12d3-a456-426614174003",
+  "type": "Floorplan",
+  "meta": {
+    "createdAt": "2024-11-22T23:00:00.000Z",
+    "updatedAt": "2024-11-22T23:00:00.000Z",
+    "createdBy": "Z0055555",
+    "updatedBy": "Z0055555"
+  },
+  "attributes": {
+    "name": "quaternary",
+    "description": "Quaternary floorplan",
+    "defaultFloorplan": false,
+    "scale": 0.05,
+    "unit": "ft",
+    "northDirection": 270.0
+  },
+  "links": {
+    "self": "/partitions/8fa85f64-cccc-6666-g7fc-6c963f66afa6/floorplans/8fa85f64-1010-8906-g7fc-6c963f66afa6"
+  },
+  "relationships": {
+    "isPartOfBuilding": {
+      "data": {
+        "type": "Building",
+        "id": "423e4567-e89b-12d3-a456-426614174003"
+      }
+    },
+    "representsFloor": {
+      "data": {
+        "type": "Floor",
+        "id": "423e4567-e89b-12d3-a456-426614174003"
+      }
+    }
+  }
+}
+
+
+
+  ]
+}

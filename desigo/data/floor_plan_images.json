@@ -1,0 +1,183 @@
+{
+  "links": {
+    "self": "/partitions/4fa85f64-8888-2222-c3fc-2c963f66afa6/floorplans/827d0ae5-6c62-42a7-9367-7aa95512823e/floorplan-images?page[number]=5&page[size]=10&sort=-createdAt&coordinateSystem=ORG2D",
+    "first": "/partitions/4fa85f64-8888-2222-c3fc-2c963f66afa6/floorplans/827d0ae5-6c62-42a7-9367-7aa95512823e/floorplan-images?page[number]=1&page[size]=10&sort=-createdAt&coordinateSystem=ORG2D",
+    "prev": "/partitions/4fa85f64-8888-2222-c3fc-2c963f66afa6/floorplans/827d0ae5-6c62-42a7-9367-7aa95512823e/floorplan-images?page[number]=4&page[size]=10&sort=-createdAt&coordinateSystem=ORG2D",
+    "next": "/partitions/4fa85f64-8888-2222-c3fc-2c963f66afa6/floorplans/827d0ae5-6c62-42a7-9367-7aa95512823e/floorplan-images?page[number]=6&page[size]=10&sort=-createdAt&coordinateSystem=ORG2D",
+    "last": "/partitions/4fa85f64-8888-2222-c3fc-2c963f66afa6/floorplans/827d0ae5-6c62-42a7-9367-7aa95512823e/floorplan-images?page[number]=40&page[size]=10&sort=-createdAt&coordinateSystem=ORG2D"
+  },
+  "data": [
+    {
+      "type": "FloorplanImage",
+      "id": "827d0ae5-6c62-42a7-9367-7aa95512823e",
+      "meta": {
+        "createdAt": "2024-11-22T20:07:25.543Z",
+        "updatedAt": "2024-11-22T20:07:25.543Z",
+        "createdBy": "Z0011111",
+        "updatedBy": "Z0011111"
+      },
+      "attributes": {
+        "mimeType": "image/jpeg",
+        "description": "Fire Floorplan Image",
+        "centerPoint": {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              85.42972974479198,
+              46.30901306406977
+            ]
+          },
+          "properties": null
+        },
+        "size": {
+          "height": 5.5,
+          "width": 5.5
+        },
+        "imageBytes": "string",
+        "deprecated": false,
+        "northDirection": 30
+      },
+      "links": {
+        "self": "/partitions/4fa85f64-8888-2222-c3fc-2c963f66afa6/floorplans/9cf1e1e5-3b76-4cda-b489-7afaf00a8621/floorplan-images/3fa85f64-5717-4562-b3fc-2c963f66afa6"
+      },
+      "relationships": {
+        "representsFloorplan": {
+          "data": {
+            "type": "Floorplan",
+            "id": "827d0ae5-6c62-42a7-9367-7aa95512823e"
+          }
+        }
+      }
+    },
+    {
+  "type": "FloorplanImage",
+  "id": "123e4567-e89b-12d3-a456-426614174000",
+  "meta": {
+    "createdAt": "2024-11-22T21:00:00.000Z",
+    "updatedAt": "2024-11-22T21:00:00.000Z",
+    "createdBy": "Z0022222",
+    "updatedBy": "Z0022222"
+  },
+  "attributes": {
+    "mimeType": "image/png",
+    "description": "Emergency Exit Plan",
+    "centerPoint": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.123456,
+          35.654321
+        ]
+      },
+      "properties": null
+    },
+    "size": {
+      "height": 6.0,
+      "width": 6.0
+    },
+    "imageBytes": "string",
+    "deprecated": false,
+    "northDirection": 45
+  },
+  "links": {
+    "self": "/partitions/5fa85f64-9999-3333-d4fc-3c963f66afa6/floorplans/9cf1e1e5-3b76-4cda-b489-7afaf00a8621/floorplan-images/5fa85f64-7878-5673-d4fc-3c963f66afa6"
+  },
+  "relationships": {
+    "representsFloorplan": {
+      "data": {
+        "type": "Floorplan",
+        "id": "123e4567-e89b-12d3-a456-426614174000"
+      }
+    }
+  }
+},
+    {
+  "type": "FloorplanImage",
+  "id": "223e4567-e89b-12d3-a456-426614174001",
+  "meta": {
+    "createdAt": "2024-11-22T22:00:00.000Z",
+    "updatedAt": "2024-11-22T22:00:00.000Z",
+    "createdBy": "Z0033333",
+    "updatedBy": "Z0033333"
+  },
+  "attributes": {
+    "mimeType": "image/gif",
+    "description": "Safety Floorplan Image",
+    "centerPoint": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.987654,
+          25.123456
+        ]
+      },
+      "properties": null
+    },
+    "size": {
+      "height": 7.0,
+      "width": 7.0
+    },
+    "imageBytes": "string",
+    "deprecated": true,
+    "northDirection": 60
+  },
+  "links": {
+    "self": "/partitions/6fa85f64-aaaa-4444-e5fc-4c963f66afa6/floorplans/9cf1e1e5-3b76-4cda-b489-7afaf00a8621/floorplan-images/6fa85f64-8989-6784-e5fc-4c963f66afa6"
+  },
+  "relationships": {
+    "representsFloorplan": {
+      "data": {
+        "type": "Floorplan",
+        "id": "223e4567-e89b-12d3-a456-426614174001"
+      }
+    }
+  }
+},
+    {
+  "type": "FloorplanImage",
+  "id": "323e4567-e89b-12d3-a456-426614174002",
+  "meta": {
+    "createdAt": "2024-11-22T23:00:00.000Z",
+    "updatedAt": "2024-11-22T23:00:00.000Z",
+    "createdBy": "Z0044444",
+    "updatedBy": "Z0044444"
+  },
+  "attributes": {
+    "mimeType": "image/bmp",
+    "description": "Evacuation Plan",
+    "centerPoint": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.432198,
+          15.876543
+        ]
+      },
+      "properties": null
+    },
+    "size": {
+      "height": 8.0,
+      "width": 8.0
+    },
+    "imageBytes": "string",
+    "deprecated": false,
+    "northDirection": 90
+  },
+  "links": {
+    "self": "/partitions/7fa85f64-bbbb-5555-f6fc-5c963f66afa6/floorplans/9cf1e1e5-3b76-4cda-b489-7afaf00a8621/floorplan-images/7fa85f64-9090-7895-f6fc-5c963f66afa6"
+  },
+  "relationships": {
+    "representsFloorplan": {
+      "data": {
+        "type": "Floorplan",
+        "id": "323e4567-e89b-12d3-a456-426614174002"
+      }
+    }
+  }
+}
+  ]
+}
