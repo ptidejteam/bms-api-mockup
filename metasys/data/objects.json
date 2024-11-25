@@ -1,479 +1,617 @@
 {
-  "objectAttributes":  {
-  "item": {
-    "defaultAttribute": "attributeEnumSet.presentValue"
-  },
-  "schema": {
-    "type": "object",
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "language": "en-US",
-    "title": "JCI AV",
-    "version": "1.0",
-    "properties": {
-      "presentValue": {
-        "title": "Present Value",
-        "prioritized": true,
-        "metasysType": "float",
-        "type": "number",
-        "minimum": -3.40282347e+38,
-        "maximum": 3.40282347e+38
-      },
-      "reliability": {
-        "title": "Reliability",
-        "prioritized": false,
-        "type": "string",
-        "metasysType": "enum"
-      },
-      "outOfService": {
-        "title": "Out Of Service",
-        "prioritized": false,
-        "type": "boolean",
-        "metasysType": "bool"
-      },
-      "statusFlags": {
-        "title": "Status Flags",
-        "readOnly": true,
-        "prioritized": false,
-        "type": "string",
-        "metasysType": "bitString"
-      },
-      "eventState": {
-        "title": "Event State",
-        "readOnly": true,
-        "prioritized": false,
-        "type": "string",
-        "metasysType": "enum"
-      },
-      "presentValueWritable": {
-        "title": "Present Value Writable",
-        "readOnly": true,
-        "prioritized": false,
-        "type": "string",
-        "metasysType": "enum"
-      },
-      "connectedToInternalApplication": {
-        "title": "Connected to Internal Application",
-        "readOnly": true,
-        "prioritized": false,
-        "type": "string",
-        "metasysType": "enum"
-      },
-      "bacnetExposed": {
-        "title": "BACnet Exposed",
-        "prioritized": false,
-        "type": "boolean",
-        "metasysType": "bool"
-      },
-      "maxPresValue": {
-        "title": "Max Value",
-        "prioritized": false,
-        "metasysType": "float",
-        "type": "number",
-        "minimum": -3.40282347e+38,
-        "maximum": 3.40282347e+38
-      },
-      "minPresValue": {
-        "title": "Min Value",
-        "prioritized": false,
-        "metasysType": "float",
-        "type": "number",
-        "minimum": -3.40282347e+38,
-        "maximum": 3.40282347e+38
-      },
-      "covIncrement": {
-        "title": "COV Increment",
-        "prioritized": false,
-        "metasysType": "float",
-        "type": "number",
-        "minimum": -3.40282347e+38,
-        "maximum": 3.40282347e+38
-      },
-      "units": {
-        "title": "Units",
-        "prioritized": false,
-        "type": "string",
-        "metasysType": "enum"
-      },
-      "displayPrecision": {
-        "title": "Display Precision",
-        "prioritized": false,
-        "type": "string",
-        "metasysType": "enum"
-      },
-      "propertyRefValue": {
-        "title": "Property Ref Value",
-        "readOnly": true,
-        "prioritized": false,
-        "metasysType": "attributeReference",
-        "oneOf": [
-          {
-            "$ref": "#attribute-reference"
-          }
-        ]
-      },
-      "connectedTo": {
-        "title": "Connected To",
-        "prioritized": false,
-        "metasysType": "attributeReference",
-        "oneOf": [
-          {
-            "$ref": "#attribute-reference"
-          }
-        ]
-      },
-      "connectedStatus": {
-        "title": "Connected Status",
-        "readOnly": true,
-        "prioritized": false,
-        "type": "string",
-        "metasysType": "enum"
-      },
-      "direction": {
-        "title": "Direction",
-        "prioritized": false,
-        "type": "string",
-        "metasysType": "enum"
-      },
-      "prioritySupported": {
-        "title": "Priority Supported",
-        "prioritized": false,
-        "type": "boolean",
-        "metasysType": "bool"
-      },
-      "relinquishDefault": {
-        "title": "Relinquish Default",
-        "prioritized": false,
-        "metasysType": "float",
-        "type": "number",
-        "minimum": -3.40282347e+38,
-        "maximum": 3.40282347e+38
-      },
-      "restoreCommandPriority": {
-        "title": "Restore Command Priority",
-        "prioritized": false,
-        "type": "string",
-        "metasysType": "bitString"
-      },
-      "priorityArray": {
-        "title": "Priority Array",
-        "readOnly": true,
-        "prioritized": false,
-        "type": "array",
-        "metasysType": "array"
-      },
-      "overrideExpirationTime": {
-        "title": "Override Expiration Time",
-        "readOnly": true,
-        "prioritized": false,
-        "type": "object",
-        "metasysType": "struct"
-      },
-      "currentCommandPriority": {
-        "title": "Current Command Priority",
-        "readOnly": true,
-        "prioritized": false,
-        "metasysType": "ushort",
-        "type": "integer",
-        "minimum": 0,
-        "maximum": 65535
-      },
-      "itemReference": {
-        "title": "Item Reference",
-        "readOnly": true,
-        "prioritized": false,
-        "type": "string",
-        "metasysType": "string"
-      },
-      "name": {
-        "title": "Name",
-        "prioritized": false,
-        "type": "string",
-        "metasysType": "string"
-      },
-      "objectName": {
-        "title": "Object Name",
-        "prioritized": false,
-        "type": "string",
-        "metasysType": "string"
-      },
-      "description": {
-        "title": "Description",
-        "prioritized": false,
-        "type": "string",
-        "metasysType": "string"
-      },
-      "status": {
-        "title": "Status",
-        "readOnly": true,
-        "prioritized": false,
-        "type": "string",
-        "metasysType": "enum"
-      },
-      "enabled": {
-        "title": "Enabled",
-        "prioritized": false,
-        "type": "boolean",
-        "metasysType": "bool"
-      },
-      "executionPriority": {
-        "title": "Execution Priority",
-        "prioritized": false,
-        "type": "string",
-        "metasysType": "enum"
-      },
-      "objectCategory": {
-        "title": "Authorization Category",
-        "prioritized": false,
-        "type": "string",
-        "metasysType": "enum"
-      },
-      "alarmState": {
-        "title": "Alarm State",
-        "readOnly": true,
-        "prioritized": false,
-        "type": "string",
-        "metasysType": "enum"
-      },
-      "bacnetObjectType": {
-        "title": "Object Type",
-        "readOnly": true,
-        "prioritized": false,
-        "type": "string",
-        "metasysType": "enum"
-      },
-      "objectIdentifier": {
-        "title": "Object Identifier",
-        "readOnly": true,
-        "prioritized": false,
-        "metasysType": "bacOid",
-        "oneOf": [
-          {
-            "$ref": "#bacoid"
-          }
-        ]
-      },
-      "propertyList": {
-        "title": "Property List",
-        "readOnly": true,
-        "prioritized": false,
-        "type": "array",
-        "metasysType": "listof"
-      }
-    },
-    "definitions": {
-      "object-reference": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "#object-reference",
-        "title": "Object reference data type",
-        "type": "object",
-        "oneOf": [
-          {
+    "objectAttributes": {
+        "item": {
+            "defaultAttribute": "attributeEnumSet.presentValue"
+        },
+        "schema": {
+            "type": "object",
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "language": "en-US",
+            "title": "JCI AV",
+            "version": "1.0",
             "properties": {
-              "objectReference": {
-                "format": "fully-qualified-reference",
-                "type": "string"
-              },
-              "referencedObject": {
-                "type": "object",
-                "properties": {
-                  "objectName": {
-                    "type": "string"
-                  },
-                  "objectUrl": {
-                    "type": "string",
-                    "format": "uri"
-                  }
+                "presentValue": {
+                    "title": "Present Value",
+                    "prioritized": true,
+                    "metasysType": "float",
+                    "type": "number",
+                    "minimum": -3.40282347e+38,
+                    "maximum": 3.40282347e+38
                 },
-                "readOnly": true
-              }
-            },
-            "required": [
-              "objectReference"
-            ]
-          },
-          {
-            "properties": {
-              "objectBACoid": {
-                "readOnly": true,
-                "oneOf": [
-                  {
-                    "$ref": "#bacoid"
-                  }
-                ]
-              },
-              "deviceAddress": {
-                "readOnly": true,
-                "type": "string"
-              },
-              "deviceBACoid": {
-                "readOnly": true,
-                "oneOf": [
-                  {
-                    "$ref": "#bacoid"
-                  }
-                ]
-              }
-            },
-            "required": [
-              "objectBACoid"
-            ],
-            "additionalProperties": false
-          }
-        ]
-      },
-      "attribute-reference": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "#attribute-reference",
-        "title": "Attribute reference data type",
-        "type": "object",
-        "allOf": [
-          {
-            "$ref": "#object-reference"
-          },
-          {
-            "properties": {
-              "attribute": {
-                "$ref": "https://{hostname}/api/v4/schemas/enums/attributeEnumSet"
-              },
-              "if": {
-                "required": [
-                  "objectReference"
-                ]
-              },
-              "then": {
-                "properties": {
-                  "referencedObject": {
-                    "properties": {
-                      "attributeUrl": {
-                        "type": "string",
-                        "metasysType": "string",
-                        "format": "uri"
-                      },
-                      "attributeName": {
-                        "type": "string",
-                        "metasysType": "string"
-                      }
-                    }
-                  }
+                "reliability": {
+                    "title": "Reliability",
+                    "prioritized": false,
+                    "type": "string",
+                    "metasysType": "enum"
+                },
+                "outOfService": {
+                    "title": "Out Of Service",
+                    "prioritized": false,
+                    "type": "boolean",
+                    "metasysType": "bool"
+                },
+                "statusFlags": {
+                    "title": "Status Flags",
+                    "readOnly": true,
+                    "prioritized": false,
+                    "type": "string",
+                    "metasysType": "bitString"
+                },
+                "eventState": {
+                    "title": "Event State",
+                    "readOnly": true,
+                    "prioritized": false,
+                    "type": "string",
+                    "metasysType": "enum"
+                },
+                "presentValueWritable": {
+                    "title": "Present Value Writable",
+                    "readOnly": true,
+                    "prioritized": false,
+                    "type": "string",
+                    "metasysType": "enum"
+                },
+                "connectedToInternalApplication": {
+                    "title": "Connected to Internal Application",
+                    "readOnly": true,
+                    "prioritized": false,
+                    "type": "string",
+                    "metasysType": "enum"
+                },
+                "bacnetExposed": {
+                    "title": "BACnet Exposed",
+                    "prioritized": false,
+                    "type": "boolean",
+                    "metasysType": "bool"
+                },
+                "maxPresValue": {
+                    "title": "Max Value",
+                    "prioritized": false,
+                    "metasysType": "float",
+                    "type": "number",
+                    "minimum": -3.40282347e+38,
+                    "maximum": 3.40282347e+38
+                },
+                "minPresValue": {
+                    "title": "Min Value",
+                    "prioritized": false,
+                    "metasysType": "float",
+                    "type": "number",
+                    "minimum": -3.40282347e+38,
+                    "maximum": 3.40282347e+38
+                },
+                "covIncrement": {
+                    "title": "COV Increment",
+                    "prioritized": false,
+                    "metasysType": "float",
+                    "type": "number",
+                    "minimum": -3.40282347e+38,
+                    "maximum": 3.40282347e+38
+                },
+                "units": {
+                    "title": "Units",
+                    "prioritized": false,
+                    "type": "string",
+                    "metasysType": "enum"
+                },
+                "displayPrecision": {
+                    "title": "Display Precision",
+                    "prioritized": false,
+                    "type": "string",
+                    "metasysType": "enum"
+                },
+                "propertyRefValue": {
+                    "title": "Property Ref Value",
+                    "readOnly": true,
+                    "prioritized": false,
+                    "metasysType": "attributeReference",
+                    "oneOf": [
+                        {
+                            "$ref": "#attribute-reference"
+                        }
+                    ]
+                },
+                "connectedTo": {
+                    "title": "Connected To",
+                    "prioritized": false,
+                    "metasysType": "attributeReference",
+                    "oneOf": [
+                        {
+                            "$ref": "#attribute-reference"
+                        }
+                    ]
+                },
+                "connectedStatus": {
+                    "title": "Connected Status",
+                    "readOnly": true,
+                    "prioritized": false,
+                    "type": "string",
+                    "metasysType": "enum"
+                },
+                "direction": {
+                    "title": "Direction",
+                    "prioritized": false,
+                    "type": "string",
+                    "metasysType": "enum"
+                },
+                "prioritySupported": {
+                    "title": "Priority Supported",
+                    "prioritized": false,
+                    "type": "boolean",
+                    "metasysType": "bool"
+                },
+                "relinquishDefault": {
+                    "title": "Relinquish Default",
+                    "prioritized": false,
+                    "metasysType": "float",
+                    "type": "number",
+                    "minimum": -3.40282347e+38,
+                    "maximum": 3.40282347e+38
+                },
+                "restoreCommandPriority": {
+                    "title": "Restore Command Priority",
+                    "prioritized": false,
+                    "type": "string",
+                    "metasysType": "bitString"
+                },
+                "priorityArray": {
+                    "title": "Priority Array",
+                    "readOnly": true,
+                    "prioritized": false,
+                    "type": "array",
+                    "metasysType": "array"
+                },
+                "overrideExpirationTime": {
+                    "title": "Override Expiration Time",
+                    "readOnly": true,
+                    "prioritized": false,
+                    "type": "object",
+                    "metasysType": "struct"
+                },
+                "currentCommandPriority": {
+                    "title": "Current Command Priority",
+                    "readOnly": true,
+                    "prioritized": false,
+                    "metasysType": "ushort",
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 65535
+                },
+                "itemReference": {
+                    "title": "Item Reference",
+                    "readOnly": true,
+                    "prioritized": false,
+                    "type": "string",
+                    "metasysType": "string"
+                },
+                "name": {
+                    "title": "Name",
+                    "prioritized": false,
+                    "type": "string",
+                    "metasysType": "string"
+                },
+                "objectName": {
+                    "title": "Object Name",
+                    "prioritized": false,
+                    "type": "string",
+                    "metasysType": "string"
+                },
+                "description": {
+                    "title": "Description",
+                    "prioritized": false,
+                    "type": "string",
+                    "metasysType": "string"
+                },
+                "status": {
+                    "title": "Status",
+                    "readOnly": true,
+                    "prioritized": false,
+                    "type": "string",
+                    "metasysType": "enum"
+                },
+                "enabled": {
+                    "title": "Enabled",
+                    "prioritized": false,
+                    "type": "boolean",
+                    "metasysType": "bool"
+                },
+                "executionPriority": {
+                    "title": "Execution Priority",
+                    "prioritized": false,
+                    "type": "string",
+                    "metasysType": "enum"
+                },
+                "objectCategory": {
+                    "title": "Authorization Category",
+                    "prioritized": false,
+                    "type": "string",
+                    "metasysType": "enum"
+                },
+                "alarmState": {
+                    "title": "Alarm State",
+                    "readOnly": true,
+                    "prioritized": false,
+                    "type": "string",
+                    "metasysType": "enum"
+                },
+                "bacnetObjectType": {
+                    "title": "Object Type",
+                    "readOnly": true,
+                    "prioritized": false,
+                    "type": "string",
+                    "metasysType": "enum"
+                },
+                "objectIdentifier": {
+                    "title": "Object Identifier",
+                    "readOnly": true,
+                    "prioritized": false,
+                    "metasysType": "bacOid",
+                    "oneOf": [
+                        {
+                            "$ref": "#bacoid"
+                        }
+                    ]
+                },
+                "propertyList": {
+                    "title": "Property List",
+                    "readOnly": true,
+                    "prioritized": false,
+                    "type": "array",
+                    "metasysType": "listof"
                 }
-              }
+            },
+            "definitions": {
+                "object-reference": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "$id": "#object-reference",
+                    "title": "Object reference data type",
+                    "type": "object",
+                    "oneOf": [
+                        {
+                            "properties": {
+                                "objectReference": {
+                                    "format": "fully-qualified-reference",
+                                    "type": "string"
+                                },
+                                "referencedObject": {
+                                    "type": "object",
+                                    "properties": {
+                                        "objectName": {
+                                            "type": "string"
+                                        },
+                                        "objectUrl": {
+                                            "type": "string",
+                                            "format": "uri"
+                                        }
+                                    },
+                                    "readOnly": true
+                                }
+                            },
+                            "required": [
+                                "objectReference"
+                            ]
+                        },
+                        {
+                            "properties": {
+                                "objectBACoid": {
+                                    "readOnly": true,
+                                    "oneOf": [
+                                        {
+                                            "$ref": "#bacoid"
+                                        }
+                                    ]
+                                },
+                                "deviceAddress": {
+                                    "readOnly": true,
+                                    "type": "string"
+                                },
+                                "deviceBACoid": {
+                                    "readOnly": true,
+                                    "oneOf": [
+                                        {
+                                            "$ref": "#bacoid"
+                                        }
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "objectBACoid"
+                            ],
+                            "additionalProperties": false
+                        }
+                    ]
+                },
+                "attribute-reference": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "$id": "#attribute-reference",
+                    "title": "Attribute reference data type",
+                    "type": "object",
+                    "allOf": [
+                        {
+                            "$ref": "#object-reference"
+                        },
+                        {
+                            "properties": {
+                                "attribute": {
+                                    "$ref": "http://127.0.0.1:6000/api/v4/schemas/enums/attributeEnumSet"
+                                },
+                                "if": {
+                                    "required": [
+                                        "objectReference"
+                                    ]
+                                },
+                                "then": {
+                                    "properties": {
+                                        "referencedObject": {
+                                            "properties": {
+                                                "attributeUrl": {
+                                                    "type": "string",
+                                                    "metasysType": "string",
+                                                    "format": "uri"
+                                                },
+                                                "attributeName": {
+                                                    "type": "string",
+                                                    "metasysType": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "bacoid": {
+                    "type": "object",
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "$id": "#bacoid",
+                    "title": "A definition for the BACoid data type",
+                    "properties": {
+                        "bacnetObjectType": {
+                            "title": "BACnet Object Type",
+                            "oneOf": [
+                                {
+                                    "$ref": "http://127.0.0.1:6000/api/v4/schemas/enums/objectTypeEnumSet"
+                                }
+                            ]
+                        },
+                        "instance": {
+                            "type": "integer",
+                            "title": "Instance Number",
+                            "minimum": 0,
+                            "maximum": 4194303
+                        }
+                    },
+                    "required": [
+                        "bacnetObjectType",
+                        "instance"
+                    ],
+                    "additionalProperties": false
+                }
             }
-          }
-        ]
-      },
-      "bacoid": {
-        "type": "object",
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "#bacoid",
-        "title": "A definition for the BACoid data type",
-        "properties": {
-          "bacnetObjectType": {
-            "title": "BACnet Object Type",
-            "oneOf": [
-              {
-                "$ref": "https://{hostname}/api/v4/schemas/enums/objectTypeEnumSet"
-              }
-            ]
-          },
-          "instance": {
-            "type": "integer",
-            "title": "Instance Number",
-            "minimum": 0,
-            "maximum": 4194303
-          }
-        },
-        "required": [
-          "bacnetObjectType",
-          "instance"
-        ],
-        "additionalProperties": false
-      }
-    }
-  }
-},
-  "objects": {
-  "self": "https://{hostname}/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9/objects?flatten=false&includeExtensions=true&includeInternal=false&depth=1",
-  "items": [
-    {
-      "self": "https://{hostname}/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9",
-      "parentUrl": null,
-      "networkDeviceUrl": "https://{hostname}/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456",
-      "pointsUrl": "https://{hostname}/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9/points",
-      "objectsUrl": "https://{hostname}/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9/objects",
-      "alarmsUrl": "https://{hostname}/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9/alarms",
-      "auditsUrl": "https://{hostname}/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9/audits",
-      "trendedAttributesUrl": "https://{hostname}/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9/trendedAttributes",
-      "itemReference": "{hostname}:{deviceHostname}/$site",
-      "hasChildrenMatchingQuery": true,
-      "name": "Site",
-      "id": "767d8af0-163f-552c-ba37-a884466075f9",
-      "objectType": "objectTypeEnumSet.siteClass",
-      "classification": "site",
-      "items": [
-        {
-          "self": "https://{hostname}/api/v4/objects/851bf2f5-1043-5418-873a-182f0daa047f",
-          "parentUrl": "https://{hostname}/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9",
-          "networkDeviceUrl": "https://{hostname}/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456",
-          "pointsUrl": "https://{hostname}/api/v4/objects/851bf2f5-1043-5418-873a-182f0daa047f/points",
-          "objectsUrl": "https://{hostname}/api/v4/objects/851bf2f5-1043-5418-873a-182f0daa047f/objects",
-          "alarmsUrl": "https://{hostname}/api/v4/objects/851bf2f5-1043-5418-873a-182f0daa047f/alarms",
-          "auditsUrl": "https://{hostname}/api/v4/objects/851bf2f5-1043-5418-873a-182f0daa047f/audits",
-          "trendedAttributesUrl": "https://{hostname}/api/v4/objects/851bf2f5-1043-5418-873a-182f0daa047f/trendedAttributes",
-          "itemReference": "{hostname}:{deviceHostname}/$site.UserTrees",
-          "hasChildrenMatchingQuery": false,
-          "name": "User Views",
-          "id": "851bf2f5-1043-5418-873a-182f0daa047f",
-          "objectType": "objectTypeEnumSet.containerClass",
-          "classification": "folder",
-          "items": []
-        },
-        {
-          "self": "https://{hostname}/api/v4/objects/727072c8-bc67-5f38-8623-485a9d73af4f",
-          "parentUrl": "https://{hostname}/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9",
-          "networkDeviceUrl": "https://{hostname}/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456",
-          "pointsUrl": "https://{hostname}/api/v4/objects/727072c8-bc67-5f38-8623-485a9d73af4f/points",
-          "objectsUrl": "https://{hostname}/api/v4/objects/727072c8-bc67-5f38-8623-485a9d73af4f/objects",
-          "alarmsUrl": "https://{hostname}/api/v4/objects/727072c8-bc67-5f38-8623-485a9d73af4f/alarms",
-          "auditsUrl": "https://{hostname}/api/v4/objects/727072c8-bc67-5f38-8623-485a9d73af4f/audits",
-          "trendedAttributesUrl": "https://{hostname}/api/v4/objects/727072c8-bc67-5f38-8623-485a9d73af4f/trendedAttributes",
-          "itemReference": "{hostname}:{deviceHostname}/$site.SummaryDefs",
-          "hasChildrenMatchingQuery": false,
-          "name": "Summary Definitions",
-          "id": "727072c8-bc67-5f38-8623-485a9d73af4f",
-          "objectType": "objectTypeEnumSet.containerClass",
-          "classification": "folder",
-          "items": []
-        },
-        {
-          "self": "https://{hostname}/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456",
-          "parentUrl": "https://{hostname}/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9",
-          "networkDeviceUrl": "https://{hostname}/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456",
-          "pointsUrl": "https://{hostname}/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456/points",
-          "objectsUrl": "https://{hostname}/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456/objects",
-          "alarmsUrl": "https://{hostname}/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456/alarms",
-          "auditsUrl": "https://{hostname}/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456/audits",
-          "trendedAttributesUrl": "https://{hostname}/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456/trendedAttributes",
-          "itemReference": "{hostname}:{deviceHostname}",
-          "hasChildrenMatchingQuery": true,
-          "name": "{hostname}",
-          "id": "8db194bc-68ee-599f-952e-983a7b86c456",
-          "objectType": "objectTypeEnumSet.oasClass",
-          "classification": "server",
-          "items": []
         }
-      ]
+    },
+    "objects": {
+        "self": "http://127.0.0.1:6000/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9/objects?flatten=false&includeExtensions=true&includeInternal=false&depth=1",
+        "items": [
+            {
+                "self": "http://127.0.0.1:6000/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9",
+                "parentUrl": null,
+                "networkDeviceUrl": "http://127.0.0.1:6000/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456",
+                "pointsUrl": "http://127.0.0.1:6000/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9/points",
+                "objectsUrl": "http://127.0.0.1:6000/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9/objects",
+                "alarmsUrl": "http://127.0.0.1:6000/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9/alarms",
+                "auditsUrl": "http://127.0.0.1:6000/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9/audits",
+                "trendedAttributesUrl": "http://127.0.0.1:6000/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9/trendedAttributes",
+                "itemReference": "{hostname}:{deviceHostname}/$site",
+                "hasChildrenMatchingQuery": false,
+                "name": "Tertiary Site",
+                "id": "767d8af0-163f-552c-ba37-a884466075f9",
+                "objectType": "objectTypeEnumSet.siteClass",
+                "classification": "site",
+                "items": [
+                    {
+                        "self": "http://127.0.0.1:6000/api/v4/objects/851bf2f5-1043-5418-873a-182f0daa047f",
+                        "parentUrl": "http://127.0.0.1:6000/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9",
+                        "networkDeviceUrl": "http://127.0.0.1:6000/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456",
+                        "pointsUrl": "http://127.0.0.1:6000/api/v4/objects/851bf2f5-1043-5418-873a-182f0daa047f/points",
+                        "objectsUrl": "http://127.0.0.1:6000/api/v4/objects/851bf2f5-1043-5418-873a-182f0daa047f/objects",
+                        "alarmsUrl": "http://127.0.0.1:6000/api/v4/objects/851bf2f5-1043-5418-873a-182f0daa047f/alarms",
+                        "auditsUrl": "http://127.0.0.1:6000/api/v4/objects/851bf2f5-1043-5418-873a-182f0daa047f/audits",
+                        "trendedAttributesUrl": "http://127.0.0.1:6000/api/v4/objects/851bf2f5-1043-5418-873a-182f0daa047f/trendedAttributes",
+                        "itemReference": "{hostname}:{deviceHostname}/$site.UserTrees",
+                        "hasChildrenMatchingQuery": false,
+                        "name": "User Views",
+                        "id": "851bf2f5-1043-5418-873a-182f0daa047f",
+                        "objectType": "objectTypeEnumSet.containerClass",
+                        "classification": "folder",
+                        "items": []
+                    },
+                    {
+                        "self": "http://127.0.0.1:6000/api/v4/objects/727072c8-bc67-5f38-8623-485a9d73af4f",
+                        "parentUrl": "http://127.0.0.1:6000/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9",
+                        "networkDeviceUrl": "http://127.0.0.1:6000/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456",
+                        "pointsUrl": "http://127.0.0.1:6000/api/v4/objects/727072c8-bc67-5f38-8623-485a9d73af4f/points",
+                        "objectsUrl": "http://127.0.0.1:6000/api/v4/objects/727072c8-bc67-5f38-8623-485a9d73af4f/objects",
+                        "alarmsUrl": "http://127.0.0.1:6000/api/v4/objects/727072c8-bc67-5f38-8623-485a9d73af4f/alarms",
+                        "auditsUrl": "http://127.0.0.1:6000/api/v4/objects/727072c8-bc67-5f38-8623-485a9d73af4f/audits",
+                        "trendedAttributesUrl": "http://127.0.0.1:6000/api/v4/objects/727072c8-bc67-5f38-8623-485a9d73af4f/trendedAttributes",
+                        "itemReference": "{hostname}:{deviceHostname}/$site.SummaryDefs",
+                        "hasChildrenMatchingQuery": false,
+                        "name": "Summary Definitions",
+                        "id": "727072c8-bc67-5f38-8623-485a9d73af4f",
+                        "objectType": "objectTypeEnumSet.containerClass",
+                        "classification": "folder",
+                        "items": []
+                    },
+                    {
+                        "self": "http://127.0.0.1:6000/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456",
+                        "parentUrl": "http://127.0.0.1:6000/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9",
+                        "networkDeviceUrl": "http://127.0.0.1:6000/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456",
+                        "pointsUrl": "http://127.0.0.1:6000/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456/points",
+                        "objectsUrl": "http://127.0.0.1:6000/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456/objects",
+                        "alarmsUrl": "http://127.0.0.1:6000/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456/alarms",
+                        "auditsUrl": "http://127.0.0.1:6000/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456/audits",
+                        "trendedAttributesUrl": "http://127.0.0.1:6000/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456/trendedAttributes",
+                        "itemReference": "{hostname}:{deviceHostname}",
+                        "hasChildrenMatchingQuery": true,
+                        "name": "{hostname}",
+                        "id": "8db194bc-68ee-599f-952e-983a7b86c456",
+                        "objectType": "objectTypeEnumSet.oasClass",
+                        "classification": "server",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "self": "http://127.0.0.1:6000/api/v4/objects/12345678-1234-5678-1234-567812345678",
+                "parentUrl": null,
+                "networkDeviceUrl": "http://127.0.0.1:6000/api/v4/objects/23456789-2345-6789-2345-678923456789",
+                "pointsUrl": "http://127.0.0.1:6000/api/v4/objects/12345678-1234-5678-1234-567812345678/points",
+                "objectsUrl": "http://127.0.0.1:6000/api/v4/objects/12345678-1234-5678-1234-567812345678/objects",
+                "alarmsUrl": "http://127.0.0.1:6000/api/v4/objects/12345678-1234-5678-1234-567812345678/alarms",
+                "auditsUrl": "http://127.0.0.1:6000/api/v4/objects/12345678-1234-5678-1234-567812345678/audits",
+                "trendedAttributesUrl": "http://127.0.0.1:6000/api/v4/objects/12345678-1234-5678-1234-567812345678/trendedAttributes",
+                "itemReference": "{hostname}:{deviceHostname}/$site",
+                "hasChildrenMatchingQuery": true,
+                "name": "Main Site",
+                "id": "12345678-1234-5678-1234-567812345678",
+                "objectType": "objectTypeEnumSet.siteClass",
+                "classification": "site",
+                "items": [
+                    {
+                        "self": "http://127.0.0.1:6000/api/v4/objects/87654321-4321-8765-4321-876543218765",
+                        "parentUrl": "http://127.0.0.1:6000/api/v4/objects/12345678-1234-5678-1234-567812345678",
+                        "networkDeviceUrl": "http://127.0.0.1:6000/api/v4/objects/23456789-2345-6789-2345-678923456789",
+                        "pointsUrl": "http://127.0.0.1:6000/api/v4/objects/87654321-4321-8765-4321-876543218765/points",
+                        "objectsUrl": "http://127.0.0.1:6000/api/v4/objects/87654321-4321-8765-4321-876543218765/objects",
+                        "alarmsUrl": "http://127.0.0.1:6000/api/v4/objects/87654321-4321-8765-4321-876543218765/alarms",
+                        "auditsUrl": "http://127.0.0.1:6000/api/v4/objects/87654321-4321-8765-4321-876543218765/audits",
+                        "trendedAttributesUrl": "http://127.0.0.1:6000/api/v4/objects/87654321-4321-8765-4321-876543218765/trendedAttributes",
+                        "itemReference": "{hostname}:{deviceHostname}/$site.UserViews",
+                        "hasChildrenMatchingQuery": false,
+                        "name": "User Views",
+                        "id": "87654321-4321-8765-4321-876543218765",
+                        "objectType": "objectTypeEnumSet.containerClass",
+                        "classification": "folder",
+                        "items": []
+                    },
+                    {
+                        "self": "http://127.0.0.1:6000/api/v4/objects/56781234-5678-1234-5678-123456781234",
+                        "parentUrl": "http://127.0.0.1:6000/api/v4/objects/12345678-1234-5678-1234-567812345678",
+                        "networkDeviceUrl": "http://127.0.0.1:6000/api/v4/objects/23456789-2345-6789-2345-678923456789",
+                        "pointsUrl": "http://127.0.0.1:6000/api/v4/objects/56781234-5678-1234-5678-123456781234/points",
+                        "objectsUrl": "http://127.0.0.1:6000/api/v4/objects/56781234-5678-1234-5678-123456781234/objects",
+                        "alarmsUrl": "http://127.0.0.1:6000/api/v4/objects/56781234-5678-1234-5678-123456781234/alarms",
+                        "auditsUrl": "http://127.0.0.1:6000/api/v4/objects/56781234-5678-1234-5678-123456781234/audits",
+                        "trendedAttributesUrl": "http://127.0.0.1:6000/api/v4/objects/56781234-5678-1234-5678-123456781234/trendedAttributes",
+                        "itemReference": "{hostname}:{deviceHostname}/$site.SummaryDefs",
+                        "hasChildrenMatchingQuery": false,
+                        "name": "Summary Definitions",
+                        "id": "56781234-5678-1234-5678-123456781234",
+                        "objectType": "objectTypeEnumSet.containerClass",
+                        "classification": "folder",
+                        "items": []
+                    },
+                    {
+                        "self": "http://127.0.0.1:6000/api/v4/objects/23456789-2345-6789-2345-678923456789",
+                        "parentUrl": "http://127.0.0.1:6000/api/v4/objects/12345678-1234-5678-1234-567812345678",
+                        "networkDeviceUrl": "http://127.0.0.1:6000/api/v4/objects/23456789-2345-6789-2345-678923456789",
+                        "pointsUrl": "http://127.0.0.1:6000/api/v4/objects/23456789-2345-6789-2345-678923456789/points",
+                        "objectsUrl": "http://127.0.0.1:6000/api/v4/objects/23456789-2345-6789-2345-678923456789/objects",
+                        "alarmsUrl": "http://127.0.0.1:6000/api/v4/objects/23456789-2345-6789-2345-678923456789/alarms",
+                        "auditsUrl": "http://127.0.0.1:6000/api/v4/objects/23456789-2345-6789-2345-678923456789/audits",
+                        "trendedAttributesUrl": "http://127.0.0.1:6000/api/v4/objects/23456789-2345-6789-2345-678923456789/trendedAttributes",
+                        "itemReference": "{hostname}:{deviceHostname}/$site.NetworkDevices",
+                        "hasChildrenMatchingQuery": false,
+                        "name": "Network Devices",
+                        "id": "23456789-2345-6789-2345-678923456789",
+                        "objectType": "objectTypeEnumSet.deviceClass",
+                        "classification": "device",
+                        "items": []
+                    }
+                ]
+            },
+            {
+                "self": "http://127.0.0.1:6000/api/v4/objects/abcdef12-3456-7890-abcd-ef1234567890",
+                "parentUrl": null,
+                "networkDeviceUrl": "http://127.0.0.1:6000/api/v4/objects/bcdef123-4567-890a-bcde-f1234567890a",
+                "pointsUrl": "http://127.0.0.1:6000/api/v4/objects/abcdef12-3456-7890-abcd-ef1234567890/points",
+                "objectsUrl": "http://127.0.0.1:6000/api/v4/objects/abcdef12-3456-7890-abcd-ef1234567890/objects",
+                "alarmsUrl": "http://127.0.0.1:6000/api/v4/objects/abcdef12-3456-7890-abcd-ef1234567890/alarms",
+                "auditsUrl": "http://127.0.0.1:6000/api/v4/objects/abcdef12-3456-7890-abcd-ef1234567890/audits",
+                "trendedAttributesUrl": "http://127.0.0.1:6000/api/v4/objects/abcdef12-3456-7890-abcd-ef1234567890/trendedAttributes",
+                "itemReference": "{hostname}:{deviceHostname}/$site",
+                "hasChildrenMatchingQuery": true,
+                "name": "Primary Site",
+                "id": "abcdef12-3456-7890-abcd-ef1234567890",
+                "objectType": "objectTypeEnumSet.siteClass",
+                "classification": "site",
+                "items": [
+                    {
+                        "self": "http://127.0.0.1:6000/api/v4/objects/1234abcd-5678-90ef-1234-abcd567890ef",
+                        "parentUrl": "http://127.0.0.1:6000/api/v4/objects/abcdef12-3456-7890-abcd-ef1234567890",
+                        "networkDeviceUrl": "http://127.0.0.1:6000/api/v4/objects/bcdef123-4567-890a-bcde-f1234567890a",
+                        "pointsUrl": "http://127.0.0.1:6000/api/v4/objects/1234abcd-5678-90ef-1234-abcd567890ef/points",
+                        "objectsUrl": "http://127.0.0.1:6000/api/v4/objects/1234abcd-5678-90ef-1234-abcd567890ef/objects",
+                        "alarmsUrl": "http://127.0.0.1:6000/api/v4/objects/1234abcd-5678-90ef-1234-abcd567890ef/alarms",
+                        "auditsUrl": "http://127.0.0.1:6000/api/v4/objects/1234abcd-5678-90ef-1234-abcd567890ef/audits",
+                        "trendedAttributesUrl": "http://127.0.0.1:6000/api/v4/objects/1234abcd-5678-90ef-1234-abcd567890ef/trendedAttributes",
+                        "itemReference": "{hostname}:{deviceHostname}/$site.UserViews",
+                        "hasChildrenMatchingQuery": false,
+                        "name": "User Views",
+                        "id": "1234abcd-5678-90ef-1234-abcd567890ef",
+                        "objectType": "objectTypeEnumSet.containerClass",
+                        "classification": "folder",
+                        "items": []
+                    },
+                    {
+                        "self": "http://127.0.0.1:6000/api/v4/objects/5678efgh-1234-5678-90ab-cdef12345678",
+                        "parentUrl": "http://127.0.0.1:6000/api/v4/objects/abcdef12-3456-7890-abcd-ef1234567890",
+                        "networkDeviceUrl": "http://127.0.0.1:6000/api/v4/objects/bcdef123-4567-890a-bcde-f1234567890a",
+                        "pointsUrl": "http://127.0.0.1:6000/api/v4/objects/5678efgh-1234-5678-90ab-cdef12345678/points",
+                        "objectsUrl": "http://127.0.0.1:6000/api/v4/objects/5678efgh-1234-5678-90ab-cdef12345678/objects",
+                        "alarmsUrl": "http://127.0.0.1:6000/api/v4/objects/5678efgh-1234-5678-90ab-cdef12345678/alarms",
+                        "auditsUrl": "http://127.0.0.1:6000/api/v4/objects/5678efgh-1234-5678-90ab-cdef12345678/audits",
+                        "trendedAttributesUrl": "http://127.0.0.1:6000/api/v4/objects/5678efgh-1234-5678-90ab-cdef12345678/trendedAttributes",
+                        "itemReference": "{hostname}:{deviceHostname}/$site.SummaryDefs",
+                        "hasChildrenMatchingQuery": false,
+                        "name": "Summary Definitions",
+                        "id": "5678efgh-1234-5678-90ab-cdef12345678",
+                        "objectType": "objectTypeEnumSet.containerClass",
+                        "classification": "folder",
+                        "items": []
+                    },
+                    {
+                        "self": "http://127.0.0.1:6000/api/v4/objects/bcdef123-4567-890a-bcde-f1234567890a",
+                        "parentUrl": "http://127.0.0.1:6000/api/v4/objects/abcdef12-3456-7890-abcd-ef1234567890",
+                        "networkDeviceUrl": "http://127.0.0.1:6000/api/v4/objects/bcdef123-4567-890a-bcde-f1234567890a",
+                        "pointsUrl": "http://127.0.0.1:6000/api/v4/objects/bcdef123-4567-890a-bcde-f1234567890a/points",
+                        "objectsUrl": "http://127.0.0.1:6000/api/v4/objects/bcdef123-4567-890a-bcde-f1234567890a/objects",
+                        "alarmsUrl": "http://127.0.0.1:6000/api/v4/objects/bcdef123-4567-890a-bcde-f1234567890a/alarms",
+                        "auditsUrl": "http://127.0.0.1:6000/api/v4/objects/bcdef123-4567-890a-bcde-f1234567890a/audits",
+                        "trendedAttributesUrl": "http://127.0.0.1:6000/api/v4/objects/bcdef123-4567-890a-bcde-f1234567890a/trendedAttributes",
+                        "itemReference": "{hostname}:{deviceHostname}/$site.NetworkDevices",
+                        "hasChildrenMatchingQuery": false,
+                        "name": "Network Devices",
+                        "id": "bcdef123-4567-890a-bcde-f1234567890a",
+                        "objectType": "objectTypeEnumSet.deviceClass",
+                        "classification": "device",
+                        "items": []
+                    }
+                ]
+            }
+        ],
+        "effectivePermissions": {
+            "canDelete": [],
+            "canView": [
+                "767d8af0-163f-552c-ba37-a884466075f9",
+                "727072c8-bc67-5f38-8623-485a9d73af4f"
+            ],
+            "canModify": [
+                "767d8af0-163f-552c-ba37-a884466075f9",
+                "727072c8-bc67-5f38-8623-485a9d73af4f"
+            ]
+        }
     }
-  ],
-  "effectivePermissions": {
-    "canDelete": [],
-    "canView": [
-      "767d8af0-163f-552c-ba37-a884466075f9",
-      "727072c8-bc67-5f38-8623-485a9d73af4f"
-    ],
-    "canModify": [
-      "767d8af0-163f-552c-ba37-a884466075f9",
-      "727072c8-bc67-5f38-8623-485a9d73af4f"
-    ]
-  }
-}
 }

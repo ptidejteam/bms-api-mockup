@@ -1,7 +1,7 @@
 from flask_restx import Namespace, Resource
 from util import Util
 import json
-from flask import jsonify, request
+from flask import jsonify, request, make_response
 
 api = Namespace('metasys_timeseries',
                 description='Operations to retrieve time series data.')
@@ -43,6 +43,32 @@ class Object(Resource):
         for obj in objects:
             if obj['id'] == object_id:
                 return jsonify(obj)
+
+    def patch(self, object_id):
+        json_data = json.loads(Util.get_mock_data('data/objects.json'))
+        objects = json_data['objects']['items']
+        for obj in objects:
+            if obj['id'] == object_id:
+                data = json.loads(request.data.decode('utf-8'))
+                for key, value in data['item'].items():
+                    obj[key] = value
+                with open('data/objects.json', 'w') as file:
+                    json.dump(json_data, file, indent=4)
+                    return make_response('Success', 200)
+
+    def delete(self, object_id):
+        json_data = json.loads(Util.get_mock_data('data/objects.json'))
+        objects = json_data['objects']['items']
+        del_index = -1
+        for i in range(len(objects)):
+            if objects[i]['id'] == object_id:
+                del_index = i
+                break
+        if del_index != -1:
+            del objects[del_index]
+            with open('data/objects.json', 'w') as file:
+                json.dump(json_data, file, indent=4)
+                return make_response('Success', 204)
 
 
 @api.route('/<object_id>/attributes')
