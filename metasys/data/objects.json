@@ -600,6 +600,19 @@
                         "items": []
                     }
                 ]
+            },
+            {
+                "parentId": "82b6f2d5-6fed-5074-b611-94dd40028312",
+                "localUniqueIdentifier": "ZN-3-SETPT",
+                "objectType": "objectTypeEnumSet.avClass",
+                "item": {
+                    "name": "Zone 3 Setpoint",
+                    "description": "Zone 3 Temperature Setpoint",
+                    "objectCategory": "objectCategoryEnumSet.hvacCategory",
+                    "minPresValue": 55,
+                    "maxPresValue": 95
+                },
+                "id": "4f45a01d-b0d0-4023-b0db-57d4ef81a8a5"
             }
         ],
         "effectivePermissions": {

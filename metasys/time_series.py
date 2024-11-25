@@ -1,3 +1,5 @@
+import uuid
+
 from flask_restx import Namespace, Resource
 from util import Util
 import json
@@ -31,6 +33,19 @@ class ObjectList(Resource):
         """Returns the root object of the tree and, optionally, its children"""
         json_data = json.loads(Util.get_mock_data('data/objects.json'))
         return jsonify(json_data['objects'])
+
+    def post(self):
+        data = json.loads(request.data.decode('utf-8'))
+        data['id'] = str(uuid.uuid4())
+        with open('data/objects.json', 'r+') as file:
+            json_data = json.load(file)
+            json_data['objects']['items'].append(data)
+            file.seek(0)
+            json.dump(json_data, file, indent=4)
+            file.truncate()
+            response = make_response('', 200)
+            response.headers['Location'] = f'{request.url}/{data["id"]}'
+            return response
 
 
 @api.route('/<object_id>')
