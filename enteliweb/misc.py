@@ -34,3 +34,10 @@ class Misc:
             return element.tag.split('}')[0][1:]
         else:
             return ''
+
+    @staticmethod
+    def remove_namespace(element):
+        # recursively remove namespace from the tags
+        for elem in element.iter():
+            if '}' in elem.tag:
+                elem.tag = elem.tag.split('}', 1)[1]

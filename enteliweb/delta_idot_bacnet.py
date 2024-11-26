@@ -98,6 +98,59 @@ class DeltaIDotBacnet:
         elif data_type == 'json':
             return Misc.get_resource_data('data/object_properties.json')
 
+    def delete_object(self, site_name, device_number, object_type, instance):
+        # ideally, you will get the site and device before getting object properties
+        print(f'Request parameters - site name: {site_name}, device number: {device_number}')
+        data_type = request.args.get('alt', 'xml')
+        if data_type == 'xml':
+            tree = ET.parse('data/objects.xml')
+            root = tree.getroot()
+            deleted = False
+            for obj in root.findall('ns:Object', {'ns': self.ns['csml']}):
+                if obj.get('name') == f'{object_type},{instance}':
+                    root.remove(obj)
+                    deleted = True
+            if deleted:
+                Misc.remove_namespace(root)
+                tree.write('data/objects.xml', encoding='UTF-8', xml_declaration=True)
+                res = '''
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <String error="-1" errorText="No Content" name="result" value="" xmlns="http://bacnet.org/csml/1.2"/>
+                '''
+                response = make_response(res)
+                response.headers['Content-Type'] = 'application/xml'
+                response.status_code = 203
+                return response
+            res = '''
+                <?xml version="1.0" encoding="UTF-8"?>
+                <String error="31" errorText="Forbidden" name="result" value="" xmlns="http://bacnet.org/csml/1.2"/>
+            '''
+            response = make_response(res)
+            response.headers['Content-Type'] = 'application/xml'
+            response.status_code = 403
+            return response
+        elif data_type == 'json':
+            data = json.loads(Util.get_mock_data('data/objects.json'))
+            obj_key = f'{object_type},{instance}'
+            if obj_key in data:
+                del data[obj_key]
+                with open('data/objects.json', 'w') as file:
+                    json.dump(data, file, indent=4)
+                return make_response(jsonify({
+                    "$base": "String",
+                    "name": "result",
+                    "value": "",
+                    "error": "-1",
+                    "errorText": "No Content"
+                }), 203)
+            return make_response(jsonify({
+                "$base": "String",
+                "name": "result",
+                "value": "",
+                "error": "31",
+                "errorText": "Forbidden"
+            }), 403)
+
     def get_trend_log_records(self, site_name, device_number, instance):
         data_type = request.args.get('alt', 'xml')
         # ideally, you will get the log records for the site, device and instance

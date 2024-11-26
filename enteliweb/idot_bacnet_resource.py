@@ -35,6 +35,12 @@ class IDotBacnetSiteDeviceObjectProperties(Resource):
         both BACnet standard and proprietary, and their values for the specified object."""
         return i_dot_bacnet.get_object_properties(site_name, device_number, object_type, instance)
 
+    def delete(self, site_name, device_number, object_type, instance):
+        """Delete object resource deletes a BACnet object on specified site and device.
+        The user that the application logged in as must be a member of a group with object
+        delete permissions"""
+        return i_dot_bacnet.delete_object(site_name, device_number, object_type, instance)
+
 
 @api.route('/<site_name>/<device_number>/trend-log,<instance>/log-buffer')
 class IDotBacnetTrendLogRecords(Resource):
