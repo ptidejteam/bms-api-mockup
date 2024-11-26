@@ -22,7 +22,10 @@ pip install -r requirements.txt
 ```
 
 ### Running the Applications
-Each application can be run separately on different ports. Below are the instructions for running each application.
+Each application can be run separately on different ports. 
+Below are the instructions for running each application.
+
+<em> NB: You must rename `sample_env` to `.env` before running any of the applications </em>
 
 1. Run enteliweb Application
 ```
