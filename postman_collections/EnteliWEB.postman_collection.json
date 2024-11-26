@@ -1,0 +1,1727 @@
+{
+	"info": {
+		"_postman_id": "d5811525-e931-444f-a07d-453380515b82",
+		"name": "EnteliWEB",
+		"description": "By using the REST API, an application can access alarm management, BACnet network services, enteliWEB views, dashboards, systems, users, user groups and enteliWEB configuration details.\n\nWhen working with the Delta_IDotbacnet, Delta_IDotmulti and Delta_ISystems classes, a current edition of the ASHRAE Standard 135 and the Addendum 135-2012am are essential information sources.\n\nReference\n\n1. enteliWEB 4.23 REST API Documentation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3087575"
+	},
+	"item": [
+		{
+			"name": "Detla Idot Data",
+			"item": [
+				{
+					"name": "Get XML Trend Logs",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.data/histories",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".data",
+								"histories"
+							]
+						},
+						"description": "Get all trend log objects XML"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Paginated XML Trend Logs",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.data/histories?skip=2&max_results=3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".data",
+								"histories"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "2"
+								},
+								{
+									"key": "max_results",
+									"value": "3"
+								}
+							]
+						},
+						"description": "Get Trend logs with pagination XML"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Trend Logs JSON",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.data/histories?alt=json",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".data",
+								"histories"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "max_results",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "alt",
+									"value": "json"
+								}
+							]
+						},
+						"description": "Get Trend Logs JSON"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Paginated Trend Logs JSON",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.data/histories?skip=2&max_results=3&alt=json",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".data",
+								"histories"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "2"
+								},
+								{
+									"key": "max_results",
+									"value": "3"
+								},
+								{
+									"key": "alt",
+									"value": "json"
+								}
+							]
+						},
+						"description": "Get Trend Logs with pagination JSON"
+					},
+					"response": []
+				}
+			],
+			"description": "The Delta_IDotdata class web services allow an application to obtain information related to the server device's configuration and of site objects.\n\nThe Delta_IDotdata Class web services is an implementation of a specified requirement by the ASHRAE Standard, Addendum-135-2012am-BACnet/WS RESTful Web Services Interface."
+		},
+		{
+			"name": "Delta Idot System",
+			"item": [
+				{
+					"name": "Get System Resources XML",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/systems",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								"systems"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get System Resources JSON",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/systems/?alt=json",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								"systems",
+								""
+							],
+							"query": [
+								{
+									"key": "alt",
+									"value": "json"
+								}
+							]
+						},
+						"description": "Get system resources as JSON"
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Single System XML",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/systems/PAC Lab 1 AHU",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								"systems",
+								"PAC Lab 1 AHU"
+							]
+						},
+						"description": "Get a single system resource as XML"
+					},
+					"response": []
+				},
+				{
+					"name": "Write a Single System Property XML",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " <?xml version=\"1.0\" encoding=\"utf-8\"?>\n <Struct  xmlns=\"http://bacnet.org/csml/1.2\">\n        <Real name=\"ROOM1_SP\" value=\"21\" />\n        <Real name=\"ROOM2_SP\" value=\"22\" />\n        <Real name=\"ROOM3_SP\" value=\"23\" />\n        <Real name=\"SAT_SP\" value=\"33\" />\n</Struct>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/systems/PAC Lab 1 AHU",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								"systems",
+								"PAC Lab 1 AHU"
+							]
+						},
+						"description": "Write a single system resource as XML"
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Single System JSON",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/systems/PAC Lab 1 AHU?alt=json",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								"systems",
+								"PAC Lab 1 AHU"
+							],
+							"query": [
+								{
+									"key": "alt",
+									"value": "json"
+								}
+							]
+						},
+						"description": "Get single system resource as JSON"
+					},
+					"response": []
+				},
+				{
+					"name": "Write Multiple System Properties JSON",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"$base\": \"Struct\",\n    \"ROOM1_SP\": {\n        \"$base\": \"Real\",\n        \"value\": \"21\"\n    },\n     \"ROOM2_SP\": {\n        \"$base\": \"Real\",\n        \"value\": \"27\"\n    },\n     \"ROOM3_SP\": {\n        \"$base\": \"Real\",\n        \"value\": \"28\"\n    },\n     \"SAT_SP\": {\n        \"$base\": \"Real\",\n        \"value\": \"35\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/systems/PAC Lab 1 AHU?alt=json",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								"systems",
+								"PAC Lab 1 AHU"
+							],
+							"query": [
+								{
+									"key": "alt",
+									"value": "json"
+								}
+							]
+						},
+						"description": "Write multiple system properties with json data"
+					},
+					"response": []
+				}
+			],
+			"description": "The Delta_ISystems class web services allow an application to get information about a system and the BACnet objects defined by the system, from the enteliWEB. It also allows you to set the values of objects in a system.\n\nTo obtain the current value of the objects defined by a particular system, use the Get All System Properties for a System Resource XML / Get All System Properties for a System Resource JSON request. The values are not returned when you use the Get List of All Systems Resource XML / Get List of All Systems Resource JSON request.\n\nThis Delta_ISystems class, web services documentation, assumes you understand enteliWEB systems. See the enteliWEB help to familiarize yourself with systems.\n\nFor an alternative approach for getting information about systems, see the Delta_IViews class REST API."
+		},
+		{
+			"name": "Delta Idot Multi",
+			"item": [
+				{
+					"name": "Create XML Multi",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<Struct xmlns=\"http://bacnet.org/csml/1.2\">\n    <Unsigned name=\"lifetime\" value=\"1200\" />\n    <List name=\"values\">\n        <Any name=\"1\" via=\"/.bacnet/MainSite/5600/analog-value,1/present-value\"/>\n        <Any name=\"2\" via=\"/.bacnet/MainSite/5600/analog-value,2/present-value\"/>\n        <Any name=\"3\" via=\"/.bacnet/MainSite/5600/analog-value,3/present-value\"/>\n        <Any name=\"4\" via=\"/.bacnet/MainSite/5600/analog-value,4/present-value\"/>\n    </List>\n</Struct>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.multi",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".multi"
+							]
+						},
+						"description": "Create a multi that represents the values of the AV1 through AV4 on device 5600 on the site named MainSite. This enables the user to read the present values of those analog objects (sensors)"
+					},
+					"response": []
+				},
+				{
+					"name": "Create JSON Multi",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"$base\": \"Struct\",\n    \"lifetime\": {\n        \"$base\": \"Unsigned\",\n        \"value\": 1200\n    },\n    \"values\": {\n        \"$base\": \"List\",\n        \"1\": {\n            \"$base\": \"Any\",\n            \"via\": \"/.bacnet/MainSite/5600/analog-value,1/present-value\"\n        },\n        \"2\": {\n            \"$base\": \"Any\",\n            \"via\": \"/.bacnet/MainSite/5600/analog-value,2/present-value\"\n        },\"3\": {\n            \"$base\": \"Any\",\n            \"via\": \"/.bacnet/MainSite/5600/analog-value,3/present-value\"\n        },\n        \"4\": {\n            \"$base\": \"Any\",\n            \"via\": \"/.bacnet/MainSite/5600/analog-value,4/present-value\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.multi?alt=json",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".multi"
+							],
+							"query": [
+								{
+									"key": "alt",
+									"value": "json"
+								}
+							]
+						},
+						"description": "Create a multi that represents the values of the AV1 through AV4 objects on device 5600 on site MainSite, JSON. "
+					},
+					"response": []
+				},
+				{
+					"name": "XML Object Present Value",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<Struct xmlns=\"http://bacnet.org/csml/1.2\">\n    <List name=\"values\">\n        <Real name=\"1\" value=\"33\" via=\"/.bacnet/MainSite/5600/analog-value,1/present-value\"/>\n        <Real name=\"2\" value=\"44\" via=\"/.bacnet/MainSite/5600/analog-value,2/present-value\"/>\n        <Real name=\"3\" value=\"66\" via=\"/.bacnet/MainSite/5600/analog-value,3/present-value\"/>\n        <Real name=\"4\" value=\"88\" via=\"/.bacnet/MainSite/5600/analog-value,4/present-value\"/>\n    </List>\n</Struct>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.multi",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".multi"
+							]
+						},
+						"description": "Write values to the Present_Value property of the objects AV1 through AV4 on Device 5600 on site MainSite. Do not create a multi-record on the server"
+					},
+					"response": []
+				},
+				{
+					"name": "Write JSON Object Present Value",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"$base\": \"Struct\",\n    \"values\": {\n        \"$base\": \"List\",\n        \"1\": {\n            \"$base\": \"Real\",\n            \"via\": \"/.bacnet/MainSite/5600/analog-value,1/present-value\",\n            \"value\": \"12\"\n        },\n        \"2\": {\n            \"$base\": \"Real\",\n            \"via\": \"/.bacnet/MainSite/5600/analog-value,2/present-value\",\n            \"value\": \"12\"\n        },\"3\": {\n            \"$base\": \"Real\",\n            \"via\": \"/.bacnet/MainSite/5600/analog-value,3/present-value\",\n            \"value\": \"12\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.multi?alt=json",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".multi"
+							],
+							"query": [
+								{
+									"key": "alt",
+									"value": "json"
+								}
+							]
+						},
+						"description": "Write values to the Present_Value property of the objects AV1 through AV3 on Device 5600 on site named MainSite, JSON. Do not create multi record on server"
+					},
+					"response": []
+				},
+				{
+					"name": "XML Multi Value with Info",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"$base\": \"Struct\",\n    \"values\": {\n        \"$base\": \"List\",\n        \"1\": {\n            \"$base\": \"Real\",\n            \"via\": \"/.bacnet/MainSite/5600/analog-value,1/present-value\",\n            \"value\": \"12\"\n        },\n        \"2\": {\n            \"$base\": \"Real\",\n            \"via\": \"/.bacnet/MainSite/5600/analog-value,2/present-value\",\n            \"value\": \"12\"\n        },\"3\": {\n            \"$base\": \"Real\",\n            \"via\": \"/.bacnet/MainSite/5600/analog-value,3/present-value\",\n            \"value\": \"12\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.multi/1334888287",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".multi",
+								"1334888287"
+							],
+							"query": [
+								{
+									"key": "alt",
+									"value": "json",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Get values for multi with id number = 1334888287 and return information about the multi"
+					},
+					"response": []
+				},
+				{
+					"name": "XML Multi Values",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"$base\": \"Struct\",\n    \"values\": {\n        \"$base\": \"List\",\n        \"1\": {\n            \"$base\": \"Real\",\n            \"via\": \"/.bacnet/MainSite/5600/analog-value,1/present-value\",\n            \"value\": \"12\"\n        },\n        \"2\": {\n            \"$base\": \"Real\",\n            \"via\": \"/.bacnet/MainSite/5600/analog-value,2/present-value\",\n            \"value\": \"12\"\n        },\"3\": {\n            \"$base\": \"Real\",\n            \"via\": \"/.bacnet/MainSite/5600/analog-value,3/present-value\",\n            \"value\": \"12\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.multi/1334888287/values",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".multi",
+								"1334888287",
+								"values"
+							],
+							"query": [
+								{
+									"key": "alt",
+									"value": "json",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Get values for multi with id number = 1334888287; do not return information about the multi."
+					},
+					"response": []
+				},
+				{
+					"name": "JSON Multi Value with Info",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"$base\": \"Struct\",\n    \"values\": {\n        \"$base\": \"List\",\n        \"1\": {\n            \"$base\": \"Real\",\n            \"via\": \"/.bacnet/MainSite/5600/analog-value,1/present-value\",\n            \"value\": \"12\"\n        },\n        \"2\": {\n            \"$base\": \"Real\",\n            \"via\": \"/.bacnet/MainSite/5600/analog-value,2/present-value\",\n            \"value\": \"12\"\n        },\"3\": {\n            \"$base\": \"Real\",\n            \"via\": \"/.bacnet/MainSite/5600/analog-value,3/present-value\",\n            \"value\": \"12\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.multi/1334888287?alt=json",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".multi",
+								"1334888287"
+							],
+							"query": [
+								{
+									"key": "alt",
+									"value": "json"
+								}
+							]
+						},
+						"description": "Get values for multi with id number = 1334888287 and return information about the multi, JSON"
+					},
+					"response": []
+				},
+				{
+					"name": "JSON Multi Values",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"$base\": \"Struct\",\n    \"values\": {\n        \"$base\": \"List\",\n        \"1\": {\n            \"$base\": \"Real\",\n            \"via\": \"/.bacnet/MainSite/5600/analog-value,1/present-value\",\n            \"value\": \"12\"\n        },\n        \"2\": {\n            \"$base\": \"Real\",\n            \"via\": \"/.bacnet/MainSite/5600/analog-value,2/present-value\",\n            \"value\": \"12\"\n        },\"3\": {\n            \"$base\": \"Real\",\n            \"via\": \"/.bacnet/MainSite/5600/analog-value,3/present-value\",\n            \"value\": \"12\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.multi/1334888287/values?alt=json",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".multi",
+								"1334888287",
+								"values"
+							],
+							"query": [
+								{
+									"key": "alt",
+									"value": "json"
+								}
+							]
+						},
+						"description": "Get values for multi with id number = 1334888287; do not return information about the multi"
+					},
+					"response": []
+				}
+			],
+			"description": "The Delta_Idotmulti class web services allow an application to gain access to the physical modeling of a BACnet system as represented under the .bacnet node. The .multi service as defined in ASHRAE standard 135 (in public review at time to writing) provides an efficient way to retrieve a collection of data in a single operation via a multi. Essentially, the .multi web service provides a mechanism for issuing multiple Delta_Idotbacnet GETs effectively, in one batch.\n\nFurther, when an application wants to read that collection, it can create a multi and query it repeatedly for updated values. The persistence of the multi is determined by its `lifetime` value which specifes the length of time that the server keeps the multi for. When the multi's `lifetime` reaches zero, then the multi is deleted.\n\nThe .multi web services allow access to two resources rather than only one resources as is the case with the other Interface Class web services.\n\nThe two resources as specified by ASHRAE are as follows.\n\n- multis\n    \n- values of the object properties that are specified in the multis"
+		},
+		{
+			"name": "Delta Idot Bacnet",
+			"item": [
+				{
+					"name": "XML Site Resources",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.bacnet/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".bacnet",
+								""
+							]
+						},
+						"description": "Get list of site resources XML"
+					},
+					"response": []
+				},
+				{
+					"name": "JSON Site Resources",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.bacnet/?alt=json",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".bacnet",
+								""
+							],
+							"query": [
+								{
+									"key": "alt",
+									"value": "json"
+								}
+							]
+						},
+						"description": "Get list of sites resource JSON"
+					},
+					"response": []
+				},
+				{
+					"name": "JSON Site Device List",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.bacnet/MainSite?alt=json",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".bacnet",
+								"MainSite"
+							],
+							"query": [
+								{
+									"key": "alt",
+									"value": "json"
+								}
+							]
+						},
+						"description": "Get list of devices for site resource JSON"
+					},
+					"response": []
+				},
+				{
+					"name": "XML Site Device List",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.bacnet/MainSite?skip=2&max_results=8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".bacnet",
+								"MainSite"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "2"
+								},
+								{
+									"key": "max_results",
+									"value": "8"
+								}
+							]
+						},
+						"description": "Get list of devices for site resource xml"
+					},
+					"response": []
+				},
+				{
+					"name": "XML Object List",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.bacnet/MainSite/10100?skip=3&max_results=10",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".bacnet",
+								"MainSite",
+								"10100"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "3"
+								},
+								{
+									"key": "max_results",
+									"value": "10"
+								}
+							]
+						},
+						"description": "Get the list of objects from the device resource XML"
+					},
+					"response": []
+				},
+				{
+					"name": "JSON Object List",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.bacnet/MainSite/10100?skip=2&max_results=10&alt=json",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".bacnet",
+								"MainSite",
+								"10100"
+							],
+							"query": [
+								{
+									"key": "skip",
+									"value": "2"
+								},
+								{
+									"key": "max_results",
+									"value": "10"
+								},
+								{
+									"key": "alt",
+									"value": "json"
+								}
+							]
+						},
+						"description": "Get the list of objects from device resource JSON"
+					},
+					"response": []
+				},
+				{
+					"name": "XML Property List and Values",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.bacnet/MainSite/10100/analog-input,5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".bacnet",
+								"MainSite",
+								"10100",
+								"analog-input,5"
+							]
+						},
+						"description": "Get list of properties and values from object resource XML"
+					},
+					"response": []
+				},
+				{
+					"name": "JSON Property List and Values",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.bacnet/MainSite/10100/analog-input,5?alt=json",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".bacnet",
+								"MainSite",
+								"10100",
+								"analog-input,5"
+							],
+							"query": [
+								{
+									"key": "alt",
+									"value": "json"
+								}
+							]
+						},
+						"description": "Get list of properties and values from object resource JSON"
+					},
+					"response": []
+				},
+				{
+					"name": "XML Log Records from Trend Object",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.bacnet/MainSite/10100/trend-log,1/log-buffer?published-ge=2014-06-04T12:00:00&published-le=2014-06-04T13:00:00",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".bacnet",
+								"MainSite",
+								"10100",
+								"trend-log,1",
+								"log-buffer"
+							],
+							"query": [
+								{
+									"key": "published-ge",
+									"value": "2014-06-04T12:00:00"
+								},
+								{
+									"key": "published-le",
+									"value": "2014-06-04T13:00:00"
+								}
+							]
+						},
+						"description": "Get log records from trend log object resource XML.\n\nGet log records from June 4, 2014 in the time range of 1200 to 1300 from TL1 on device 100 on MainSite."
+					},
+					"response": []
+				},
+				{
+					"name": "JSON Log Records from Trend Object",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.bacnet/MainSite/10100/trend-log,1/log-buffer?sequence-ge=778000&sequence-le=779000&alt=json",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".bacnet",
+								"MainSite",
+								"10100",
+								"trend-log,1",
+								"log-buffer"
+							],
+							"query": [
+								{
+									"key": "sequence-ge",
+									"value": "778000"
+								},
+								{
+									"key": "sequence-le",
+									"value": "779000"
+								},
+								{
+									"key": "alt",
+									"value": "json"
+								}
+							]
+						},
+						"description": "Get log records from trend log object resource JSON.\n\nGet log records with sequence numbers in the range of 778000 to 778100 from TL1 on device 100 on MainSite.\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "XML Write Value to Object Property",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Real xmlns=\"http://bacnet.org/csml/1.2\" value=\"43\"/>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.bacnet/MainSite/10100/analog-output,1/present-value?priority=5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".bacnet",
+								"MainSite",
+								"10100",
+								"analog-output,1",
+								"present-value"
+							],
+							"query": [
+								{
+									"key": "priority",
+									"value": "5"
+								}
+							]
+						},
+						"description": "Write value to object property resource XML.\n\nWrite the value of 43 to present value property of analog output 1 (OA1) on device 10100 on site MainStie with a priority level of 5"
+					},
+					"response": []
+				},
+				{
+					"name": "JSON Write Value to Object Property",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"$base\": \"Real\", \"value\": 43}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.bacnet/MainSite/10100/analog-output,1/present-value?priority=5&alt=json",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".bacnet",
+								"MainSite",
+								"10100",
+								"analog-output,1",
+								"present-value"
+							],
+							"query": [
+								{
+									"key": "priority",
+									"value": "5"
+								},
+								{
+									"key": "alt",
+									"value": "json"
+								}
+							]
+						},
+						"description": "Write value to object property resource JSON.\nWrite the value of 43 to present value property of analog output 1 (OA1) on device 10100 on site MainStie with a priority level of 5\n"
+					},
+					"response": []
+				},
+				{
+					"name": "XML Delete Object Resource",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.bacnet/MainSite/10100/analog-input,5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".bacnet",
+								"MainSite",
+								"10100",
+								"analog-input,5"
+							]
+						},
+						"description": "The Delete Object resource deletes a BACnet object on specified site and device.\n\nThe user that the application logged in as must be a member of a group with object delete permission."
+					},
+					"response": []
+				},
+				{
+					"name": "JSON Delete Object Resource",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "api-pass",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "api-user",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/enteliweb/api/.bacnet/MainSite/10100/analog-input,5?alt=json",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"enteliweb",
+								"api",
+								".bacnet",
+								"MainSite",
+								"10100",
+								"analog-input,5"
+							],
+							"query": [
+								{
+									"key": "alt",
+									"value": "json"
+								}
+							]
+						},
+						"description": "The Delete Object resource deletes an object on specified site and device.\n\nThe user that the application logged in as must be a member of a group with object delete permission."
+					},
+					"response": []
+				}
+			],
+			"description": "The Delta_IDotbacnet class web services allow access to the physical modelling of a BACnet system as represented under the .bacnet node.\n\nThe .bacnet node is a standard node defined in the (in public review at the time of writing) ASHRAE standard 135 data model.\n\nSee Delta_Idotmulti and Delta_ISystems web services for alternative approaches for getting and writing multiple properties in one operation.\n\nenteliWEB device and object permissions for the user that an application logs in affect the result of these web services.\n\nSee the enteliWEB help to familiarise yourself with user groups and permissions."
+		}
+	]
+}

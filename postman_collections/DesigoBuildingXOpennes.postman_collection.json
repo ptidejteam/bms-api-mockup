@@ -1,0 +1,1021 @@
+{
+	"info": {
+		"_postman_id": "0eadf827-9726-4025-a77e-b373c4a5dc7b",
+		"name": "Desigo Building X Opennes",
+		"description": "The Siemens Building X APIs enable you to get up to date information from your building. To use our APIs you need a Siemens Building X account and a connected building.\n\nReference:\n\n1. [https://developer.siemens.com/building-x-openness/dev-guide/gettingstarted.html](https://developer.siemens.com/building-x-openness/dev-guide/gettingstarted.html)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3087575"
+	},
+	"item": [
+		{
+			"name": "Building Operations",
+			"item": [
+				{
+					"name": "Get All Devices",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/devices?page[limit]=3&filter[modelName]=MSIB CCA&filter[serialNumber]=L7955828",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"devices"
+							],
+							"query": [
+								{
+									"key": "page[limit]",
+									"value": "3"
+								},
+								{
+									"key": "filter[modelName]",
+									"value": "MSIB CCA"
+								},
+								{
+									"key": "filter[serialNumber]",
+									"value": "L7955828"
+								}
+							]
+						},
+						"description": "List devices"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Device",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": {\n    \"type\": \"Device\",\n    \"attributes\": {\n      \"modelName\": \"MSIC BAD\",\n      \"serialNumber\": \"L7065730\"\n    }\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/devices",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"devices"
+							]
+						},
+						"description": "Create Device"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Device",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/devices/1bcaafc3-d4d3-43e1-ab64-89d8518d5951",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"devices",
+								"1bcaafc3-d4d3-43e1-ab64-89d8518d5951"
+							]
+						},
+						"description": "Get the specified device"
+					},
+					"response": []
+				},
+				{
+					"name": "Patch Device Attributes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": {\n    \"type\": \"Device\",\n    \"id\": \"bb861b72-7ffd-4687-83ed-f160046eeedc\",\n    \"attributes\": {\n      \"profile\": {\n        \"name\": \"X661-7\",\n        \"notes\": \"Device has been patched\",\n        \"externalId\": \"{{building_x_base_url}}/{{partition}}/devices/bb861b72-7ffd-4687-83ed-f160046eeedc\"\n      }\n    }\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/devices/bb861b72-7ffd-4687-83ed-f160046eeedc",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"devices",
+								"bb861b72-7ffd-4687-83ed-f160046eeedc"
+							]
+						},
+						"description": "Patch device attributes\nOnly profile attributes can be patched. All other fields will be ignored"
+					},
+					"response": []
+				},
+				{
+					"name": "List Points by Device",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/devices/e7c6d033-c305-410a-a248-f7a1e6289841/points",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"devices",
+								"e7c6d033-c305-410a-a248-f7a1e6289841",
+								"points"
+							]
+						},
+						"description": "List points by device"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Point",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/points/4f77dcg0-d7cg-6hf3-adg8-3a9f89h749h1",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"points",
+								"4f77dcg0-d7cg-6hf3-adg8-3a9f89h749h1"
+							]
+						},
+						"description": "Get the specified point"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Point - Set Value",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": {\n    \"type\": \"Point\",\n    \"id\": \"4f77dcg0-d7cg-6hf3-adg8-3a9f89h749h1\",\n    \"attributes\": {\n      \"pointValue\": {\n        \"value\": \"26.2\"\n      }\n    }\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/points/4f77dcg0-d7cg-6hf3-adg8-3a9f89h749h1",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"points",
+								"4f77dcg0-d7cg-6hf3-adg8-3a9f89h749h1"
+							]
+						},
+						"description": "Update the specified point"
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Point's Tags",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": {\n    \"tags\": {\n      \"type\": \"temperature\",\n      \"specificType\": \"room temperature\"\n    }\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/points/4f77dcg0-d7cg-6hf3-adg8-3a9f89h749h1/tags",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"points",
+								"4f77dcg0-d7cg-6hf3-adg8-3a9f89h749h1",
+								"tags"
+							]
+						},
+						"description": "Updates a point's tags by replacing them with the provided tags."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Point Values",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": {\n    \"tags\": {\n      \"type\": \"temperature\",\n      \"specificType\": \"room temperature\"\n    }\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/points/2d55baf8-b5af-4fd1-8af6-187e67f527f9/values?filter[timestamp][from]=2024-11-20T23:21:41.921Z&filter[timestamp][to]=2024-11-20T23:30:45.456Z",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"points",
+								"2d55baf8-b5af-4fd1-8af6-187e67f527f9",
+								"values"
+							],
+							"query": [
+								{
+									"key": "filter[timestamp][from]",
+									"value": "2024-11-20T23:21:41.921Z"
+								},
+								{
+									"key": "filter[timestamp][to]",
+									"value": "2024-11-20T23:30:45.456Z"
+								}
+							]
+						},
+						"description": "Get Values, a.k.a Time Series Data, for the specified Point"
+					},
+					"response": []
+				}
+			],
+			"description": "The Building Operations API enables you to read data from data points or issue commands to actuator points. Commanding enables you to e.g. change set-point values on a thermostat or open or close a valve.\n\nThe API is available for all Building X buildings that are connected with the Smart Edge services.\n\nReferences\n\n1. [https://developer.siemens.com/building-x-openness/api/building-operations/overview.html](https://developer.siemens.com/building-x-openness/api/building-operations/overview.html)"
+		},
+		{
+			"name": "Building Structure",
+			"item": [
+				{
+					"name": "Get All Locations",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/locations?filter[type]=building&page[size]=4&page[number]=0",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"locations"
+							],
+							"query": [
+								{
+									"key": "filter[type]",
+									"value": "building"
+								},
+								{
+									"key": "page[size]",
+									"value": "4"
+								},
+								{
+									"key": "page[number]",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Location",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/locations/43997b3e-fe5a-4053-ab90-ed218faa164f",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"locations",
+								"43997b3e-fe5a-4053-ab90-ed218faa164f"
+							]
+						},
+						"description": "Get a location"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Location",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": {\n    \"id\": \"43997b3e-fe5a-4053-ab90-ed218faa164f\",\n    \"type\": \"Campus\",\n    \"attributes\": {\n      \"label\": \"Aspern Smart City Campus, Zurich\",\n      \"timeZone\": \"Europe/Zurich\",\n      \"description\": \"A properly organized location in Aspern Smart City Campus\",\n      \"externalId\": \"IfcGuid:1234\",\n      \"tags\": {\n        \"userDefinedMarker\": true,\n        \"userDefinedValue\": [\n          \"blue\",\n          \"green\"\n        ]\n      },\n      \"geoLocation\": {\n        \"geometry\": {\n          \"type\": \"Point\",\n          \"coordinates\": [\n            8.48281,\n            47.19717\n          ]\n        }\n      },\n      \"geoArea\": {\n        \"geometry\": {\n          \"type\": \"Polygon\",\n          \"coordinates\": [\n            [\n              [\n                8.41,\n                47.08\n              ],\n              [\n                8.66,\n                47.08\n              ],\n              [\n                8.66,\n                47.22\n              ],\n              [\n                8.41,\n                47.22\n              ],\n              [\n                8.41,\n                47.08\n              ]\n            ]\n          ]\n        }\n      },\n      \"primaryContact\": {\n        \"name\": \"Marla Pfahl\",\n        \"email\": \"marla.pfahl@example.com\",\n        \"phone\": \"+41 41 234 56 78\"\n      }\n    },\n    \"relationships\": {\n      \"hasPostalAddress\": {\n        \"data\": {\n          \"id\": \"05085306-9c1d-4cee-b92a-04c07e4b1945\",\n          \"type\": \"Address\"\n        }\n      }\n    }\n  },\n  \"included\": [\n    {\n      \"id\": \"05085306-9c1d-4cee-b92a-04c07e4b1945\",\n      \"type\": \"Address\",\n      \"attributes\": {\n        \"locality\": \"Vienna\",\n        \"countryCode\": \"AUT\",\n        \"region\": \"Styria\",\n        \"postalCode\": \"1010\",\n        \"street\": \"Opernring 3\",\n        \"additionalProp1\": {}\n      }\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/locations",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"locations"
+							]
+						},
+						"description": "Creates a new location"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Location",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": {\n    \"id\": \"43997b3e-fe5a-4053-ab90-ed218faa164f\",\n    \"type\": \"Campus\",\n    \"attributes\": {\n      \"label\": \"Aspern Smart City Campus, Europe/Zurich\",\n      \"timeZone\": \"Europe/Zurich\",\n      \"description\": \"A properly organized location in Europe/Zurich\",\n      \"externalId\": \"IfcGuid:1234\",\n      \"tags\": {\n        \"userDefinedMarker\": true,\n        \"userDefinedValue\": [\n          \"blue\",\n          \"green\"\n        ]\n      },\n      \"geoLocation\": {\n        \"geometry\": {\n          \"type\": \"Point\",\n          \"coordinates\": [\n            8.48281,\n            47.19717\n          ]\n        }\n      },\n      \"geoArea\": {\n        \"geometry\": {\n          \"type\": \"Polygon\",\n          \"coordinates\": [\n            [\n              [\n                8.41,\n                47.08\n              ],\n              [\n                8.66,\n                47.08\n              ],\n              [\n                8.66,\n                47.22\n              ],\n              [\n                8.41,\n                47.22\n              ],\n              [\n                8.41,\n                47.08\n              ]\n            ]\n          ]\n        }\n      },\n      \"primaryContact\": {\n        \"name\": \"Marla Pfahl\",\n        \"email\": \"marla.pfahl@example.com\",\n        \"phone\": \"+41 41 234 56 78\"\n      }\n    },\n    \"relationships\": {\n      \"hasPostalAddress\": {\n        \"data\": {\n          \"id\": \"05085306-9c1d-4cee-b92a-04c07e4b1945\",\n          \"type\": \"Address\"\n        }\n      }\n    }\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/locations/43997b3e-fe5a-4053-ab90-ed218faa164f",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"locations",
+								"43997b3e-fe5a-4053-ab90-ed218faa164f"
+							]
+						},
+						"description": "Update the location"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Location",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/locations/43997b3e-fe5a-4053-ab90-ed218faa164f",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"locations",
+								"43997b3e-fe5a-4053-ab90-ed218faa164f"
+							]
+						},
+						"description": "Delete the location"
+					},
+					"response": []
+				},
+				{
+					"name": "List Addresses",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/addresses?filter[countryCode]=AUT&filter[continentCode]=EU&page[size]=2&page[number]=1",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"addresses"
+							],
+							"query": [
+								{
+									"key": "filter[countryCode]",
+									"value": "AUT"
+								},
+								{
+									"key": "filter[continentCode]",
+									"value": "EU"
+								},
+								{
+									"key": "page[size]",
+									"value": "2"
+								},
+								{
+									"key": "page[number]",
+									"value": "1"
+								}
+							]
+						},
+						"description": "List Addresses"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": {\n    \"id\": \"05085306-9c1d-3cee-b92a-04c07e4b1949\",\n    \"type\": \"Address\",\n    \"attributes\": {\n      \"locality\": \"Ghana\",\n      \"countryCode\": \"GH\",\n      \"continentCode\": \"AF\",\n      \"region\": \"Accra\",\n      \"postalCode\": \"1011\",\n      \"street\": \"Prempeh Street II\",\n      \"additionalProp1\": {}\n    }\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/addresses",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"addresses"
+							]
+						},
+						"description": "Create a new address"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/addresses/a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"addresses",
+								"a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6"
+							]
+						},
+						"description": "Get address"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\": {\n    \"id\": \"05085306-9c1d-4cee-b92a-04c07e4b1945\",\n    \"type\": \"Address\",\n    \"attributes\": {\n      \"locality\": \"Vienna\",\n      \"countryCode\": \"AUT\",\n      \"region\": \"Styria\",\n      \"postalCode\": \"1010\",\n      \"street\": \"Sherbrooke 3\",\n      \"additionalProp1\": {}\n    }\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/addresses/05085306-9c1d-4cee-b92a-04c07e4b1945",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"addresses",
+								"05085306-9c1d-4cee-b92a-04c07e4b1945"
+							]
+						},
+						"description": "Update the address"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/addresses/m1n2b3v4-c5x6-z7a8-s9d0-f1g2h3j4k5l6",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"addresses",
+								"m1n2b3v4-c5x6-z7a8-s9d0-f1g2h3j4k5l6"
+							]
+						},
+						"description": "Delete the address"
+					},
+					"response": []
+				}
+			],
+			"description": "The Building Structure API enables you to create and manage a structural representation of your buildings in Building X. The API also helps you manage the location of equipment inside buildings and enables you to programmatically automate data setup.\n\nThe Building Structure API is organized around elements of building structures, called Locations, e.g. Building, Floor and Room\n\nReferences\n\n1. [https://developer.siemens.com/building-x-openness/api/building-structure/overview.html](https://developer.siemens.com/building-x-openness/api/building-structure/overview.html)"
+		},
+		{
+			"name": "Building Geometry API",
+			"item": [
+				{
+					"name": "List Floor Plans",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/floorplans",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"floorplans"
+							]
+						},
+						"description": "List all floorplans"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Floorplan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/floorplans/323e4567-e89b-12d3-a456-426614174002",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"floorplans",
+								"323e4567-e89b-12d3-a456-426614174002"
+							]
+						},
+						"description": "Get floor plan details by id"
+					},
+					"response": []
+				},
+				{
+					"name": "List Floorplan Images",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/floorplans/323e4567-e89b-12d3-a456-426614174002/floorplan-images",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"floorplans",
+								"323e4567-e89b-12d3-a456-426614174002",
+								"floorplan-images"
+							]
+						},
+						"description": "List Floorplan Images, filtered by user provided parameters"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Floorplan Image",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/floorplans/323e4567-e89b-12d3-a456-426614174002/floorplan-images/223e4567-e89b-12d3-a456-426614174001",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"floorplans",
+								"323e4567-e89b-12d3-a456-426614174002",
+								"floorplan-images",
+								"223e4567-e89b-12d3-a456-426614174001"
+							]
+						},
+						"description": "Get Floorplan Image by ID"
+					},
+					"response": []
+				},
+				{
+					"name": "List Geometry",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/geo+json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/floorplans/323e4567-e89b-12d3-a456-426614174002/geometry",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"floorplans",
+								"323e4567-e89b-12d3-a456-426614174002",
+								"geometry"
+							]
+						},
+						"description": "List Geometry, filtered by user provided parameters"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Geometry Center Point",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/geo+json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/floorplans/323e4567-e89b-12d3-a456-426614174002/geometry/center-point",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"floorplans",
+								"323e4567-e89b-12d3-a456-426614174002",
+								"geometry",
+								"center-point"
+							]
+						},
+						"description": "Get Geometry Center Point for all the Geometry available on the Floorplan filtered with user provided parameters in ORG2D"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Geometry Details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/geo+json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{building_x_base_url}}/{{partition}}/floorplans/323e4567-e89b-12d3-a456-426614174002/geometry/7b17f8a9-91fb-4787-8f53-702a107b7d71",
+							"host": [
+								"{{building_x_base_url}}"
+							],
+							"path": [
+								"{{partition}}",
+								"floorplans",
+								"323e4567-e89b-12d3-a456-426614174002",
+								"geometry",
+								"7b17f8a9-91fb-4787-8f53-702a107b7d71"
+							]
+						},
+						"description": "Get geometry details by ID"
+					},
+					"response": []
+				}
+			],
+			"description": "The Building Geometry API enables you to create and interact with 2D geometry of building floorplans.\n\nThis API is organized around the `Floorplan`, and `Geometry` resources. A floorplan contains geometry in the form of a GeoJSON FeatureCollection.\n\nReferences\n\n1. [https://developer.siemens.com/building-x-openness/api/geometry-api/overview.html](https://developer.siemens.com/building-x-openness/api/geometry-api/overview.html)"
+		}
+	],
+	"variable": [
+		{
+			"key": "building_x_base_url",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "partition",
+			"value": "",
+			"type": "default"
+		}
+	]
+}

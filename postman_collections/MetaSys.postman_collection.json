@@ -1,0 +1,791 @@
+{
+	"info": {
+		"_postman_id": "0b20f0c7-265c-457d-b657-2af1b471f4cd",
+		"name": "MetaSys",
+		"description": "The Metasys REST API is the exposed interface for accessing data from a Johnson Controls® Metasys system. This spec documents `v4` of the API first released as part of Metasys 12.0.\n\nMetasys is a network-based building automation system (BAS) that operates the mechanical and electrical equipment in your building. For an introduction to Metasys, refer to _Metasys System_ in [Metasys System Configuration Guide](https://docs.johnsoncontrols.com/bas/r/Metasys/en-US/Metasys-System-Configuration-Guide/12.0). For a glossary of Metasys terms, refer to [Metasys System Glossary](https://docs.johnsoncontrols.com/bas/r/Metasys/en-US/Metasys-System-Glossary/12.0). For additional information on Metasys, search the Johnson Controls documentation site [Knowledge Exchange](https://docs.johnsoncontrols.com/bas/).\n\nReference\n\n1. [https://jci-metasys.github.io/api-landing/api/v4#section/Introduction](https://jci-metasys.github.io/api-landing/api/v4#section/Introduction)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3087575"
+	},
+	"item": [
+		{
+			"name": "Space",
+			"item": [
+				{
+					"name": "Get Spaces Served by a Network Device",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{metasys_base_url}}/networkDevices/d9bf66bd-22f8-425b-82a4-44ba153d79c7/spaces",
+							"host": [
+								"{{metasys_base_url}}"
+							],
+							"path": [
+								"networkDevices",
+								"d9bf66bd-22f8-425b-82a4-44ba153d79c7",
+								"spaces"
+							]
+						},
+						"description": "Retrieves the collection of spaces served by the specified network device. A space is served by a network device when any equipment instance serving the space defines points that map to an attribute of any object contained on the network device."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Spaces Served by an Equipment Instance",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:6000/api/v4/equipment/d9bf66bd-22f8-425b-82a4-44ba153d79c7/spaces",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v4",
+								"equipment",
+								"d9bf66bd-22f8-425b-82a4-44ba153d79c7",
+								"spaces"
+							]
+						},
+						"description": "Retrieves the collection of spaces served by the specified equipment instance."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Spaces",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:6000/api/v4/spaces",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v4",
+								"spaces"
+							]
+						},
+						"description": "Retrieves a collection of spaces."
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Single Space",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:6000/api/v4/spaces/bf254f63-2cbb-4195-8c53-a1d6fcbe54f6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v4",
+								"spaces",
+								"bf254f63-2cbb-4195-8c53-a1d6fcbe54f6"
+							]
+						},
+						"description": "Retrieves the specified space."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Space Children",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:6000/api/v4/spaces/bf254f63-2cbb-4195-8c53-a1d6fcbe54f6/spaces",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v4",
+								"spaces",
+								"bf254f63-2cbb-4195-8c53-a1d6fcbe54f6",
+								"spaces"
+							]
+						},
+						"description": "Retrieves the collection of spaces that are located within the specified space."
+					},
+					"response": []
+				}
+			],
+			"description": "Operations on space-related resources."
+		},
+		{
+			"name": "Equipment",
+			"item": [
+				{
+					"name": "Get Equipment Instances",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:6000/api/v4/equipment",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v4",
+								"equipment"
+							]
+						},
+						"description": "Retrieves a collection of equipment instances."
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Single Equipment Instance",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:6000/api/v4/equipment/b78fa672-3ec9-4794-bd00-7aeafeb9cde0",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v4",
+								"equipment",
+								"b78fa672-3ec9-4794-bd00-7aeafeb9cde0"
+							]
+						},
+						"description": "Retrieves the specified equipment instance."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Equipment Served by an Equipment Instance",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:6000/api/v4/equipment/b78fa672-3ec9-4794-bd00-7aeafeb9cde0/equipment",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v4",
+								"equipment",
+								"b78fa672-3ec9-4794-bd00-7aeafeb9cde0",
+								"equipment"
+							]
+						},
+						"description": "Retrieves the equipment served by the specified equipment instance."
+					},
+					"response": []
+				},
+				{
+					"name": "Get equipment serving a space",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:6000/api/v4/spaces/b78fa672-3ec9-4794-bd00-7aeafeb9cde0/equipment",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v4",
+								"spaces",
+								"b78fa672-3ec9-4794-bd00-7aeafeb9cde0",
+								"equipment"
+							]
+						},
+						"description": "Retrieves the collection of equipment that serve the specified space."
+					},
+					"response": []
+				},
+				{
+					"name": "List equipment points",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:6000/api/v4/equipment/b78fa672-3ec9-4794-bd00-7aeafeb9cde0/points",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v4",
+								"equipment",
+								"b78fa672-3ec9-4794-bd00-7aeafeb9cde0",
+								"points"
+							]
+						},
+						"description": "Retrieves the collection of points that are defined by the specified equipment instance. Each point contains a mapping to an attribute on an object."
+					},
+					"response": []
+				}
+			],
+			"description": "This section describes the operations you can perform on equipment. Equipment is a broad term for anything that makes a building run, including boilers, chillers, air handling units, lights, meters, and security systems. Use equipment operations to get equipment instances and to list equipment points. Apply filters, sorting, and paging to further refine the results."
+		},
+		{
+			"name": "Object",
+			"item": [
+				{
+					"name": "List Objects",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:6000/api/v4/objects",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v4",
+								"objects"
+							]
+						},
+						"description": "Returns the root object of the tree and, optionally, its children. The root object is the site object. The default response is a tree representation."
+					},
+					"response": []
+				},
+				{
+					"name": "List attributes of an object",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:6000/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9/attributes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v4",
+								"objects",
+								"767d8af0-163f-552c-ba37-a884466075f9",
+								"attributes"
+							]
+						},
+						"description": "Returns an object payload with a JSON schema that contains all of the properties of the object. Each property entry contains only a partial schema for that property. "
+					},
+					"response": []
+				},
+				{
+					"name": "List Commands",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:6000/api/v4/objects/960534d2-7df5-5ed8-884c-164e7a2f280a/commands",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v4",
+								"objects",
+								"960534d2-7df5-5ed8-884c-164e7a2f280a",
+								"commands"
+							]
+						},
+						"description": "Returns a payload that lists all of the commands that an object supports. Each command entry has an `invokeUrl` property, which is the URL needed to invoke the command. In addition, each command entry has a `commandBodySchema` property, which is a JSON schema that describes the acceptable payload for the command. Commands are invoked using the HTTP method `PUT` along with the `invokeUrl` and acceptable body."
+					},
+					"response": []
+				},
+				{
+					"name": "Send Command",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"parameters\": [\n    72.5\n  ],\n  \"annotation\": \"Increase the set point to make it warmer.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:6000/api/v4/objects/960534d2-7df5-5ed8-884c-164e7a2f280a/commands/adjustCommand",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v4",
+								"objects",
+								"960534d2-7df5-5ed8-884c-164e7a2f280a",
+								"commands",
+								"adjustCommand"
+							]
+						},
+						"description": "Used to send a command to an object. The payloads of commands differ, but they share some similarities. To learn the specifics of the commands of an object use `List commands`.\n\nRequires Monitoring and Commanding API license."
+					},
+					"response": []
+				},
+				{
+					"name": "Get an Object",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:6000/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v4",
+								"objects",
+								"767d8af0-163f-552c-ba37-a884466075f9"
+							]
+						},
+						"description": "Objects support one or more views. By default, this operation gets the default view of an object. For many objects this is the Focus View (identifier viewNameEnumSet.focusView).\n\nRequires Monitoring and Commanding API license."
+					},
+					"response": []
+				},
+				{
+					"name": "Edit an Object",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"item\": {\n        \"name\": \"Tertiary Site\",\n        \"objectType\": \"objectTypeEnumSet.siteClass\",\n        \"classification\": \"site\",\n        \"hasChildrenMatchingQuery\": false,\n        \"self\": \"http://127.0.0.1:6000/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9\",\n        \"parentUrl\": null,\n        \"networkDeviceUrl\": \"http://127.0.0.1:6000/api/v4/objects/8db194bc-68ee-599f-952e-983a7b86c456\",\n        \"pointsUrl\": \"http://127.0.0.1:6000/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9/points\",\n        \"objectsUrl\": \"http://127.0.0.1:6000/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9/objects\",\n        \"alarmsUrl\": \"http://127.0.0.1:6000/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9/alarms\",\n        \"auditsUrl\": \"http://127.0.0.1:6000/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9/audits\",\n        \"trendedAttributesUrl\": \"http://127.0.0.1:6000/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9/trendedAttributes\",\n        \"itemReference\": \"{hostname}:{deviceHostname}/$site\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:6000/api/v4/objects/767d8af0-163f-552c-ba37-a884466075f9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v4",
+								"objects",
+								"767d8af0-163f-552c-ba37-a884466075f9"
+							]
+						},
+						"description": "This operation modifies one or more attributes of an object. Note: attributes must be updated in whole. For example, if you wish to modify an attribute of metasysType struct which is modelled as a JSON object you must include all elements of the struct. It is undefined what might happen if you do not"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete an Object",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:6000/api/v4/objects/abcdef12-3456-7890-abcd-ef1234567890",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v4",
+								"objects",
+								"abcdef12-3456-7890-abcd-ef1234567890"
+							]
+						},
+						"description": "Deletes the specified object.\n\nNot all objects can be deleted (not even by an administrator)"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Object",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"parentId\": \"82b6f2d5-6fed-5074-b611-94dd40028312\",\n  \"localUniqueIdentifier\": \"ZN-3-SETPT\",\n  \"objectType\": \"objectTypeEnumSet.avClass\",\n  \"item\": {\n    \"name\": \"Zone 3 Setpoint\",\n    \"description\": \"Zone 3 Temperature Setpoint\",\n    \"objectCategory\": \"objectCategoryEnumSet.hvacCategory\",\n    \"minPresValue\": 55,\n    \"maxPresValue\": 95\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:6000/api/v4/objects",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v4",
+								"objects"
+							]
+						},
+						"description": "Creates a new object. Several things are needed to successfully create an object."
+					},
+					"response": []
+				}
+			],
+			"description": "This section describes the operations you can perform on objects. Objects are self-contained functional items in the Metasys system, for a full definition refer to the [Metasys System Glossary](https://docs.johnsoncontrols.com/bas/r/Metasys/en-US/Metasys-System-Glossary/11.0/O). Use objects operations to list, create, edit, and delete objects. Apply filters, sorting, and paging to further refine the results. Some operations accept subscriptions, see [Change of Value Subscriptions](https://jci-metasys.github.io/api-landing/api/v4#change-of-value-subscriptions)."
+		},
+		{
+			"name": "Time Series",
+			"item": [
+				{
+					"name": "Get Object Attributes with Samples",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:6000/api/v4/objects/b259cdd9-6bb5-57c9-aeca-3ef7df6ebb9a/trendedAttributes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v4",
+								"objects",
+								"b259cdd9-6bb5-57c9-aeca-3ef7df6ebb9a",
+								"trendedAttributes"
+							]
+						},
+						"description": "Retrieves a collection of samples for the specified object attribute during a particular date and time range."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Samples for an Object Attribute",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:6000/api/v4/objects/c550095d-ee4c-4314-b415-b0577e383ee9/trendedAttributes/b259cdd9-6bb5-57c9-aeca-3ef7df6ebb6e",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v4",
+								"objects",
+								"c550095d-ee4c-4314-b415-b0577e383ee9",
+								"trendedAttributes",
+								"b259cdd9-6bb5-57c9-aeca-3ef7df6ebb6e"
+							]
+						},
+						"description": "Retrieves a collection of samples for the specified object attribute during a particular date and time range."
+					},
+					"response": []
+				}
+			],
+			"description": "Operations to retrieve time series data.\n\nTime series data is located in two places: in buffers on devices and in an historical data repository (if your site has a repository).\n\nThe buffers typically have relatively recent samples while the repository may have samples as old as your site. Over time the samples in buffers are moved to the repository (if configured to do so)."
+		}
+	],
+	"variable": [
+		{
+			"key": "metasys_base_url",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
